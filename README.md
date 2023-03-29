@@ -1,4 +1,6 @@
-# HELP
+# Blogs sharing Thoughts and Learnings
+
+[https://hailiang-wang.github.io/](https://hailiang-wang.github.io/)
 
 ## Deps
 
@@ -9,7 +11,7 @@ Pandoc, https://pandoc.org/
 Put files into docs, add entry into docs/README.md.
 Next, run `./scripts/commit.sh`.
 
-Later [site](https://hailiang-wang.github.io/hailiang-wang/) is rebuilt on the fly with GitHub Pages workflow.
+Later [site](https://hailiang-wang.github.io/) is rebuilt on the fly with GitHub Pages workflow.
 
 
 ## Others
