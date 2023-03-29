@@ -14,7 +14,7 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), welcome furthe
 | Culture  | culture,history,figure  | 文化，历史，人物 |
 | Management  | management,economics,chatopera,okrs | 管理,经济,Chatopera,目标管理 |
 | Technologies | tech, AI, opensource | 科学、技术 |
-| Interests | books,sports | 兴趣，运动 |
+| Others | books,sports | 兴趣，运动 |
 
 ## Posts
 
