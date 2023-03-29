@@ -21,7 +21,7 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), welcome furthe
 | Date | Post | Tags |
 | --- | --- | --- |
 | 2023-03-28 | [财务管理基本知识](./files/2023_03_26_finance_general_kb.docx)  | finance |
-| 2023-03-26| [推此志也，虽与日月争光可也 \|《离骚》赏析](https://zhuanlan.zhihu.com/p/614769976) | culture,figure |
+| 2023-03-17 | [推此志也，虽与日月争光可也 \|《离骚》赏析](./files/2023_03_17_屈原_离骚_赏析.docx) | culture,figure |
 | 2023-02-10 | [《国富论》摘要 国民财富增加的原理](https://zhuanlan.zhihu.com/p/610118842)  | economics |
 | 2023-02-02 | [尼采：自然产生人类的用意](https://zhuanlan.zhihu.com/p/605672737)  | philosophy | 
 | 2021-12-22 | [功劳归于勇敢者](https://steam.chatopera.com/2021/12/16/gong-lao-gui-yu-yong-gan-zhe-yi-ci-you-yi-ci-de-zuo-de-geng-hao/) | cultural |

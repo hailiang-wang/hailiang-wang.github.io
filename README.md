@@ -8,7 +8,7 @@ Pandoc, https://pandoc.org/
 
 ## Add and update
 
-Put files into docs, add entry into docs/README.md.
+Put files into docs, add entry into [docs/README.md](docs/README.md).
 Next, run `./scripts/commit.sh`.
 
 Later [site](https://hailiang-wang.github.io/) is rebuilt on the fly with GitHub Pages workflow.
