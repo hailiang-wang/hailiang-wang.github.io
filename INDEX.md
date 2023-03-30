@@ -31,6 +31,7 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 | 2021-12-31 | [《商界局外人》，英文 'The Outsiders' by William N. T.](./files/2021_12_31_The_Outsiders_商界局外人.docx) | management,digest |
 | 2021-12-20 | [《一个数学家的辩白》书摘，哈代自传](./files/notes_2303301357.docx)  | digest,figure,culture |
 | 2021-12-16 | [功劳归于勇敢者, The Man in the Arena](./files/notes_2303301246.docx) | figure,chatopera |
+| 2021-11-22 | [《论人的成长》，英文 'A Way of Being' by Carl Rogers](./files/notes_2303310717.docx) | psych,digest | 
 | 2021-11-17 | [Digest of 'The Magic of Thinking Big', by David J. S.](./files/The_Magic_of_Thinking_Big_Book_by_David_J._Schwartz_Digest.docx) | mindset, digest|
 | 2021-09-20 | [《成为领导者》，英文 'Becoming a Leader' by Warren B.](./files/2021_09_20_成为领导者.docx) | management,mindset | 
 | 2021-03-22 | [OKRs 学习和应用：向目标前进](./files/2021_03_22_OKRs_学习和应用.pdf) | management,okrs |
