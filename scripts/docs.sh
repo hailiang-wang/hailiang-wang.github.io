@@ -25,4 +25,4 @@ fi
 pandoc --template ./assets/github.html5 \
         --metadata pagetitle="Hai Liang W's Sharings on GitHub" \
         --metadata date-meta="$DATE_WITH_TIME" \
-        -i README.md -o index.html
+        -i INDEX.md -o index.html
