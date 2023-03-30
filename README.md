@@ -1,6 +1,6 @@
 # Blogs sharing Thoughts and Learnings
 
-[https://hailiang-wang.github.io/](https://hailiang-wang.github.io/)
+Give birth to [https://hailiang-wang.github.io/](https://hailiang-wang.github.io/).
 
 ## Deps
 
