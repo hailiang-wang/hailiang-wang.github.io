@@ -6,7 +6,7 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 
 | Category | Tags | Description |
 | --- | --- |  --- |
-| Product | product,cskefu,chatbot | 产品 |
+| Product | product,cskefu,chatbot,branding,sales | 产品 |
 | Finance  | finance,munger,buffett  | 财务管理，投资 |
 | Productivity  | productivity,ob  | 生产力，效率，自动化 |
 | Philosophy  | philosophy,buddha  | 哲学，宗教 |
@@ -26,7 +26,7 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 | 2023-02-02 | [尼采：自然产生人类的用意](./files/notes_2303301353.docx)  | philosophy | 
 | 2022-02-28 | [Digest of How to read a book by Mortimer J. Adler, 中文《如何阅读一本书》](./files/notes_2303301803.docx) | books |
 | 2022-02-01 | [金字塔原理，The Pyramid Principle  - clear thinking, precise writing in logic.](./files/2022_02_01_The_Pyramid_Principle.docx) | communications |
-| 2022-01-23 | [《定位》读书笔记，艾里斯与杰克特劳特，英文 'Positioning: The Battle for Your Mind'](./files/notes_2303301841.docx) | management |
+| 2022-01-23 | [《定位》读书笔记，艾里斯与杰克特劳特，英文 'Positioning: The Battle for Your Mind'](./files/notes_2303301841.docx) | branding |
 | 2022-01-15 | [《清单革命》读书笔记，英文 'The Checklist'](./files/notes_2303301830.docx) | productivity,culture | 
 | 2021-12-20 | [哈代自传之《一个数学家的辩白》书摘](./files/notes_2303301357.docx)  | tech,figure,culture |
 | 2021-12-16 | [功劳归于勇敢者, The Man in the Arena](./files/notes_2303301246.docx) | figure,chatopera |
