@@ -22,13 +22,13 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 | --- | --- | --- |
 | 2023-03-28 | [财务管理基本知识](./files/2023_03_26_finance_general_kb.docx)  | finance |
 | 2023-03-17 | [推此志也，虽与日月争光可也 \|《离骚》赏析](./files/2023_03_17_屈原_离骚_赏析.docx) | culture,figure |
-| 2023-02-10 | [《国富论》摘要 国民财富增加的原理](./files/notes_2303301338.docx)  | economics,philosophy |
+| 2023-02-10 | [《国富论》摘要，国民财富增加的原理](./files/notes_2303301338.docx)  | economics,philosophy |
 | 2023-02-02 | [尼采：自然产生人类的用意](./files/notes_2303301353.docx)  | philosophy | 
-| 2022-02-28 | [Digest of How to read a book by Mortimer J. Adler, 中文《如何阅读一本书》](./files/notes_2303301803.docx) | books |
-| 2022-02-01 | [金字塔原理，The Pyramid Principle  - clear thinking, precise writing in logic.](./files/2022_02_01_The_Pyramid_Principle.docx) | communications |
-| 2022-01-23 | [《定位》读书笔记，艾里斯与杰克特劳特，英文 'Positioning: The Battle for Your Mind'](./files/notes_2303301841.docx) | branding |
+| 2022-02-28 | [《如何阅读一本书》摘要，英文 'How to read a book'](./files/notes_2303301803.docx) | books |
+| 2022-02-01 | [《金字塔原理》读书笔记，The Pyramid Principle](./files/2022_02_01_The_Pyramid_Principle.docx) | communications |
+| 2022-01-23 | [《定位》读书笔记，心智之争，英文 'Positioning'](./files/notes_2303301841.docx) | branding |
 | 2022-01-15 | [《清单革命》读书笔记，英文 'The Checklist'](./files/notes_2303301830.docx) | productivity,culture | 
-| 2021-12-20 | [哈代自传之《一个数学家的辩白》书摘](./files/notes_2303301357.docx)  | tech,figure,culture |
+| 2021-12-20 | [《一个数学家的辩白》书摘，哈代自传](./files/notes_2303301357.docx)  | tech,figure,culture |
 | 2021-12-16 | [功劳归于勇敢者, The Man in the Arena](./files/notes_2303301246.docx) | figure,chatopera |
 | 2021-03-22 | [OKRs 学习和应用：向目标前进](./files/2021_03_22_OKRs_学习和应用.pdf) | management,okrs |
 | 2019-02-19 | [《道德经》注解](https://github.com/hailiang-wang/book-of-tao)   | philosophy|
