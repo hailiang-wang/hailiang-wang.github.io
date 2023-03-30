@@ -113,6 +113,13 @@ $for(header-includes)$
   $header-includes$
 $endfor$
 $-------------------------------------------------------------------------------
+
+<style>
+table colgroup col {
+    width: auto !important;
+}
+</style>
+
 <meta name="google-site-verification" content="y0HDzWVgSTGwnicNDNqMJuwhka3VnoRgKipEWceTazk" />
 <script src="assets/jquery-3.6.4.slim.min.js"></script>
 <!-- Google tag (gtag.js) -->
