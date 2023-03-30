@@ -11,7 +11,7 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 | Productivity  | productivity,ob  | 生产力，效率，自动化 |
 | Philosophy  | philosophy,buddha  | 哲学，宗教 |
 | Psychology  | psych  | 心理学 |
-| Culture  | culture,history,figure  | 文化，历史，人物 |
+| Culture  | culture,history,figure,communications  | 文化，历史，人物 |
 | Management  | management,economics,chatopera,okrs | 管理,经济,Chatopera,目标管理 |
 | Technologies | tech, AI, opensource | 科学、技术 |
 | Others | books,sports | 兴趣，运动 |
@@ -25,6 +25,7 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 | 2023-02-10 | [《国富论》摘要 国民财富增加的原理](./files/notes_2303301338.docx)  | economics,philosophy |
 | 2023-02-02 | [尼采：自然产生人类的用意](./files/notes_2303301353.docx)  | philosophy | 
 | 2022-02-28 | [Digest of How to read a book by Mortimer J. Adler, 中文《如何阅读一本书》](./files/notes_2303301803.docx) | books |
+| 2022-02-01 | [金字塔原理，The Pyramid Principle  - clear thinking, precise writing in logic.](./files/2022_02_01_The_Pyramid_Principle.docx) | communications |
 | 2022-01-15 | [《清单革命》读书笔记，英文 'The Checklist'](./files/notes_2303301830.docx) | productivity,culture | 
 | 2021-12-20 | [哈代自传之《一个数学家的辩白》书摘](./files/notes_2303301357.docx)  | tech,figure,culture |
 | 2021-12-16 | [功劳归于勇敢者, The Man in the Arena](./files/notes_2303301246.docx) | figure,chatopera |
