@@ -24,6 +24,7 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 | 2023-03-17 | [推此志也，虽与日月争光可也 \|《离骚》赏析](./files/2023_03_17_屈原_离骚_赏析.docx) | culture,figure |
 | 2023-02-10 | [《国富论》摘要，国民财富增加的原理](./files/notes_2303301338.docx)  | economics,philosophy |
 | 2023-02-02 | [尼采：自然产生人类的用意](./files/notes_2303301353.docx)  | philosophy | 
+| 2022-09-02 | [《独裁者手册》读书摘要，英文 'The Dictator's Handbook'](./files/2022_09_02_The_dictator_handbook.docx) | management | 
 | 2022-02-28 | [《如何阅读一本书》摘要，英文 'How to read a book'](./files/notes_2303301803.docx) | digest,books |
 | 2022-02-01 | [《金字塔原理》读书笔记，The Pyramid Principle](./files/2022_02_01_The_Pyramid_Principle.docx) | digest,communications |
 | 2022-01-23 | [《定位》读书笔记，心智之争，英文 'Positioning'](./files/notes_2303301841.docx) | branding,digest |
