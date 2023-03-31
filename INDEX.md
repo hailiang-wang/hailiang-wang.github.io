@@ -38,6 +38,7 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 | 2021-11-17 | [Digest of 'The Magic of Thinking Big', by David J. S.](./files/The_Magic_of_Thinking_Big_Book_by_David_J._Schwartz_Digest.docx) | mindset, digest|
 | 2021-09-20 | [《成为领导者》，英文 'Becoming a Leader' by Warren B.](./files/2021_09_20_成为领导者.docx) | management,mindset | 
 | 2021-07-30 | [心经](./files/2021_07_30_心经.docx) | buddha |
+| 2021-07-25 | [Chatopera 销售基础技能培训](./files/2021_07_25_Chatopera_销售基础技能.pdf) | sales | 
 | 2021-03-22 | [OKRs 学习和应用：向目标前进](./files/2021_03_22_OKRs_学习和应用.pdf) | management,okrs |
 | 2019-02-19 | [《道德经》注解](./files/notes_2303310632.docx)   | philosophy |
 | 2018-11-11 | [出版物《智能问答与深度学习》博文视点](https://search.jd.com/Search?keyword=%E6%99%BA%E8%83%BD%E9%97%AE%E7%AD%94%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0&enc=utf-8)  | tech,AI |
