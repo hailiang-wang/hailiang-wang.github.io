@@ -6,13 +6,13 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 
 | Category | Tags | Description |
 | --- | --- |  --- |
-| Product | product,cskefu,chatbot,branding,sales | 产品 |
+| Product | product,cskefu,chatbot,branding,chatopera | 产品 |
 | Finance  | finance,munger,buffett  | 财务管理，投资 |
 | Productivity  | productivity,ob  | 生产力，效率，自动化 |
 | Philosophy  | philosophy,buddha  | 哲学，宗教 |
 | Psychology  | psych,mindset,meditation  | 心理学，心态，冥想 |
 | Culture  | culture,history,figure,communications  | 文化，历史，人物 |
-| Management  | management,economics,chatopera,okrs | 管理,经济,Chatopera,目标管理 |
+| Management  | management,economics,okrs,sales | 管理,经济,目标管理 |
 | Technologies | tech, AI, opensource | 科学、技术 |
 | Others | books,sports,digest | 兴趣，运动，读书摘要 |
 
@@ -28,6 +28,7 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 | 2022-02-01 | [《金字塔原理》读书笔记，The Pyramid Principle](./files/2022_02_01_The_Pyramid_Principle.docx) | digest,communications |
 | 2022-01-23 | [《定位》读书笔记，心智之争，英文 'Positioning'](./files/notes_2303301841.docx) | branding,digest |
 | 2022-01-15 | [《清单革命》读书笔记，英文 'The Checklist'](./files/notes_2303301830.docx) | productivity,culture,digest | 
+| 2022-01-09 |  [佛学的奥义](./files/notes_2303310816.docx) | buddha,philosophy | 
 | 2021-12-31 | [《商界局外人》，英文 'The Outsiders' by William N. T.](./files/2021_12_31_The_Outsiders_商界局外人.docx) | management,digest |
 | 2021-12-20 | [《一个数学家的辩白》书摘，哈代自传](./files/notes_2303301357.docx)  | digest,figure,culture |
 | 2021-12-16 | [功劳归于勇敢者, The Man in the Arena](./files/notes_2303301246.docx) | figure,chatopera |
