@@ -243,7 +243,7 @@ $-------------------------------------------------------------------------------
 </article>
 <div class='float-message'>
   <div class='float-message-inner'>
-    <a href="#!" onclick="jQuery('.float-message').hide();" class="close-link">X</a>
+    <a href="javascript:void(0);" onclick="jQuery('.float-message').hide();" class="close-link">X</a>
   	<p>Subscribe</p>
     <img style="width:100px" src="assets/subscribe-UZBZJvjkHFE.png">
   </div>
