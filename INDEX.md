@@ -25,6 +25,7 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 | 2023-02-10 | [《国富论》摘要，国民财富增加的原理](./files/notes_2303301338.docx)  | economics,philosophy |
 | 2023-02-09 | [《金字塔原理：实战篇》读书摘要](./files/2023_02_09_金字塔原理_实战篇_摘要总结.docx) | digest,communications | 
 | 2023-02-02 | [尼采：自然产生人类的用意](./files/notes_2303301353.docx)  | philosophy | 
+| 2022-11-13 | [《自恋的基因》读书摘要](./files/notes_2304111727.docx) | psych | 
 | 2022-09-02 | [《独裁者手册》读书摘要，英文 'The Dictator's Handbook'](./files/2022_09_02_The_dictator_handbook.docx) | management | 
 | 2022-08-21 | [禅，Zen](./files/2022_08_21_Zen_禅.pdf) | buddha |
 | 2022-02-28 | [《如何阅读一本书》摘要，英文 'How to read a book'](./files/notes_2303301803.docx) | digest,books |
