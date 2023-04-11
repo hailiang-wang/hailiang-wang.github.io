@@ -37,7 +37,7 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 | 2021-12-16 | [功劳归于勇敢者, The Man in the Arena](./files/notes_2303301246.docx) | figure,chatopera |
 | 2021-11-22 | [《论人的成长》，英文 'A Way of Being' by Carl Rogers](./files/notes_2303310717.docx) | psych,digest | 
 | 2021-11-17 | [Digest of 'The Magic of Thinking Big', by David J. S.](./files/The_Magic_of_Thinking_Big_Book_by_David_J._Schwartz_Digest.docx) | mindset, digest|
-| 2021-10-21 | [张一鸣微博摘录 231](./files/notes_2304110824.docx) | communications,figure,ceo | 
+| 2021-10-21 | [张一鸣微博摘录 231](./files/notes_2304110824.pdf) | communications,figure,ceo | 
 | 2021-10-19 | [《乔布斯的魔力演讲》 by 卡迈恩 • 加洛，读书摘要](./files/2021_10_19_ThePresentationSecretsOfSteveJobs.docx) | communications,figure,digest | 
 | 2021-10-18 | [如何建立，保持好的习惯：欺骗你的大脑](./files/2021_10_18_ReshapeYourHabits.docx) | habits | 
 | 2021-10-08 | [Improve Communication Skills at Work](./files/2021_10_08_Improve_Communication_Skills_at_Work.docx) | communications | 
