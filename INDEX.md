@@ -9,7 +9,7 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 | Product | product,cskefu,chatbot,branding,chatopera | 产品 |
 | Finance  | finance,munger,buffett  | 财务管理，投资 |
 | Productivity  | productivity,ob,habits  | 生产力，效率，自动化 |
-| Philosophy  | philosophy,buddha  | 哲学，宗教 |
+| Philosophy  | philosophy,buddha,love  | 哲学，宗教 |
 | Psychology  | psych,mindset,meditation  | 心理学，心态，冥想 |
 | Culture  | culture,history,figure,communications  | 文化，历史，人物 |
 | Management  | management,economics,okrs,sales,ceo | 管理,经济,目标管理 |
@@ -25,7 +25,6 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 | 2023-02-10 | [《国富论》摘要，国民财富增加的原理](./files/notes_2303301338.docx)  | economics,philosophy |
 | 2023-02-09 | [《金字塔原理：实战篇》读书摘要](./files/2023_02_09_金字塔原理_实战篇_摘要总结.docx) | digest,communications | 
 | 2023-02-02 | [尼采：自然产生人类的用意](./files/notes_2303301353.docx)  | philosophy | 
-| 2022-11-13 | [《自恋的基因》读书摘要](./files/notes_2304111727.docx) | psych | 
 | 2022-09-02 | [《独裁者手册》读书摘要，英文 'The Dictator's Handbook'](./files/2022_09_02_The_dictator_handbook.docx) | management | 
 | 2022-08-21 | [禅，Zen](./files/2022_08_21_Zen_禅.pdf) | buddha |
 | 2022-02-28 | [《如何阅读一本书》摘要，英文 'How to read a book'](./files/notes_2303301803.docx) | digest,books |
@@ -36,7 +35,9 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 | 2021-12-31 | [《商界局外人》，英文 'The Outsiders' by William N. T.](./files/2021_12_31_The_Outsiders_商界局外人.docx) | management,digest |
 | 2021-12-20 | [《一个数学家的辩白》书摘，哈代自传](./files/notes_2303301357.docx)  | digest,figure,culture |
 | 2021-12-16 | [功劳归于勇敢者, The Man in the Arena](./files/notes_2303301246.docx) | figure,chatopera |
+| 2021-12-05 | [《亲密陷阱》读书节选](./files/notes_2304111753.docx) | love,communications |
 | 2021-11-22 | [《论人的成长》，英文 'A Way of Being' by Carl Rogers](./files/notes_2303310717.docx) | psych,digest | 
+| 2021-11-21 | [《自恋的基因》读书摘要](./files/notes_2304111727.docx) | psych | 
 | 2021-11-17 | [Digest of 'The Magic of Thinking Big', by David J. S.](./files/The_Magic_of_Thinking_Big_Book_by_David_J._Schwartz_Digest.docx) | mindset, digest|
 | 2021-10-21 | [张一鸣微博摘录 231](./files/notes_2304110824.pdf) | communications,figure,ceo | 
 | 2021-10-19 | [《乔布斯的魔力演讲》 by 卡迈恩 • 加洛，读书摘要](./files/2021_10_19_ThePresentationSecretsOfSteveJobs.docx) | communications,figure,digest | 
