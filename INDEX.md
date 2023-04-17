@@ -54,5 +54,6 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 | 2019-02-19 | [《道德经》注解，Tao](./files/notes_2303310632.docx)   | philosophy |
 | 2018-11-11 | [出版物《智能问答与深度学习》博文视点](https://search.jd.com/Search?keyword=%E6%99%BA%E8%83%BD%E9%97%AE%E7%AD%94%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0&enc=utf-8)  | tech,AI |
 | 2017-02-07 | [聊天机器人设计与实现 2017](./files/2017_02_07_Chatbot_Mechanism.docx) | tech,AI,chatbot,chatopera |
+| 2016-07-31 | [《打造 Facebook》读书摘要](./html/notes_2016_07_31_creative_facebook.html) | ceo | 
 | 2014-02-14 | [《毛泽东传》菲利普肖特读书摘要](./files/notes_2303310919.docx) | figure | 
 | 2013-07-29 | [《乔布斯传》书摘，英文 Steve Jobs](./html/notes_2304171331.html) | figure,tech | 
