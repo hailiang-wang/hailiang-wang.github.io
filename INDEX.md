@@ -25,6 +25,7 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 | 2023-02-10 | [《国富论》摘要，国民财富增加的原理](./files/notes_2303301338.docx)  | economics,philosophy |
 | 2023-02-09 | [《金字塔原理：实战篇》读书摘要](./files/2023_02_09_金字塔原理_实战篇_摘要总结.docx) | digest,communications | 
 | 2023-02-02 | [尼采：自然产生人类的用意](./files/notes_2303301353.docx)  | philosophy | 
+| 2023-01-04 | [人类误判心理学介绍，查理芒格，总结自《穷查理宝典》](./files/2023_01_04_穷查理宝典_总结_HLW.docx)  | psych | 
 | 2022-09-02 | [《独裁者手册》读书摘要，英文 'The Dictator's Handbook'](./files/2022_09_02_The_dictator_handbook.docx) | management | 
 | 2022-08-21 | [禅，Zen](./files/2022_08_21_Zen_禅.pdf) | buddha |
 | 2022-02-28 | [《如何阅读一本书》摘要，英文 'How to read a book'](./files/notes_2303301803.docx) | digest,books |
@@ -54,3 +55,4 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 | 2018-11-11 | [出版物《智能问答与深度学习》博文视点](https://search.jd.com/Search?keyword=%E6%99%BA%E8%83%BD%E9%97%AE%E7%AD%94%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0&enc=utf-8)  | tech,AI |
 | 2017-02-07 | [聊天机器人设计与实现 2017](./files/2017_02_07_Chatbot_Mechanism.docx) | tech,AI,chatbot,chatopera |
 | 2014-02-14 | [《毛泽东传》菲利普肖特读书摘要](./files/notes_2303310919.docx) | figure | 
+| 2013-07-29 | [《乔布斯传》书摘，英文 Steve Jobs](./html/notes_2304171331.html) | figure,tech | 
