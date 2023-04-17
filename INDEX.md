@@ -30,7 +30,7 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 | 2022-02-28 | [《如何阅读一本书》摘要，英文 'How to read a book'](./files/notes_2303301803.docx) | digest,books |
 | 2022-02-01 | [《金字塔原理》读书笔记，The Pyramid Principle](./files/2022_02_01_The_Pyramid_Principle.docx) | digest,communications |
 | 2022-01-23 | [《定位》读书笔记，心智之争，英文 'Positioning'](./files/notes_2303301841.docx) | branding,digest |
-| 2022-01-26 | [《大教堂与集市》读后感，英文 The Cathedral and the Bazaar](./files/notes_2304170947.docx) | tech,opensource |
+| 2022-01-26 | [《大教堂与集市》读后感，英文 The Cathedral and the Bazaar](./html/notes_2304170947.html) | tech,opensource |
 | 2022-01-15 | [《清单革命》读书笔记，英文 'The Checklist'](./files/notes_2303301830.docx) | productivity,culture,digest | 
 | 2022-01-09 | [佛学的奥义：《金刚经》，《心经》，etc.](./files/notes_2303310816.docx) | buddha,philosophy | 
 | 2021-12-31 | [《商界局外人》，英文 'The Outsiders' by William N. T.](./files/2021_12_31_The_Outsiders_商界局外人.docx) | management,digest |
