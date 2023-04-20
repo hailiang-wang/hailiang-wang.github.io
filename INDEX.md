@@ -48,6 +48,7 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 | 2021-09-20 | [《成为领导者》，英文 'Becoming a Leader' by Warren B.](./files/2021_09_20_成为领导者.docx) | management,mindset | 
 | 2021-08-22 | [《心理咨询面谈技术》第四版，读书摘要](./files/2021_08_22_心理咨询面谈技术.docx) | psych,communications | 
 | 2021-07-30 | [心经](./files/2021_07_30_心经.docx) | buddha |
+| 2021-07-19 | [《高效能人士的七个习惯》读书总结](./html/notes_2304201018.html) | philosophy,psych,communications |
 | 2021-07-25 | [Chatopera 销售基础技能培训](./files/2021_07_25_Chatopera_销售基础技能.pdf) | sales | 
 | 2021-03-22 | [OKRs 学习和应用：向目标前进](./files/2021_03_22_OKRs_学习和应用.pdf) | management,okrs |
 | 2021-03-02 | [《这就是OKR，让谷歌、亚马逊实现爆炸性增长的工作法》摘要](./files/notes_2304120611.docx) | management,okrs |
