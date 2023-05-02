@@ -20,7 +20,7 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 
 | Date | Post | Tags |
 | --- | --- | --- |
-| 2023-05-02 | [卡片笔记写作法介绍，Intro. of Zettelkasten](./html/notes_2305021058.html)  | books,communications |
+| 2023-05-02 | [卡片盒笔记法介绍，Intro. of Zettelkasten](./html/notes_2305021058.html)  | books,communications |
 | 2023-03-28 | [财务管理基本知识](./files/2023_03_26_finance_general_kb.docx)  | finance,digest |
 | 2023-03-17 | [推此志也，虽与日月争光可也 \|《离骚》赏析](./files/2023_03_17_屈原_离骚_赏析.docx) | culture,figure |
 | 2023-02-10 | [《国富论》摘要，国民财富增加的原理](./files/notes_2303301338.docx)  | economics,philosophy |
