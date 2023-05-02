@@ -241,6 +241,12 @@ $include-after$
 $endfor$
 $-------------------------------------------------------------------------------
 </article>
+
+<div style="text-align:center;">版权声明：自由转载-非商用-非衍生-保持署名 https://hailiang-wang.github.io/ <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">（创意共享3.0许可证）</a>
+</div>
+<div style="text-align:center;">//</div>
+<br />
+
 <div class='float-message'>
   <div class='float-message-inner'>
     <a href="javascript:void(0);" onclick="jQuery('.float-message').hide();" class="close-link">X</a>
