@@ -20,6 +20,7 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 
 | Date | Post | Tags |
 | --- | --- | --- |
+| 2023-05-26 | [从0到1：开启商业与未来的秘密, by Peter Thiel](./html/notes_2305231845.html) | tech,culture |
 | 2023-05-02 | [卡片盒笔记法介绍，Intro. to Zettelkasten](./html/notes_2305021058.html)  | habits,communications |
 | 2023-03-28 | [财务管理基本知识](./files/2023_03_26_finance_general_kb.docx)  | finance,digest |
 | 2023-03-17 | [推此志也，虽与日月争光可也 \|《离骚》赏析](./files/2023_03_17_屈原_离骚_赏析.docx) | culture,figure |
