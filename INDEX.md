@@ -20,6 +20,7 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 
 | Date | Post | Tags |
 | --- | --- | --- |
+| 2023-10-09 | [读《爱的艺术，The Art of Loving》](html/notes_2310081543.html) | love |
 | 2023-09-30 | [读《游叙弗伦、苏格拉底的申辩、克力同》，柏拉图著，严群译](./html/notes_2309301528.html) | philosophy,history,figure |
 | 2023-05-26 | [从0到1：开启商业与未来的秘密, by Peter Thiel](./html/notes_2305231845.html) | tech,culture |
 | 2023-05-02 | [卡片盒笔记法介绍，Intro. to Zettelkasten](./html/notes_2305021058.html)  | habits,communications |
