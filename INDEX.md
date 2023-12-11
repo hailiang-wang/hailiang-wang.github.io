@@ -20,6 +20,7 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 
 | Date | Post | Tags |
 | --- | --- | --- |
+| 2023-12-11 | [Forward: Poor Charlie’s Almanack Book Summary](html/notes_2312110908.html) | figure,munger,philosophy |
 | 2023-12-07 | [读《No Room For Small Dreams》，西蒙佩雷斯自传](html/notes_2312071841.html) | figure,history,culture |
 | 2023-10-09 | [读《爱的艺术，The Art of Loving》](html/notes_2310081543.html) | love |
 | 2023-09-30 | [读《游叙弗伦、苏格拉底的申辩、克力同》，柏拉图著，严群译](./html/notes_2309301528.html) | philosophy,history,figure |
