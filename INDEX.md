@@ -20,6 +20,7 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 
 | Date | Post | Tags |
 | --- | --- | --- |
+| 2024-03-10 | [第一奇书《金瓶梅》第二讲](html/notes_2403100640.html) | culture |
 | 2024-03-04 | [第一奇书《金瓶梅》第一讲](html/notes_2403040541.html) | culture |
 | 2023-12-11 | [Forward: Poor Charlie’s Almanack Book Summary](html/notes_2312110908.html) | figure,munger,philosophy |
 | 2023-12-07 | [读《No Room For Small Dreams》，西蒙佩雷斯自传](html/notes_2312071841.html) | figure,history,culture |
