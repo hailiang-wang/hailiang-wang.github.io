@@ -20,6 +20,7 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 
 | Date | Post | Tags |
 | --- | --- | --- |
+| 2024-04-04 | [读《从优秀到卓越》吉姆柯林斯](html/notes_2404040802.html) | management |
 | 2024-03-12 | [第一奇书《金瓶梅》第三讲](html/notes_2403120641.html) | culture |
 | 2024-03-10 | [第一奇书《金瓶梅》第二讲](html/notes_2403100640.html) | culture |
 | 2024-03-04 | [第一奇书《金瓶梅》第一讲](html/notes_2403040541.html) | culture |
