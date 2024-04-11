@@ -13,13 +13,14 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 | Psychology  | psych,mindset,meditation  | 心理学，心态，冥想 |
 | Culture  | culture,history,figure,communications  | 文化，历史，人物 |
 | Management  | management,economics,okrs,sales,ceo | 管理,经济,目标管理 |
-| Technologies | tech, AI, opensource | 科学、技术 |
+| Technologies | tech, AI, opensource, math | 科学、技术 |
 | Others | books,sports,digest | 兴趣，运动，读书摘要 |
 
 ## Posts
 
 | Date | Post | Tags |
 | --- | --- | --- |
+| 2024-04-04 | [读《微积分的力量》by Steven Strogatz](html/notes_2404111704.html) | math, philosophy |
 | 2024-04-04 | [读《从优秀到卓越》吉姆柯林斯](html/notes_2404040802.html) | management |
 | 2024-03-12 | [第一奇书《金瓶梅》第三讲](html/notes_2403120641.html) | culture |
 | 2024-03-10 | [第一奇书《金瓶梅》第二讲](html/notes_2403100640.html) | culture |
