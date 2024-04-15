@@ -20,6 +20,7 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 
 | Date | Post | Tags |
 | --- | --- | --- |
+| 2024-04-14 | [书摘《推销的艺术》卡耐基](html/notes_2404141920.html) | mindset, sales |
 | 2024-04-11 | [读《微积分的力量》by Steven Strogatz](html/notes_2404111704.html) | math, philosophy |
 | 2024-04-04 | [读《从优秀到卓越》吉姆柯林斯](html/notes_2404040802.html) | management |
 | 2024-03-12 | [第一奇书《金瓶梅》第三讲](html/notes_2403120641.html) | culture |
