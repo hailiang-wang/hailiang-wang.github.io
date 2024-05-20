@@ -9,7 +9,7 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 | Product | product,cskefu,chatbot,branding,chatopera | 产品 |
 | Finance  | finance,munger,buffett  | 财务管理，投资 |
 | Productivity  | productivity,ob,habits  | 生产力，效率，自动化 |
-| Philosophy  | philosophy,buddha,love  | 哲学，宗教 |
+| Philosophy  | philosophy,buddha,love,confucianism  | 哲学，宗教 |
 | Psychology  | psych,mindset,meditation  | 心理学，心态，冥想 |
 | Culture  | culture,history,figure,communications  | 文化，历史，人物 |
 | Management  | management,economics,okrs,sales,ceo | 管理,经济,目标管理 |
@@ -19,7 +19,8 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 ## Posts
 
 | Date | Post | Tags |
-| --- | --- | --- |
+	| --- | --- | --- |
+| 2024-05-20 | [读《活法》稻盛和夫著，曹岫云译](html/notes_2405200951.html) | buddha, confucianism |
 | 2024-05-16 | [读《太平天国》史景迁（美国）著](html/notes_2405160811.html) | history |
 | 2024-04-14 | [书摘《推销的艺术》卡耐基](html/notes_2404141920.html) | mindset, sales |
 | 2024-04-11 | [读《微积分的力量》by Steven Strogatz](html/notes_2404111704.html) | math, philosophy |
