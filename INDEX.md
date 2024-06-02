@@ -20,6 +20,7 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 
 | Date | Post | Tags |
 | --- | --- | --- |
+| 2024-06-02 | [读《存在的艺术》艾里希弗洛姆](html/notes_2406021822.html) | love |
 | 2024-05-20 | [读《活法》稻盛和夫著，曹岫云译](html/notes_2405200951.html) | buddha, confucianism |
 | 2024-05-16 | [读《太平天国》史景迁（美国）著](html/notes_2405160811.html) | history |
 | 2024-04-14 | [书摘《推销的艺术》卡耐基](html/notes_2404141920.html) | mindset, sales |
