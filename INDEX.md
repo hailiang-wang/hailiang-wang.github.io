@@ -20,6 +20,7 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 
 | Date | Post | Tags |
 | --- | --- | --- |
+| 2024-07-18 | [读《曾仕强经典语录》罗浮山国学院编著](html/notes_2407181059.html) | culture |
 | 2024-06-27 | [读《论语》](html/notes_2406270918.html) | culture |
 | 2024-06-02 | [读《存在的艺术》艾里希弗洛姆](html/notes_2406021822.html) | love |
 | 2024-05-20 | [读《活法》稻盛和夫著，曹岫云译](html/notes_2405200951.html) | buddha, confucianism |
