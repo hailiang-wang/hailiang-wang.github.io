@@ -20,6 +20,7 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 
 | Date | Post | Tags |
 | --- | --- | --- |
+| 2024-08-08 | [读《数学与生活》远山启（日）著](html/notes_2408081752.html) | math |
 | 2024-07-27 | [读《怎样解题：数学思维的新方法》波利亚 著](html/notes_2407270650.html) | math |
 | 2024-07-18 | [读《曾仕强经典语录》罗浮山国学院编著](html/notes_2407181059.html) | culture |
 | 2024-06-27 | [读《论语》](html/notes_2406270918.html) | culture |
