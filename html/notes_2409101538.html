@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<!--
+==============================================================================
+           "GitHub HTML5 Pandoc Template" v2.2 — by Tristano Ajmone
+==============================================================================
+Copyright © Tristano Ajmone, 2017-2020, MIT License (MIT). Project's home:
+
+- https://github.com/tajmone/pandoc-goodies
+
+The CSS in this template reuses source code taken from the following projects:
+
+- GitHub Markdown CSS: Copyright © Sindre Sorhus, MIT License (MIT):
+  https://github.com/sindresorhus/github-markdown-css
+
+- Primer CSS: Copyright © 2016-2017 GitHub Inc., MIT License (MIT):
+  http://primercss.io/
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The MIT License
+
+Copyright (c) Tristano Ajmone, 2017-2020 (github.com/tajmone/pandoc-goodies)
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+Copyright (c) 2017 GitHub Inc.
+
+"GitHub Pandoc HTML5 Template" is Copyright (c) Tristano Ajmone, 2017-2020,
+released under the MIT License (MIT); it contains readaptations of substantial
+portions of the following third party softwares:
+
+(1) "GitHub Markdown CSS", Copyright (c) Sindre Sorhus, MIT License (MIT).
+(2) "Primer CSS", Copyright (c) 2016 GitHub Inc., MIT License (MIT).
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+==============================================================================-->
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<!-- <link rel="icon" href="assets/images/favicon.png" sizes="32x32"> -->
+  <title>notes_2409101538</title>
+  <style type="text/css">
+@charset "UTF-8";.markdown-body{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#24292e;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:16px;line-height:1.5;word-wrap:break-word;box-sizing:border-box;min-width:200px;max-width:980px;margin:0 auto;padding:45px}.markdown-body a{color:#0366d6;background-color:transparent;text-decoration:none;-webkit-text-decoration-skip:objects}.markdown-body a:active,.markdown-body a:hover{outline-width:0}.markdown-body a:hover{text-decoration:underline}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body strong{font-weight:600}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1{font-size:2em;margin:.67em 0;padding-bottom:.3em;border-bottom:1px solid #eaecef}.markdown-body h2{padding-bottom:.3em;font-size:1.5em;border-bottom:1px solid #eaecef}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#6a737d}.markdown-body img{border-style:none}.markdown-body svg:not(:root){overflow:hidden}.markdown-body hr{box-sizing:content-box;height:.25em;margin:24px 0;padding:0;overflow:hidden;background-color:#e1e4e8;border:0}.markdown-body hr::before{display:table;content:""}.markdown-body hr::after{display:table;clear:both;content:""}.markdown-body input{margin:0;overflow:visible;font:inherit;font-family:inherit;font-size:inherit;line-height:inherit}.markdown-body [type=checkbox]{box-sizing:border-box;padding:0}.markdown-body *{box-sizing:border-box}.markdown-body blockquote{margin:0}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol ol,.markdown-body ul ol{list-style-type:lower-roman}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body ol ol ol,.markdown-body ol ul ol,.markdown-body ul ol ol,.markdown-body ul ul ol{list-style-type:lower-alpha}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dd{margin-left:0}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:600}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body code{font-family:SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace}.markdown-body pre{font:12px SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace;word-wrap:normal}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body blockquote{padding:0 1em;color:#6a737d;border-left:.25em solid #dfe2e5}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body table{display:block;width:100%;overflow:auto;border-spacing:0;border-collapse:collapse}.markdown-body table th{font-weight:600}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #dfe2e5}.markdown-body table tr{background-color:#fff;border-top:1px solid #c6cbd1}.markdown-body table tr:nth-child(2n){background-color:#f6f8fa}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body code{padding:.2em 0;margin:0;font-size:85%;background-color:rgba(27,31,35,.05);border-radius:3px}.markdown-body code::after,.markdown-body code::before{letter-spacing:-.2em;content:" "}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:0 0;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f6f8fa;border-radius:3px}.markdown-body pre code{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code::after,.markdown-body pre code::before{content:normal}.markdown-body .full-commit .btn-outline:not(:disabled):hover{color:#005cc5;border-color:#005cc5}.markdown-body kbd{box-shadow:inset 0 -1px 0 #959da5;display:inline-block;padding:3px 5px;font:11px/10px SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace;color:#444d56;vertical-align:middle;background-color:#fcfcfc;border:1px solid #c6cbd1;border-bottom-color:#959da5;border-radius:3px;box-shadow:inset 0 -1px 0 #959da5}.markdown-body :checked+.radio-label{position:relative;z-index:1;border-color:#0366d6}.markdown-body .task-list-item{list-style-type:none}.markdown-body .task-list-item+.task-list-item{margin-top:3px}.markdown-body .task-list-item input{margin:0 .2em .25em -1.6em;vertical-align:middle}.markdown-body::before{display:table;content:""}.markdown-body::after{display:table;clear:both;content:""}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.Alert,.Error,.Note,.Success,.Warning{padding:11px;margin-bottom:24px;border-style:solid;border-width:1px;border-radius:4px}.Alert p,.Error p,.Note p,.Success p,.Warning p{margin-top:0}.Alert p:last-child,.Error p:last-child,.Note p:last-child,.Success p:last-child,.Warning p:last-child{margin-bottom:0}.Alert{color:#246;background-color:#e2eef9;border-color:#bac6d3}.Warning{color:#4c4a42;background-color:#fff9ea;border-color:#dfd8c2}.Error{color:#911;background-color:#fcdede;border-color:#d2b2b2}.Success{color:#22662c;background-color:#e2f9e5;border-color:#bad3be}.Note{color:#2f363d;background-color:#f6f8fa;border-color:#d5d8da}.Alert h1,.Alert h2,.Alert h3,.Alert h4,.Alert h5,.Alert h6{color:#246;margin-bottom:0}.Warning h1,.Warning h2,.Warning h3,.Warning h4,.Warning h5,.Warning h6{color:#4c4a42;margin-bottom:0}.Error h1,.Error h2,.Error h3,.Error h4,.Error h5,.Error h6{color:#911;margin-bottom:0}.Success h1,.Success h2,.Success h3,.Success h4,.Success h5,.Success h6{color:#22662c;margin-bottom:0}.Note h1,.Note h2,.Note h3,.Note h4,.Note h5,.Note h6{color:#2f363d;margin-bottom:0}.Alert h1:first-child,.Alert h2:first-child,.Alert h3:first-child,.Alert h4:first-child,.Alert h5:first-child,.Alert h6:first-child,.Error h1:first-child,.Error h2:first-child,.Error h3:first-child,.Error h4:first-child,.Error h5:first-child,.Error h6:first-child,.Note h1:first-child,.Note h2:first-child,.Note h3:first-child,.Note h4:first-child,.Note h5:first-child,.Note h6:first-child,.Success h1:first-child,.Success h2:first-child,.Success h3:first-child,.Success h4:first-child,.Success h5:first-child,.Success h6:first-child,.Warning h1:first-child,.Warning h2:first-child,.Warning h3:first-child,.Warning h4:first-child,.Warning h5:first-child,.Warning h6:first-child{margin-top:0}h1.title,p.subtitle{text-align:center}h1.title.followed-by-subtitle{margin-bottom:0}p.subtitle{font-size:1.5em;font-weight:600;line-height:1.25;margin-top:0;margin-bottom:16px;padding-bottom:.3em}div.line-block{white-space:pre-line}
+  </style>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+
+<style>
+table colgroup col {
+    width: auto !important;
+}
+</style>
+
+<meta name="google-site-verification" content="y0HDzWVgSTGwnicNDNqMJuwhka3VnoRgKipEWceTazk" />
+<script>/*! jQuery v3.6.4 -ajax,-ajax/jsonp,-ajax/load,-ajax/script,-ajax/var/location,-ajax/var/nonce,-ajax/var/rquery,-ajax/xhr,-manipulation/_evalUrl,-deprecated/ajax-event-alias,-effects,-effects/animatedSelector,-effects/Tween | (c) OpenJS Foundation and other contributors | jquery.org/license */
+!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.exports=e.document?t(e,!0):function(e){if(!e.document)throw new Error("jQuery requires a window with a document");return t(e)}:t(e)}("undefined"!=typeof window?window:this,function(g,e){"use strict";var t=[],r=Object.getPrototypeOf,s=t.slice,v=t.flat?function(e){return t.flat.call(e)}:function(e){return t.concat.apply([],e)},u=t.push,i=t.indexOf,n={},o=n.toString,y=n.hasOwnProperty,a=y.toString,l=a.call(Object),m={},b=function(e){return"function"==typeof e&&"number"!=typeof e.nodeType&&"function"!=typeof e.item},x=function(e){return null!=e&&e===e.window},w=g.document,c={type:!0,src:!0,nonce:!0,noModule:!0};function C(e,t,n){var r,i,o=(n=n||w).createElement("script");if(o.text=e,t)for(r in c)(i=t[r]||t.getAttribute&&t.getAttribute(r))&&o.setAttribute(r,i);n.head.appendChild(o).parentNode.removeChild(o)}function T(e){return null==e?e+"":"object"==typeof e||"function"==typeof e?n[o.call(e)]||"object":typeof e}var f="3.6.4 -ajax,-ajax/jsonp,-ajax/load,-ajax/script,-ajax/var/location,-ajax/var/nonce,-ajax/var/rquery,-ajax/xhr,-manipulation/_evalUrl,-deprecated/ajax-event-alias,-effects,-effects/animatedSelector,-effects/Tween",E=function(e,t){return new E.fn.init(e,t)};function d(e){var t=!!e&&"length"in e&&e.length,n=T(e);return!b(e)&&!x(e)&&("array"===n||0===t||"number"==typeof t&&0<t&&t-1 in e)}E.fn=E.prototype={jquery:f,constructor:E,length:0,toArray:function(){return s.call(this)},get:function(e){return null==e?s.call(this):e<0?this[e+this.length]:this[e]},pushStack:function(e){var t=E.merge(this.constructor(),e);return t.prevObject=this,t},each:function(e){return E.each(this,e)},map:function(n){return this.pushStack(E.map(this,function(e,t){return n.call(e,t,e)}))},slice:function(){return this.pushStack(s.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},even:function(){return this.pushStack(E.grep(this,function(e,t){return(t+1)%2}))},odd:function(){return this.pushStack(E.grep(this,function(e,t){return t%2}))},eq:function(e){var t=this.length,n=+e+(e<0?t:0);return this.pushStack(0<=n&&n<t?[this[n]]:[])},end:function(){return this.prevObject||this.constructor()},push:u,sort:t.sort,splice:t.splice},E.extend=E.fn.extend=function(){var e,t,n,r,i,o,a=arguments[0]||{},s=1,u=arguments.length,l=!1;for("boolean"==typeof a&&(l=a,a=arguments[s]||{},s++),"object"==typeof a||b(a)||(a={}),s===u&&(a=this,s--);s<u;s++)if(null!=(e=arguments[s]))for(t in e)r=e[t],"__proto__"!==t&&a!==r&&(l&&r&&(E.isPlainObject(r)||(i=Array.isArray(r)))?(n=a[t],o=i&&!Array.isArray(n)?[]:i||E.isPlainObject(n)?n:{},i=!1,a[t]=E.extend(l,o,r)):void 0!==r&&(a[t]=r));return a},E.extend({expando:"jQuery"+(f+Math.random()).replace(/\D/g,""),isReady:!0,error:function(e){throw new Error(e)},noop:function(){},isPlainObject:function(e){var t,n;return!(!e||"[object Object]"!==o.call(e))&&(!(t=r(e))||"function"==typeof(n=y.call(t,"constructor")&&t.constructor)&&a.call(n)===l)},isEmptyObject:function(e){var t;for(t in e)return!1;return!0},globalEval:function(e,t,n){C(e,{nonce:t&&t.nonce},n)},each:function(e,t){var n,r=0;if(d(e)){for(n=e.length;r<n;r++)if(!1===t.call(e[r],r,e[r]))break}else for(r in e)if(!1===t.call(e[r],r,e[r]))break;return e},makeArray:function(e,t){var n=t||[];return null!=e&&(d(Object(e))?E.merge(n,"string"==typeof e?[e]:e):u.call(n,e)),n},inArray:function(e,t,n){return null==t?-1:i.call(t,e,n)},merge:function(e,t){for(var n=+t.length,r=0,i=e.length;r<n;r++)e[i++]=t[r];return e.length=i,e},grep:function(e,t,n){for(var r=[],i=0,o=e.length,a=!n;i<o;i++)!t(e[i],i)!==a&&r.push(e[i]);return r},map:function(e,t,n){var r,i,o=0,a=[];if(d(e))for(r=e.length;o<r;o++)null!=(i=t(e[o],o,n))&&a.push(i);else for(o in e)null!=(i=t(e[o],o,n))&&a.push(i);return v(a)},guid:1,support:m}),"function"==typeof Symbol&&(E.fn[Symbol.iterator]=t[Symbol.iterator]),E.each("Boolean Number String Function Array Date RegExp Object Error Symbol".split(" "),function(e,t){n["[object "+t+"]"]=t.toLowerCase()});var p=function(n){var e,p,x,o,i,h,f,g,w,u,l,C,T,a,E,v,s,c,y,A="sizzle"+1*new Date,d=n.document,N=0,r=0,m=ue(),b=ue(),S=ue(),k=ue(),D=function(e,t){return e===t&&(l=!0),0},L={}.hasOwnProperty,t=[],j=t.pop,q=t.push,O=t.push,P=t.slice,H=function(e,t){for(var n=0,r=e.length;n<r;n++)if(e[n]===t)return n;return-1},I="checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped",R="[\\x20\\t\\r\\n\\f]",B="(?:\\\\[\\da-fA-F]{1,6}"+R+"?|\\\\[^\\r\\n\\f]|[\\w-]|[^\0-\\x7f])+",M="\\["+R+"*("+B+")(?:"+R+"*([*^$|!~]?=)"+R+"*(?:'((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\"|("+B+"))|)"+R+"*\\]",W=":("+B+")(?:\\((('((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\")|((?:\\\\.|[^\\\\()[\\]]|"+M+")*)|.*)\\)|)",F=new RegExp(R+"+","g"),$=new RegExp("^"+R+"+|((?:^|[^\\\\])(?:\\\\.)*)"+R+"+$","g"),z=new RegExp("^"+R+"*,"+R+"*"),_=new RegExp("^"+R+"*([>+~]|"+R+")"+R+"*"),U=new RegExp(R+"|>"),V=new RegExp(W),X=new RegExp("^"+B+"$"),Q={ID:new RegExp("^#("+B+")"),CLASS:new RegExp("^\\.("+B+")"),TAG:new RegExp("^("+B+"|[*])"),ATTR:new RegExp("^"+M),PSEUDO:new RegExp("^"+W),CHILD:new RegExp("^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\("+R+"*(even|odd|(([+-]|)(\\d*)n|)"+R+"*(?:([+-]|)"+R+"*(\\d+)|))"+R+"*\\)|)","i"),bool:new RegExp("^(?:"+I+")$","i"),needsContext:new RegExp("^"+R+"*[>+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\("+R+"*((?:-\\d)?\\d*)"+R+"*\\)|)(?=[^-]|$)","i")},Y=/HTML$/i,G=/^(?:input|select|textarea|button)$/i,K=/^h\d$/i,J=/^[^{]+\{\s*\[native \w/,Z=/^(?:#([\w-]+)|(\w+)|\.([\w-]+))$/,ee=/[+~]/,te=new RegExp("\\\\[\\da-fA-F]{1,6}"+R+"?|\\\\([^\\r\\n\\f])","g"),ne=function(e,t){var n="0x"+e.slice(1)-65536;return t||(n<0?String.fromCharCode(n+65536):String.fromCharCode(n>>10|55296,1023&n|56320))},re=/([\0-\x1f\x7f]|^-?\d)|^-$|[^\0-\x1f\x7f-\uFFFF\w-]/g,ie=function(e,t){return t?"\0"===e?"\ufffd":e.slice(0,-1)+"\\"+e.charCodeAt(e.length-1).toString(16)+" ":"\\"+e},oe=function(){C()},ae=xe(function(e){return!0===e.disabled&&"fieldset"===e.nodeName.toLowerCase()},{dir:"parentNode",next:"legend"});try{O.apply(t=P.call(d.childNodes),d.childNodes),t[d.childNodes.length].nodeType}catch(e){O={apply:t.length?function(e,t){q.apply(e,P.call(t))}:function(e,t){var n=e.length,r=0;while(e[n++]=t[r++]);e.length=n-1}}}function se(t,e,n,r){var i,o,a,s,u,l,c,f=e&&e.ownerDocument,d=e?e.nodeType:9;if(n=n||[],"string"!=typeof t||!t||1!==d&&9!==d&&11!==d)return n;if(!r&&(C(e),e=e||T,E)){if(11!==d&&(u=Z.exec(t)))if(i=u[1]){if(9===d){if(!(a=e.getElementById(i)))return n;if(a.id===i)return n.push(a),n}else if(f&&(a=f.getElementById(i))&&y(e,a)&&a.id===i)return n.push(a),n}else{if(u[2])return O.apply(n,e.getElementsByTagName(t)),n;if((i=u[3])&&p.getElementsByClassName&&e.getElementsByClassName)return O.apply(n,e.getElementsByClassName(i)),n}if(p.qsa&&!k[t+" "]&&(!v||!v.test(t))&&(1!==d||"object"!==e.nodeName.toLowerCase())){if(c=t,f=e,1===d&&(U.test(t)||_.test(t))){(f=ee.test(t)&&ye(e.parentNode)||e)===e&&p.scope||((s=e.getAttribute("id"))?s=s.replace(re,ie):e.setAttribute("id",s=A)),o=(l=h(t)).length;while(o--)l[o]=(s?"#"+s:":scope")+" "+be(l[o]);c=l.join(",")}try{return O.apply(n,f.querySelectorAll(c)),n}catch(e){k(t,!0)}finally{s===A&&e.removeAttribute("id")}}}return g(t.replace($,"$1"),e,n,r)}function ue(){var r=[];return function e(t,n){return r.push(t+" ")>x.cacheLength&&delete e[r.shift()],e[t+" "]=n}}function le(e){return e[A]=!0,e}function ce(e){var t=T.createElement("fieldset");try{return!!e(t)}catch(e){return!1}finally{t.parentNode&&t.parentNode.removeChild(t),t=null}}function fe(e,t){var n=e.split("|"),r=n.length;while(r--)x.attrHandle[n[r]]=t}function de(e,t){var n=t&&e,r=n&&1===e.nodeType&&1===t.nodeType&&e.sourceIndex-t.sourceIndex;if(r)return r;if(n)while(n=n.nextSibling)if(n===t)return-1;return e?1:-1}function pe(t){return function(e){return"input"===e.nodeName.toLowerCase()&&e.type===t}}function he(n){return function(e){var t=e.nodeName.toLowerCase();return("input"===t||"button"===t)&&e.type===n}}function ge(t){return function(e){return"form"in e?e.parentNode&&!1===e.disabled?"label"in e?"label"in e.parentNode?e.parentNode.disabled===t:e.disabled===t:e.isDisabled===t||e.isDisabled!==!t&&ae(e)===t:e.disabled===t:"label"in e&&e.disabled===t}}function ve(a){return le(function(o){return o=+o,le(function(e,t){var n,r=a([],e.length,o),i=r.length;while(i--)e[n=r[i]]&&(e[n]=!(t[n]=e[n]))})})}function ye(e){return e&&"undefined"!=typeof e.getElementsByTagName&&e}for(e in p=se.support={},i=se.isXML=function(e){var t=e&&e.namespaceURI,n=e&&(e.ownerDocument||e).documentElement;return!Y.test(t||n&&n.nodeName||"HTML")},C=se.setDocument=function(e){var t,n,r=e?e.ownerDocument||e:d;return r!=T&&9===r.nodeType&&r.documentElement&&(a=(T=r).documentElement,E=!i(T),d!=T&&(n=T.defaultView)&&n.top!==n&&(n.addEventListener?n.addEventListener("unload",oe,!1):n.attachEvent&&n.attachEvent("onunload",oe)),p.scope=ce(function(e){return a.appendChild(e).appendChild(T.createElement("div")),"undefined"!=typeof e.querySelectorAll&&!e.querySelectorAll(":scope fieldset div").length}),p.cssHas=ce(function(){try{return T.querySelector(":has(*,:jqfake)"),!1}catch(e){return!0}}),p.attributes=ce(function(e){return e.className="i",!e.getAttribute("className")}),p.getElementsByTagName=ce(function(e){return e.appendChild(T.createComment("")),!e.getElementsByTagName("*").length}),p.getElementsByClassName=J.test(T.getElementsByClassName),p.getById=ce(function(e){return a.appendChild(e).id=A,!T.getElementsByName||!T.getElementsByName(A).length}),p.getById?(x.filter.ID=function(e){var t=e.replace(te,ne);return function(e){return e.getAttribute("id")===t}},x.find.ID=function(e,t){if("undefined"!=typeof t.getElementById&&E){var n=t.getElementById(e);return n?[n]:[]}}):(x.filter.ID=function(e){var n=e.replace(te,ne);return function(e){var t="undefined"!=typeof e.getAttributeNode&&e.getAttributeNode("id");return t&&t.value===n}},x.find.ID=function(e,t){if("undefined"!=typeof t.getElementById&&E){var n,r,i,o=t.getElementById(e);if(o){if((n=o.getAttributeNode("id"))&&n.value===e)return[o];i=t.getElementsByName(e),r=0;while(o=i[r++])if((n=o.getAttributeNode("id"))&&n.value===e)return[o]}return[]}}),x.find.TAG=p.getElementsByTagName?function(e,t){return"undefined"!=typeof t.getElementsByTagName?t.getElementsByTagName(e):p.qsa?t.querySelectorAll(e):void 0}:function(e,t){var n,r=[],i=0,o=t.getElementsByTagName(e);if("*"===e){while(n=o[i++])1===n.nodeType&&r.push(n);return r}return o},x.find.CLASS=p.getElementsByClassName&&function(e,t){if("undefined"!=typeof t.getElementsByClassName&&E)return t.getElementsByClassName(e)},s=[],v=[],(p.qsa=J.test(T.querySelectorAll))&&(ce(function(e){var t;a.appendChild(e).innerHTML="<a id='"+A+"'></a><select id='"+A+"-\r\\' msallowcapture=''><option selected=''></option></select>",e.querySelectorAll("[msallowcapture^='']").length&&v.push("[*^$]="+R+"*(?:''|\"\")"),e.querySelectorAll("[selected]").length||v.push("\\["+R+"*(?:value|"+I+")"),e.querySelectorAll("[id~="+A+"-]").length||v.push("~="),(t=T.createElement("input")).setAttribute("name",""),e.appendChild(t),e.querySelectorAll("[name='']").length||v.push("\\["+R+"*name"+R+"*="+R+"*(?:''|\"\")"),e.querySelectorAll(":checked").length||v.push(":checked"),e.querySelectorAll("a#"+A+"+*").length||v.push(".#.+[+~]"),e.querySelectorAll("\\\f"),v.push("[\\r\\n\\f]")}),ce(function(e){e.innerHTML="<a href='' disabled='disabled'></a><select disabled='disabled'><option/></select>";var t=T.createElement("input");t.setAttribute("type","hidden"),e.appendChild(t).setAttribute("name","D"),e.querySelectorAll("[name=d]").length&&v.push("name"+R+"*[*^$|!~]?="),2!==e.querySelectorAll(":enabled").length&&v.push(":enabled",":disabled"),a.appendChild(e).disabled=!0,2!==e.querySelectorAll(":disabled").length&&v.push(":enabled",":disabled"),e.querySelectorAll("*,:x"),v.push(",.*:")})),(p.matchesSelector=J.test(c=a.matches||a.webkitMatchesSelector||a.mozMatchesSelector||a.oMatchesSelector||a.msMatchesSelector))&&ce(function(e){p.disconnectedMatch=c.call(e,"*"),c.call(e,"[s!='']:x"),s.push("!=",W)}),p.cssHas||v.push(":has"),v=v.length&&new RegExp(v.join("|")),s=s.length&&new RegExp(s.join("|")),t=J.test(a.compareDocumentPosition),y=t||J.test(a.contains)?function(e,t){var n=9===e.nodeType&&e.documentElement||e,r=t&&t.parentNode;return e===r||!(!r||1!==r.nodeType||!(n.contains?n.contains(r):e.compareDocumentPosition&&16&e.compareDocumentPosition(r)))}:function(e,t){if(t)while(t=t.parentNode)if(t===e)return!0;return!1},D=t?function(e,t){if(e===t)return l=!0,0;var n=!e.compareDocumentPosition-!t.compareDocumentPosition;return n||(1&(n=(e.ownerDocument||e)==(t.ownerDocument||t)?e.compareDocumentPosition(t):1)||!p.sortDetached&&t.compareDocumentPosition(e)===n?e==T||e.ownerDocument==d&&y(d,e)?-1:t==T||t.ownerDocument==d&&y(d,t)?1:u?H(u,e)-H(u,t):0:4&n?-1:1)}:function(e,t){if(e===t)return l=!0,0;var n,r=0,i=e.parentNode,o=t.parentNode,a=[e],s=[t];if(!i||!o)return e==T?-1:t==T?1:i?-1:o?1:u?H(u,e)-H(u,t):0;if(i===o)return de(e,t);n=e;while(n=n.parentNode)a.unshift(n);n=t;while(n=n.parentNode)s.unshift(n);while(a[r]===s[r])r++;return r?de(a[r],s[r]):a[r]==d?-1:s[r]==d?1:0}),T},se.matches=function(e,t){return se(e,null,null,t)},se.matchesSelector=function(e,t){if(C(e),p.matchesSelector&&E&&!k[t+" "]&&(!s||!s.test(t))&&(!v||!v.test(t)))try{var n=c.call(e,t);if(n||p.disconnectedMatch||e.document&&11!==e.document.nodeType)return n}catch(e){k(t,!0)}return 0<se(t,T,null,[e]).length},se.contains=function(e,t){return(e.ownerDocument||e)!=T&&C(e),y(e,t)},se.attr=function(e,t){(e.ownerDocument||e)!=T&&C(e);var n=x.attrHandle[t.toLowerCase()],r=n&&L.call(x.attrHandle,t.toLowerCase())?n(e,t,!E):void 0;return void 0!==r?r:p.attributes||!E?e.getAttribute(t):(r=e.getAttributeNode(t))&&r.specified?r.value:null},se.escape=function(e){return(e+"").replace(re,ie)},se.error=function(e){throw new Error("Syntax error, unrecognized expression: "+e)},se.uniqueSort=function(e){var t,n=[],r=0,i=0;if(l=!p.detectDuplicates,u=!p.sortStable&&e.slice(0),e.sort(D),l){while(t=e[i++])t===e[i]&&(r=n.push(i));while(r--)e.splice(n[r],1)}return u=null,e},o=se.getText=function(e){var t,n="",r=0,i=e.nodeType;if(i){if(1===i||9===i||11===i){if("string"==typeof e.textContent)return e.textContent;for(e=e.firstChild;e;e=e.nextSibling)n+=o(e)}else if(3===i||4===i)return e.nodeValue}else while(t=e[r++])n+=o(t);return n},(x=se.selectors={cacheLength:50,createPseudo:le,match:Q,attrHandle:{},find:{},relative:{">":{dir:"parentNode",first:!0}," ":{dir:"parentNode"},"+":{dir:"previousSibling",first:!0},"~":{dir:"previousSibling"}},preFilter:{ATTR:function(e){return e[1]=e[1].replace(te,ne),e[3]=(e[3]||e[4]||e[5]||"").replace(te,ne),"~="===e[2]&&(e[3]=" "+e[3]+" "),e.slice(0,4)},CHILD:function(e){return e[1]=e[1].toLowerCase(),"nth"===e[1].slice(0,3)?(e[3]||se.error(e[0]),e[4]=+(e[4]?e[5]+(e[6]||1):2*("even"===e[3]||"odd"===e[3])),e[5]=+(e[7]+e[8]||"odd"===e[3])):e[3]&&se.error(e[0]),e},PSEUDO:function(e){var t,n=!e[6]&&e[2];return Q.CHILD.test(e[0])?null:(e[3]?e[2]=e[4]||e[5]||"":n&&V.test(n)&&(t=h(n,!0))&&(t=n.indexOf(")",n.length-t)-n.length)&&(e[0]=e[0].slice(0,t),e[2]=n.slice(0,t)),e.slice(0,3))}},filter:{TAG:function(e){var t=e.replace(te,ne).toLowerCase();return"*"===e?function(){return!0}:function(e){return e.nodeName&&e.nodeName.toLowerCase()===t}},CLASS:function(e){var t=m[e+" "];return t||(t=new RegExp("(^|"+R+")"+e+"("+R+"|$)"))&&m(e,function(e){return t.test("string"==typeof e.className&&e.className||"undefined"!=typeof e.getAttribute&&e.getAttribute("class")||"")})},ATTR:function(n,r,i){return function(e){var t=se.attr(e,n);return null==t?"!="===r:!r||(t+="","="===r?t===i:"!="===r?t!==i:"^="===r?i&&0===t.indexOf(i):"*="===r?i&&-1<t.indexOf(i):"$="===r?i&&t.slice(-i.length)===i:"~="===r?-1<(" "+t.replace(F," ")+" ").indexOf(i):"|="===r&&(t===i||t.slice(0,i.length+1)===i+"-"))}},CHILD:function(h,e,t,g,v){var y="nth"!==h.slice(0,3),m="last"!==h.slice(-4),b="of-type"===e;return 1===g&&0===v?function(e){return!!e.parentNode}:function(e,t,n){var r,i,o,a,s,u,l=y!==m?"nextSibling":"previousSibling",c=e.parentNode,f=b&&e.nodeName.toLowerCase(),d=!n&&!b,p=!1;if(c){if(y){while(l){a=e;while(a=a[l])if(b?a.nodeName.toLowerCase()===f:1===a.nodeType)return!1;u=l="only"===h&&!u&&"nextSibling"}return!0}if(u=[m?c.firstChild:c.lastChild],m&&d){p=(s=(r=(i=(o=(a=c)[A]||(a[A]={}))[a.uniqueID]||(o[a.uniqueID]={}))[h]||[])[0]===N&&r[1])&&r[2],a=s&&c.childNodes[s];while(a=++s&&a&&a[l]||(p=s=0)||u.pop())if(1===a.nodeType&&++p&&a===e){i[h]=[N,s,p];break}}else if(d&&(p=s=(r=(i=(o=(a=e)[A]||(a[A]={}))[a.uniqueID]||(o[a.uniqueID]={}))[h]||[])[0]===N&&r[1]),!1===p)while(a=++s&&a&&a[l]||(p=s=0)||u.pop())if((b?a.nodeName.toLowerCase()===f:1===a.nodeType)&&++p&&(d&&((i=(o=a[A]||(a[A]={}))[a.uniqueID]||(o[a.uniqueID]={}))[h]=[N,p]),a===e))break;return(p-=v)===g||p%g==0&&0<=p/g}}},PSEUDO:function(e,o){var t,a=x.pseudos[e]||x.setFilters[e.toLowerCase()]||se.error("unsupported pseudo: "+e);return a[A]?a(o):1<a.length?(t=[e,e,"",o],x.setFilters.hasOwnProperty(e.toLowerCase())?le(function(e,t){var n,r=a(e,o),i=r.length;while(i--)e[n=H(e,r[i])]=!(t[n]=r[i])}):function(e){return a(e,0,t)}):a}},pseudos:{not:le(function(e){var r=[],i=[],s=f(e.replace($,"$1"));return s[A]?le(function(e,t,n,r){var i,o=s(e,null,r,[]),a=e.length;while(a--)(i=o[a])&&(e[a]=!(t[a]=i))}):function(e,t,n){return r[0]=e,s(r,null,n,i),r[0]=null,!i.pop()}}),has:le(function(t){return function(e){return 0<se(t,e).length}}),contains:le(function(t){return t=t.replace(te,ne),function(e){return-1<(e.textContent||o(e)).indexOf(t)}}),lang:le(function(n){return X.test(n||"")||se.error("unsupported lang: "+n),n=n.replace(te,ne).toLowerCase(),function(e){var t;do{if(t=E?e.lang:e.getAttribute("xml:lang")||e.getAttribute("lang"))return(t=t.toLowerCase())===n||0===t.indexOf(n+"-")}while((e=e.parentNode)&&1===e.nodeType);return!1}}),target:function(e){var t=n.location&&n.location.hash;return t&&t.slice(1)===e.id},root:function(e){return e===a},focus:function(e){return e===T.activeElement&&(!T.hasFocus||T.hasFocus())&&!!(e.type||e.href||~e.tabIndex)},enabled:ge(!1),disabled:ge(!0),checked:function(e){var t=e.nodeName.toLowerCase();return"input"===t&&!!e.checked||"option"===t&&!!e.selected},selected:function(e){return e.parentNode&&e.parentNode.selectedIndex,!0===e.selected},empty:function(e){for(e=e.firstChild;e;e=e.nextSibling)if(e.nodeType<6)return!1;return!0},parent:function(e){return!x.pseudos.empty(e)},header:function(e){return K.test(e.nodeName)},input:function(e){return G.test(e.nodeName)},button:function(e){var t=e.nodeName.toLowerCase();return"input"===t&&"button"===e.type||"button"===t},text:function(e){var t;return"input"===e.nodeName.toLowerCase()&&"text"===e.type&&(null==(t=e.getAttribute("type"))||"text"===t.toLowerCase())},first:ve(function(){return[0]}),last:ve(function(e,t){return[t-1]}),eq:ve(function(e,t,n){return[n<0?n+t:n]}),even:ve(function(e,t){for(var n=0;n<t;n+=2)e.push(n);return e}),odd:ve(function(e,t){for(var n=1;n<t;n+=2)e.push(n);return e}),lt:ve(function(e,t,n){for(var r=n<0?n+t:t<n?t:n;0<=--r;)e.push(r);return e}),gt:ve(function(e,t,n){for(var r=n<0?n+t:n;++r<t;)e.push(r);return e})}}).pseudos.nth=x.pseudos.eq,{radio:!0,checkbox:!0,file:!0,password:!0,image:!0})x.pseudos[e]=pe(e);for(e in{submit:!0,reset:!0})x.pseudos[e]=he(e);function me(){}function be(e){for(var t=0,n=e.length,r="";t<n;t++)r+=e[t].value;return r}function xe(s,e,t){var u=e.dir,l=e.next,c=l||u,f=t&&"parentNode"===c,d=r++;return e.first?function(e,t,n){while(e=e[u])if(1===e.nodeType||f)return s(e,t,n);return!1}:function(e,t,n){var r,i,o,a=[N,d];if(n){while(e=e[u])if((1===e.nodeType||f)&&s(e,t,n))return!0}else while(e=e[u])if(1===e.nodeType||f)if(i=(o=e[A]||(e[A]={}))[e.uniqueID]||(o[e.uniqueID]={}),l&&l===e.nodeName.toLowerCase())e=e[u]||e;else{if((r=i[c])&&r[0]===N&&r[1]===d)return a[2]=r[2];if((i[c]=a)[2]=s(e,t,n))return!0}return!1}}function we(i){return 1<i.length?function(e,t,n){var r=i.length;while(r--)if(!i[r](e,t,n))return!1;return!0}:i[0]}function Ce(e,t,n,r,i){for(var o,a=[],s=0,u=e.length,l=null!=t;s<u;s++)(o=e[s])&&(n&&!n(o,r,i)||(a.push(o),l&&t.push(s)));return a}function Te(p,h,g,v,y,e){return v&&!v[A]&&(v=Te(v)),y&&!y[A]&&(y=Te(y,e)),le(function(e,t,n,r){var i,o,a,s=[],u=[],l=t.length,c=e||function(e,t,n){for(var r=0,i=t.length;r<i;r++)se(e,t[r],n);return n}(h||"*",n.nodeType?[n]:n,[]),f=!p||!e&&h?c:Ce(c,s,p,n,r),d=g?y||(e?p:l||v)?[]:t:f;if(g&&g(f,d,n,r),v){i=Ce(d,u),v(i,[],n,r),o=i.length;while(o--)(a=i[o])&&(d[u[o]]=!(f[u[o]]=a))}if(e){if(y||p){if(y){i=[],o=d.length;while(o--)(a=d[o])&&i.push(f[o]=a);y(null,d=[],i,r)}o=d.length;while(o--)(a=d[o])&&-1<(i=y?H(e,a):s[o])&&(e[i]=!(t[i]=a))}}else d=Ce(d===t?d.splice(l,d.length):d),y?y(null,t,d,r):O.apply(t,d)})}function Ee(e){for(var i,t,n,r=e.length,o=x.relative[e[0].type],a=o||x.relative[" "],s=o?1:0,u=xe(function(e){return e===i},a,!0),l=xe(function(e){return-1<H(i,e)},a,!0),c=[function(e,t,n){var r=!o&&(n||t!==w)||((i=t).nodeType?u(e,t,n):l(e,t,n));return i=null,r}];s<r;s++)if(t=x.relative[e[s].type])c=[xe(we(c),t)];else{if((t=x.filter[e[s].type].apply(null,e[s].matches))[A]){for(n=++s;n<r;n++)if(x.relative[e[n].type])break;return Te(1<s&&we(c),1<s&&be(e.slice(0,s-1).concat({value:" "===e[s-2].type?"*":""})).replace($,"$1"),t,s<n&&Ee(e.slice(s,n)),n<r&&Ee(e=e.slice(n)),n<r&&be(e))}c.push(t)}return we(c)}return me.prototype=x.filters=x.pseudos,x.setFilters=new me,h=se.tokenize=function(e,t){var n,r,i,o,a,s,u,l=b[e+" "];if(l)return t?0:l.slice(0);a=e,s=[],u=x.preFilter;while(a){for(o in n&&!(r=z.exec(a))||(r&&(a=a.slice(r[0].length)||a),s.push(i=[])),n=!1,(r=_.exec(a))&&(n=r.shift(),i.push({value:n,type:r[0].replace($," ")}),a=a.slice(n.length)),x.filter)!(r=Q[o].exec(a))||u[o]&&!(r=u[o](r))||(n=r.shift(),i.push({value:n,type:o,matches:r}),a=a.slice(n.length));if(!n)break}return t?a.length:a?se.error(e):b(e,s).slice(0)},f=se.compile=function(e,t){var n,v,y,m,b,r,i=[],o=[],a=S[e+" "];if(!a){t||(t=h(e)),n=t.length;while(n--)(a=Ee(t[n]))[A]?i.push(a):o.push(a);(a=S(e,(v=o,m=0<(y=i).length,b=0<v.length,r=function(e,t,n,r,i){var o,a,s,u=0,l="0",c=e&&[],f=[],d=w,p=e||b&&x.find.TAG("*",i),h=N+=null==d?1:Math.random()||.1,g=p.length;for(i&&(w=t==T||t||i);l!==g&&null!=(o=p[l]);l++){if(b&&o){a=0,t||o.ownerDocument==T||(C(o),n=!E);while(s=v[a++])if(s(o,t||T,n)){r.push(o);break}i&&(N=h)}m&&((o=!s&&o)&&u--,e&&c.push(o))}if(u+=l,m&&l!==u){a=0;while(s=y[a++])s(c,f,t,n);if(e){if(0<u)while(l--)c[l]||f[l]||(f[l]=j.call(r));f=Ce(f)}O.apply(r,f),i&&!e&&0<f.length&&1<u+y.length&&se.uniqueSort(r)}return i&&(N=h,w=d),c},m?le(r):r))).selector=e}return a},g=se.select=function(e,t,n,r){var i,o,a,s,u,l="function"==typeof e&&e,c=!r&&h(e=l.selector||e);if(n=n||[],1===c.length){if(2<(o=c[0]=c[0].slice(0)).length&&"ID"===(a=o[0]).type&&9===t.nodeType&&E&&x.relative[o[1].type]){if(!(t=(x.find.ID(a.matches[0].replace(te,ne),t)||[])[0]))return n;l&&(t=t.parentNode),e=e.slice(o.shift().value.length)}i=Q.needsContext.test(e)?0:o.length;while(i--){if(a=o[i],x.relative[s=a.type])break;if((u=x.find[s])&&(r=u(a.matches[0].replace(te,ne),ee.test(o[0].type)&&ye(t.parentNode)||t))){if(o.splice(i,1),!(e=r.length&&be(o)))return O.apply(n,r),n;break}}}return(l||f(e,c))(r,t,!E,n,!t||ee.test(e)&&ye(t.parentNode)||t),n},p.sortStable=A.split("").sort(D).join("")===A,p.detectDuplicates=!!l,C(),p.sortDetached=ce(function(e){return 1&e.compareDocumentPosition(T.createElement("fieldset"))}),ce(function(e){return e.innerHTML="<a href='#'></a>","#"===e.firstChild.getAttribute("href")})||fe("type|href|height|width",function(e,t,n){if(!n)return e.getAttribute(t,"type"===t.toLowerCase()?1:2)}),p.attributes&&ce(function(e){return e.innerHTML="<input/>",e.firstChild.setAttribute("value",""),""===e.firstChild.getAttribute("value")})||fe("value",function(e,t,n){if(!n&&"input"===e.nodeName.toLowerCase())return e.defaultValue}),ce(function(e){return null==e.getAttribute("disabled")})||fe(I,function(e,t,n){var r;if(!n)return!0===e[t]?t.toLowerCase():(r=e.getAttributeNode(t))&&r.specified?r.value:null}),se}(g);E.find=p,E.expr=p.selectors,E.expr[":"]=E.expr.pseudos,E.uniqueSort=E.unique=p.uniqueSort,E.text=p.getText,E.isXMLDoc=p.isXML,E.contains=p.contains,E.escapeSelector=p.escape;var h=function(e,t,n){var r=[],i=void 0!==n;while((e=e[t])&&9!==e.nodeType)if(1===e.nodeType){if(i&&E(e).is(n))break;r.push(e)}return r},A=function(e,t){for(var n=[];e;e=e.nextSibling)1===e.nodeType&&e!==t&&n.push(e);return n},N=E.expr.match.needsContext;function S(e,t){return e.nodeName&&e.nodeName.toLowerCase()===t.toLowerCase()}var k=/^<([a-z][^\/\0>:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?>(?:<\/\1>|)$/i;function D(e,n,r){return b(n)?E.grep(e,function(e,t){return!!n.call(e,t,e)!==r}):n.nodeType?E.grep(e,function(e){return e===n!==r}):"string"!=typeof n?E.grep(e,function(e){return-1<i.call(n,e)!==r}):E.filter(n,e,r)}E.filter=function(e,t,n){var r=t[0];return n&&(e=":not("+e+")"),1===t.length&&1===r.nodeType?E.find.matchesSelector(r,e)?[r]:[]:E.find.matches(e,E.grep(t,function(e){return 1===e.nodeType}))},E.fn.extend({find:function(e){var t,n,r=this.length,i=this;if("string"!=typeof e)return this.pushStack(E(e).filter(function(){for(t=0;t<r;t++)if(E.contains(i[t],this))return!0}));for(n=this.pushStack([]),t=0;t<r;t++)E.find(e,i[t],n);return 1<r?E.uniqueSort(n):n},filter:function(e){return this.pushStack(D(this,e||[],!1))},not:function(e){return this.pushStack(D(this,e||[],!0))},is:function(e){return!!D(this,"string"==typeof e&&N.test(e)?E(e):e||[],!1).length}});var L,j=/^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]+))$/;(E.fn.init=function(e,t,n){var r,i;if(!e)return this;if(n=n||L,"string"==typeof e){if(!(r="<"===e[0]&&">"===e[e.length-1]&&3<=e.length?[null,e,null]:j.exec(e))||!r[1]&&t)return!t||t.jquery?(t||n).find(e):this.constructor(t).find(e);if(r[1]){if(t=t instanceof E?t[0]:t,E.merge(this,E.parseHTML(r[1],t&&t.nodeType?t.ownerDocument||t:w,!0)),k.test(r[1])&&E.isPlainObject(t))for(r in t)b(this[r])?this[r](t[r]):this.attr(r,t[r]);return this}return(i=w.getElementById(r[2]))&&(this[0]=i,this.length=1),this}return e.nodeType?(this[0]=e,this.length=1,this):b(e)?void 0!==n.ready?n.ready(e):e(E):E.makeArray(e,this)}).prototype=E.fn,L=E(w);var q=/^(?:parents|prev(?:Until|All))/,O={children:!0,contents:!0,next:!0,prev:!0};function P(e,t){while((e=e[t])&&1!==e.nodeType);return e}E.fn.extend({has:function(e){var t=E(e,this),n=t.length;return this.filter(function(){for(var e=0;e<n;e++)if(E.contains(this,t[e]))return!0})},closest:function(e,t){var n,r=0,i=this.length,o=[],a="string"!=typeof e&&E(e);if(!N.test(e))for(;r<i;r++)for(n=this[r];n&&n!==t;n=n.parentNode)if(n.nodeType<11&&(a?-1<a.index(n):1===n.nodeType&&E.find.matchesSelector(n,e))){o.push(n);break}return this.pushStack(1<o.length?E.uniqueSort(o):o)},index:function(e){return e?"string"==typeof e?i.call(E(e),this[0]):i.call(this,e.jquery?e[0]:e):this[0]&&this[0].parentNode?this.first().prevAll().length:-1},add:function(e,t){return this.pushStack(E.uniqueSort(E.merge(this.get(),E(e,t))))},addBack:function(e){return this.add(null==e?this.prevObject:this.prevObject.filter(e))}}),E.each({parent:function(e){var t=e.parentNode;return t&&11!==t.nodeType?t:null},parents:function(e){return h(e,"parentNode")},parentsUntil:function(e,t,n){return h(e,"parentNode",n)},next:function(e){return P(e,"nextSibling")},prev:function(e){return P(e,"previousSibling")},nextAll:function(e){return h(e,"nextSibling")},prevAll:function(e){return h(e,"previousSibling")},nextUntil:function(e,t,n){return h(e,"nextSibling",n)},prevUntil:function(e,t,n){return h(e,"previousSibling",n)},siblings:function(e){return A((e.parentNode||{}).firstChild,e)},children:function(e){return A(e.firstChild)},contents:function(e){return null!=e.contentDocument&&r(e.contentDocument)?e.contentDocument:(S(e,"template")&&(e=e.content||e),E.merge([],e.childNodes))}},function(r,i){E.fn[r]=function(e,t){var n=E.map(this,i,e);return"Until"!==r.slice(-5)&&(t=e),t&&"string"==typeof t&&(n=E.filter(t,n)),1<this.length&&(O[r]||E.uniqueSort(n),q.test(r)&&n.reverse()),this.pushStack(n)}});var H=/[^\x20\t\r\n\f]+/g;function I(e){return e}function R(e){throw e}function B(e,t,n,r){var i;try{e&&b(i=e.promise)?i.call(e).done(t).fail(n):e&&b(i=e.then)?i.call(e,t,n):t.apply(void 0,[e].slice(r))}catch(e){n.apply(void 0,[e])}}E.Callbacks=function(r){var e,n;r="string"==typeof r?(e=r,n={},E.each(e.match(H)||[],function(e,t){n[t]=!0}),n):E.extend({},r);var i,t,o,a,s=[],u=[],l=-1,c=function(){for(a=a||r.once,o=i=!0;u.length;l=-1){t=u.shift();while(++l<s.length)!1===s[l].apply(t[0],t[1])&&r.stopOnFalse&&(l=s.length,t=!1)}r.memory||(t=!1),i=!1,a&&(s=t?[]:"")},f={add:function(){return s&&(t&&!i&&(l=s.length-1,u.push(t)),function n(e){E.each(e,function(e,t){b(t)?r.unique&&f.has(t)||s.push(t):t&&t.length&&"string"!==T(t)&&n(t)})}(arguments),t&&!i&&c()),this},remove:function(){return E.each(arguments,function(e,t){var n;while(-1<(n=E.inArray(t,s,n)))s.splice(n,1),n<=l&&l--}),this},has:function(e){return e?-1<E.inArray(e,s):0<s.length},empty:function(){return s&&(s=[]),this},disable:function(){return a=u=[],s=t="",this},disabled:function(){return!s},lock:function(){return a=u=[],t||i||(s=t=""),this},locked:function(){return!!a},fireWith:function(e,t){return a||(t=[e,(t=t||[]).slice?t.slice():t],u.push(t),i||c()),this},fire:function(){return f.fireWith(this,arguments),this},fired:function(){return!!o}};return f},E.extend({Deferred:function(e){var o=[["notify","progress",E.Callbacks("memory"),E.Callbacks("memory"),2],["resolve","done",E.Callbacks("once memory"),E.Callbacks("once memory"),0,"resolved"],["reject","fail",E.Callbacks("once memory"),E.Callbacks("once memory"),1,"rejected"]],i="pending",a={state:function(){return i},always:function(){return s.done(arguments).fail(arguments),this},"catch":function(e){return a.then(null,e)},pipe:function(){var i=arguments;return E.Deferred(function(r){E.each(o,function(e,t){var n=b(i[t[4]])&&i[t[4]];s[t[1]](function(){var e=n&&n.apply(this,arguments);e&&b(e.promise)?e.promise().progress(r.notify).done(r.resolve).fail(r.reject):r[t[0]+"With"](this,n?[e]:arguments)})}),i=null}).promise()},then:function(t,n,r){var u=0;function l(i,o,a,s){return function(){var n=this,r=arguments,e=function(){var e,t;if(!(i<u)){if((e=a.apply(n,r))===o.promise())throw new TypeError("Thenable self-resolution");t=e&&("object"==typeof e||"function"==typeof e)&&e.then,b(t)?s?t.call(e,l(u,o,I,s),l(u,o,R,s)):(u++,t.call(e,l(u,o,I,s),l(u,o,R,s),l(u,o,I,o.notifyWith))):(a!==I&&(n=void 0,r=[e]),(s||o.resolveWith)(n,r))}},t=s?e:function(){try{e()}catch(e){E.Deferred.exceptionHook&&E.Deferred.exceptionHook(e,t.stackTrace),u<=i+1&&(a!==R&&(n=void 0,r=[e]),o.rejectWith(n,r))}};i?t():(E.Deferred.getStackHook&&(t.stackTrace=E.Deferred.getStackHook()),g.setTimeout(t))}}return E.Deferred(function(e){o[0][3].add(l(0,e,b(r)?r:I,e.notifyWith)),o[1][3].add(l(0,e,b(t)?t:I)),o[2][3].add(l(0,e,b(n)?n:R))}).promise()},promise:function(e){return null!=e?E.extend(e,a):a}},s={};return E.each(o,function(e,t){var n=t[2],r=t[5];a[t[1]]=n.add,r&&n.add(function(){i=r},o[3-e][2].disable,o[3-e][3].disable,o[0][2].lock,o[0][3].lock),n.add(t[3].fire),s[t[0]]=function(){return s[t[0]+"With"](this===s?void 0:this,arguments),this},s[t[0]+"With"]=n.fireWith}),a.promise(s),e&&e.call(s,s),s},when:function(e){var n=arguments.length,t=n,r=Array(t),i=s.call(arguments),o=E.Deferred(),a=function(t){return function(e){r[t]=this,i[t]=1<arguments.length?s.call(arguments):e,--n||o.resolveWith(r,i)}};if(n<=1&&(B(e,o.done(a(t)).resolve,o.reject,!n),"pending"===o.state()||b(i[t]&&i[t].then)))return o.then();while(t--)B(i[t],a(t),o.reject);return o.promise()}});var M=/^(Eval|Internal|Range|Reference|Syntax|Type|URI)Error$/;E.Deferred.exceptionHook=function(e,t){g.console&&g.console.warn&&e&&M.test(e.name)&&g.console.warn("jQuery.Deferred exception: "+e.message,e.stack,t)},E.readyException=function(e){g.setTimeout(function(){throw e})};var W=E.Deferred();function F(){w.removeEventListener("DOMContentLoaded",F),g.removeEventListener("load",F),E.ready()}E.fn.ready=function(e){return W.then(e)["catch"](function(e){E.readyException(e)}),this},E.extend({isReady:!1,readyWait:1,ready:function(e){(!0===e?--E.readyWait:E.isReady)||(E.isReady=!0)!==e&&0<--E.readyWait||W.resolveWith(w,[E])}}),E.ready.then=W.then,"complete"===w.readyState||"loading"!==w.readyState&&!w.documentElement.doScroll?g.setTimeout(E.ready):(w.addEventListener("DOMContentLoaded",F),g.addEventListener("load",F));var $=function(e,t,n,r,i,o,a){var s=0,u=e.length,l=null==n;if("object"===T(n))for(s in i=!0,n)$(e,t,s,n[s],!0,o,a);else if(void 0!==r&&(i=!0,b(r)||(a=!0),l&&(a?(t.call(e,r),t=null):(l=t,t=function(e,t,n){return l.call(E(e),n)})),t))for(;s<u;s++)t(e[s],n,a?r:r.call(e[s],s,t(e[s],n)));return i?e:l?t.call(e):u?t(e[0],n):o},z=/^-ms-/,_=/-([a-z])/g;function U(e,t){return t.toUpperCase()}function V(e){return e.replace(z,"ms-").replace(_,U)}var X=function(e){return 1===e.nodeType||9===e.nodeType||!+e.nodeType};function Q(){this.expando=E.expando+Q.uid++}Q.uid=1,Q.prototype={cache:function(e){var t=e[this.expando];return t||(t={},X(e)&&(e.nodeType?e[this.expando]=t:Object.defineProperty(e,this.expando,{value:t,configurable:!0}))),t},set:function(e,t,n){var r,i=this.cache(e);if("string"==typeof t)i[V(t)]=n;else for(r in t)i[V(r)]=t[r];return i},get:function(e,t){return void 0===t?this.cache(e):e[this.expando]&&e[this.expando][V(t)]},access:function(e,t,n){return void 0===t||t&&"string"==typeof t&&void 0===n?this.get(e,t):(this.set(e,t,n),void 0!==n?n:t)},remove:function(e,t){var n,r=e[this.expando];if(void 0!==r){if(void 0!==t){n=(t=Array.isArray(t)?t.map(V):(t=V(t))in r?[t]:t.match(H)||[]).length;while(n--)delete r[t[n]]}(void 0===t||E.isEmptyObject(r))&&(e.nodeType?e[this.expando]=void 0:delete e[this.expando])}},hasData:function(e){var t=e[this.expando];return void 0!==t&&!E.isEmptyObject(t)}};var Y=new Q,G=new Q,K=/^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,J=/[A-Z]/g;function Z(e,t,n){var r,i;if(void 0===n&&1===e.nodeType)if(r="data-"+t.replace(J,"-$&").toLowerCase(),"string"==typeof(n=e.getAttribute(r))){try{n="true"===(i=n)||"false"!==i&&("null"===i?null:i===+i+""?+i:K.test(i)?JSON.parse(i):i)}catch(e){}G.set(e,t,n)}else n=void 0;return n}E.extend({hasData:function(e){return G.hasData(e)||Y.hasData(e)},data:function(e,t,n){return G.access(e,t,n)},removeData:function(e,t){G.remove(e,t)},_data:function(e,t,n){return Y.access(e,t,n)},_removeData:function(e,t){Y.remove(e,t)}}),E.fn.extend({data:function(n,e){var t,r,i,o=this[0],a=o&&o.attributes;if(void 0===n){if(this.length&&(i=G.get(o),1===o.nodeType&&!Y.get(o,"hasDataAttrs"))){t=a.length;while(t--)a[t]&&0===(r=a[t].name).indexOf("data-")&&(r=V(r.slice(5)),Z(o,r,i[r]));Y.set(o,"hasDataAttrs",!0)}return i}return"object"==typeof n?this.each(function(){G.set(this,n)}):$(this,function(e){var t;if(o&&void 0===e)return void 0!==(t=G.get(o,n))?t:void 0!==(t=Z(o,n))?t:void 0;this.each(function(){G.set(this,n,e)})},null,e,1<arguments.length,null,!0)},removeData:function(e){return this.each(function(){G.remove(this,e)})}}),E.extend({queue:function(e,t,n){var r;if(e)return t=(t||"fx")+"queue",r=Y.get(e,t),n&&(!r||Array.isArray(n)?r=Y.access(e,t,E.makeArray(n)):r.push(n)),r||[]},dequeue:function(e,t){t=t||"fx";var n=E.queue(e,t),r=n.length,i=n.shift(),o=E._queueHooks(e,t);"inprogress"===i&&(i=n.shift(),r--),i&&("fx"===t&&n.unshift("inprogress"),delete o.stop,i.call(e,function(){E.dequeue(e,t)},o)),!r&&o&&o.empty.fire()},_queueHooks:function(e,t){var n=t+"queueHooks";return Y.get(e,n)||Y.access(e,n,{empty:E.Callbacks("once memory").add(function(){Y.remove(e,[t+"queue",n])})})}}),E.fn.extend({queue:function(t,n){var e=2;return"string"!=typeof t&&(n=t,t="fx",e--),arguments.length<e?E.queue(this[0],t):void 0===n?this:this.each(function(){var e=E.queue(this,t,n);E._queueHooks(this,t),"fx"===t&&"inprogress"!==e[0]&&E.dequeue(this,t)})},dequeue:function(e){return this.each(function(){E.dequeue(this,e)})},clearQueue:function(e){return this.queue(e||"fx",[])},promise:function(e,t){var n,r=1,i=E.Deferred(),o=this,a=this.length,s=function(){--r||i.resolveWith(o,[o])};"string"!=typeof e&&(t=e,e=void 0),e=e||"fx";while(a--)(n=Y.get(o[a],e+"queueHooks"))&&n.empty&&(r++,n.empty.add(s));return s(),i.promise(t)}});var ee=/[+-]?(?:\d*\.|)\d+(?:[eE][+-]?\d+|)/.source,te=new RegExp("^(?:([+-])=|)("+ee+")([a-z%]*)$","i"),ne=["Top","Right","Bottom","Left"],re=w.documentElement,ie=function(e){return E.contains(e.ownerDocument,e)},oe={composed:!0};re.getRootNode&&(ie=function(e){return E.contains(e.ownerDocument,e)||e.getRootNode(oe)===e.ownerDocument});var ae=function(e,t){return"none"===(e=t||e).style.display||""===e.style.display&&ie(e)&&"none"===E.css(e,"display")};var se={};function ue(e,t){for(var n,r,i,o,a,s,u,l=[],c=0,f=e.length;c<f;c++)(r=e[c]).style&&(n=r.style.display,t?("none"===n&&(l[c]=Y.get(r,"display")||null,l[c]||(r.style.display="")),""===r.style.display&&ae(r)&&(l[c]=(u=a=o=void 0,a=(i=r).ownerDocument,s=i.nodeName,(u=se[s])||(o=a.body.appendChild(a.createElement(s)),u=E.css(o,"display"),o.parentNode.removeChild(o),"none"===u&&(u="block"),se[s]=u)))):"none"!==n&&(l[c]="none",Y.set(r,"display",n)));for(c=0;c<f;c++)null!=l[c]&&(e[c].style.display=l[c]);return e}E.fn.extend({show:function(){return ue(this,!0)},hide:function(){return ue(this)},toggle:function(e){return"boolean"==typeof e?e?this.show():this.hide():this.each(function(){ae(this)?E(this).show():E(this).hide()})}});var le,ce,fe=/^(?:checkbox|radio)$/i,de=/<([a-z][^\/\0>\x20\t\r\n\f]*)/i,pe=/^$|^module$|\/(?:java|ecma)script/i;le=w.createDocumentFragment().appendChild(w.createElement("div")),(ce=w.createElement("input")).setAttribute("type","radio"),ce.setAttribute("checked","checked"),ce.setAttribute("name","t"),le.appendChild(ce),m.checkClone=le.cloneNode(!0).cloneNode(!0).lastChild.checked,le.innerHTML="<textarea>x</textarea>",m.noCloneChecked=!!le.cloneNode(!0).lastChild.defaultValue,le.innerHTML="<option></option>",m.option=!!le.lastChild;var he={thead:[1,"<table>","</table>"],col:[2,"<table><colgroup>","</colgroup></table>"],tr:[2,"<table><tbody>","</tbody></table>"],td:[3,"<table><tbody><tr>","</tr></tbody></table>"],_default:[0,"",""]};function ge(e,t){var n;return n="undefined"!=typeof e.getElementsByTagName?e.getElementsByTagName(t||"*"):"undefined"!=typeof e.querySelectorAll?e.querySelectorAll(t||"*"):[],void 0===t||t&&S(e,t)?E.merge([e],n):n}function ve(e,t){for(var n=0,r=e.length;n<r;n++)Y.set(e[n],"globalEval",!t||Y.get(t[n],"globalEval"))}he.tbody=he.tfoot=he.colgroup=he.caption=he.thead,he.th=he.td,m.option||(he.optgroup=he.option=[1,"<select multiple='multiple'>","</select>"]);var ye=/<|&#?\w+;/;function me(e,t,n,r,i){for(var o,a,s,u,l,c,f=t.createDocumentFragment(),d=[],p=0,h=e.length;p<h;p++)if((o=e[p])||0===o)if("object"===T(o))E.merge(d,o.nodeType?[o]:o);else if(ye.test(o)){a=a||f.appendChild(t.createElement("div")),s=(de.exec(o)||["",""])[1].toLowerCase(),u=he[s]||he._default,a.innerHTML=u[1]+E.htmlPrefilter(o)+u[2],c=u[0];while(c--)a=a.lastChild;E.merge(d,a.childNodes),(a=f.firstChild).textContent=""}else d.push(t.createTextNode(o));f.textContent="",p=0;while(o=d[p++])if(r&&-1<E.inArray(o,r))i&&i.push(o);else if(l=ie(o),a=ge(f.appendChild(o),"script"),l&&ve(a),n){c=0;while(o=a[c++])pe.test(o.type||"")&&n.push(o)}return f}var be=/^([^.]*)(?:\.(.+)|)/;function xe(){return!0}function we(){return!1}function Ce(e,t){return e===function(){try{return w.activeElement}catch(e){}}()==("focus"===t)}function Te(e,t,n,r,i,o){var a,s;if("object"==typeof t){for(s in"string"!=typeof n&&(r=r||n,n=void 0),t)Te(e,s,n,r,t[s],o);return e}if(null==r&&null==i?(i=n,r=n=void 0):null==i&&("string"==typeof n?(i=r,r=void 0):(i=r,r=n,n=void 0)),!1===i)i=we;else if(!i)return e;return 1===o&&(a=i,(i=function(e){return E().off(e),a.apply(this,arguments)}).guid=a.guid||(a.guid=E.guid++)),e.each(function(){E.event.add(this,t,i,r,n)})}function Ee(e,i,o){o?(Y.set(e,i,!1),E.event.add(e,i,{namespace:!1,handler:function(e){var t,n,r=Y.get(this,i);if(1&e.isTrigger&&this[i]){if(r.length)(E.event.special[i]||{}).delegateType&&e.stopPropagation();else if(r=s.call(arguments),Y.set(this,i,r),t=o(this,i),this[i](),r!==(n=Y.get(this,i))||t?Y.set(this,i,!1):n={},r!==n)return e.stopImmediatePropagation(),e.preventDefault(),n&&n.value}else r.length&&(Y.set(this,i,{value:E.event.trigger(E.extend(r[0],E.Event.prototype),r.slice(1),this)}),e.stopImmediatePropagation())}})):void 0===Y.get(e,i)&&E.event.add(e,i,xe)}E.event={global:{},add:function(t,e,n,r,i){var o,a,s,u,l,c,f,d,p,h,g,v=Y.get(t);if(X(t)){n.handler&&(n=(o=n).handler,i=o.selector),i&&E.find.matchesSelector(re,i),n.guid||(n.guid=E.guid++),(u=v.events)||(u=v.events=Object.create(null)),(a=v.handle)||(a=v.handle=function(e){return"undefined"!=typeof E&&E.event.triggered!==e.type?E.event.dispatch.apply(t,arguments):void 0}),l=(e=(e||"").match(H)||[""]).length;while(l--)p=g=(s=be.exec(e[l])||[])[1],h=(s[2]||"").split(".").sort(),p&&(f=E.event.special[p]||{},p=(i?f.delegateType:f.bindType)||p,f=E.event.special[p]||{},c=E.extend({type:p,origType:g,data:r,handler:n,guid:n.guid,selector:i,needsContext:i&&E.expr.match.needsContext.test(i),namespace:h.join(".")},o),(d=u[p])||((d=u[p]=[]).delegateCount=0,f.setup&&!1!==f.setup.call(t,r,h,a)||t.addEventListener&&t.addEventListener(p,a)),f.add&&(f.add.call(t,c),c.handler.guid||(c.handler.guid=n.guid)),i?d.splice(d.delegateCount++,0,c):d.push(c),E.event.global[p]=!0)}},remove:function(e,t,n,r,i){var o,a,s,u,l,c,f,d,p,h,g,v=Y.hasData(e)&&Y.get(e);if(v&&(u=v.events)){l=(t=(t||"").match(H)||[""]).length;while(l--)if(p=g=(s=be.exec(t[l])||[])[1],h=(s[2]||"").split(".").sort(),p){f=E.event.special[p]||{},d=u[p=(r?f.delegateType:f.bindType)||p]||[],s=s[2]&&new RegExp("(^|\\.)"+h.join("\\.(?:.*\\.|)")+"(\\.|$)"),a=o=d.length;while(o--)c=d[o],!i&&g!==c.origType||n&&n.guid!==c.guid||s&&!s.test(c.namespace)||r&&r!==c.selector&&("**"!==r||!c.selector)||(d.splice(o,1),c.selector&&d.delegateCount--,f.remove&&f.remove.call(e,c));a&&!d.length&&(f.teardown&&!1!==f.teardown.call(e,h,v.handle)||E.removeEvent(e,p,v.handle),delete u[p])}else for(p in u)E.event.remove(e,p+t[l],n,r,!0);E.isEmptyObject(u)&&Y.remove(e,"handle events")}},dispatch:function(e){var t,n,r,i,o,a,s=new Array(arguments.length),u=E.event.fix(e),l=(Y.get(this,"events")||Object.create(null))[u.type]||[],c=E.event.special[u.type]||{};for(s[0]=u,t=1;t<arguments.length;t++)s[t]=arguments[t];if(u.delegateTarget=this,!c.preDispatch||!1!==c.preDispatch.call(this,u)){a=E.event.handlers.call(this,u,l),t=0;while((i=a[t++])&&!u.isPropagationStopped()){u.currentTarget=i.elem,n=0;while((o=i.handlers[n++])&&!u.isImmediatePropagationStopped())u.rnamespace&&!1!==o.namespace&&!u.rnamespace.test(o.namespace)||(u.handleObj=o,u.data=o.data,void 0!==(r=((E.event.special[o.origType]||{}).handle||o.handler).apply(i.elem,s))&&!1===(u.result=r)&&(u.preventDefault(),u.stopPropagation()))}return c.postDispatch&&c.postDispatch.call(this,u),u.result}},handlers:function(e,t){var n,r,i,o,a,s=[],u=t.delegateCount,l=e.target;if(u&&l.nodeType&&!("click"===e.type&&1<=e.button))for(;l!==this;l=l.parentNode||this)if(1===l.nodeType&&("click"!==e.type||!0!==l.disabled)){for(o=[],a={},n=0;n<u;n++)void 0===a[i=(r=t[n]).selector+" "]&&(a[i]=r.needsContext?-1<E(i,this).index(l):E.find(i,this,null,[l]).length),a[i]&&o.push(r);o.length&&s.push({elem:l,handlers:o})}return l=this,u<t.length&&s.push({elem:l,handlers:t.slice(u)}),s},addProp:function(t,e){Object.defineProperty(E.Event.prototype,t,{enumerable:!0,configurable:!0,get:b(e)?function(){if(this.originalEvent)return e(this.originalEvent)}:function(){if(this.originalEvent)return this.originalEvent[t]},set:function(e){Object.defineProperty(this,t,{enumerable:!0,configurable:!0,writable:!0,value:e})}})},fix:function(e){return e[E.expando]?e:new E.Event(e)},special:{load:{noBubble:!0},click:{setup:function(e){var t=this||e;return fe.test(t.type)&&t.click&&S(t,"input")&&Ee(t,"click",xe),!1},trigger:function(e){var t=this||e;return fe.test(t.type)&&t.click&&S(t,"input")&&Ee(t,"click"),!0},_default:function(e){var t=e.target;return fe.test(t.type)&&t.click&&S(t,"input")&&Y.get(t,"click")||S(t,"a")}},beforeunload:{postDispatch:function(e){void 0!==e.result&&e.originalEvent&&(e.originalEvent.returnValue=e.result)}}}},E.removeEvent=function(e,t,n){e.removeEventListener&&e.removeEventListener(t,n)},E.Event=function(e,t){if(!(this instanceof E.Event))return new E.Event(e,t);e&&e.type?(this.originalEvent=e,this.type=e.type,this.isDefaultPrevented=e.defaultPrevented||void 0===e.defaultPrevented&&!1===e.returnValue?xe:we,this.target=e.target&&3===e.target.nodeType?e.target.parentNode:e.target,this.currentTarget=e.currentTarget,this.relatedTarget=e.relatedTarget):this.type=e,t&&E.extend(this,t),this.timeStamp=e&&e.timeStamp||Date.now(),this[E.expando]=!0},E.Event.prototype={constructor:E.Event,isDefaultPrevented:we,isPropagationStopped:we,isImmediatePropagationStopped:we,isSimulated:!1,preventDefault:function(){var e=this.originalEvent;this.isDefaultPrevented=xe,e&&!this.isSimulated&&e.preventDefault()},stopPropagation:function(){var e=this.originalEvent;this.isPropagationStopped=xe,e&&!this.isSimulated&&e.stopPropagation()},stopImmediatePropagation:function(){var e=this.originalEvent;this.isImmediatePropagationStopped=xe,e&&!this.isSimulated&&e.stopImmediatePropagation(),this.stopPropagation()}},E.each({altKey:!0,bubbles:!0,cancelable:!0,changedTouches:!0,ctrlKey:!0,detail:!0,eventPhase:!0,metaKey:!0,pageX:!0,pageY:!0,shiftKey:!0,view:!0,"char":!0,code:!0,charCode:!0,key:!0,keyCode:!0,button:!0,buttons:!0,clientX:!0,clientY:!0,offsetX:!0,offsetY:!0,pointerId:!0,pointerType:!0,screenX:!0,screenY:!0,targetTouches:!0,toElement:!0,touches:!0,which:!0},E.event.addProp),E.each({focus:"focusin",blur:"focusout"},function(t,e){E.event.special[t]={setup:function(){return Ee(this,t,Ce),!1},trigger:function(){return Ee(this,t),!0},_default:function(e){return Y.get(e.target,t)},delegateType:e}}),E.each({mouseenter:"mouseover",mouseleave:"mouseout",pointerenter:"pointerover",pointerleave:"pointerout"},function(e,i){E.event.special[e]={delegateType:i,bindType:i,handle:function(e){var t,n=e.relatedTarget,r=e.handleObj;return n&&(n===this||E.contains(this,n))||(e.type=r.origType,t=r.handler.apply(this,arguments),e.type=i),t}}}),E.fn.extend({on:function(e,t,n,r){return Te(this,e,t,n,r)},one:function(e,t,n,r){return Te(this,e,t,n,r,1)},off:function(e,t,n){var r,i;if(e&&e.preventDefault&&e.handleObj)return r=e.handleObj,E(e.delegateTarget).off(r.namespace?r.origType+"."+r.namespace:r.origType,r.selector,r.handler),this;if("object"==typeof e){for(i in e)this.off(i,t,e[i]);return this}return!1!==t&&"function"!=typeof t||(n=t,t=void 0),!1===n&&(n=we),this.each(function(){E.event.remove(this,e,n,t)})}});var Ae=/<script|<style|<link/i,Ne=/checked\s*(?:[^=]|=\s*.checked.)/i,Se=/^\s*<!\[CDATA\[|\]\]>\s*$/g;function ke(e,t){return S(e,"table")&&S(11!==t.nodeType?t:t.firstChild,"tr")&&E(e).children("tbody")[0]||e}function De(e){return e.type=(null!==e.getAttribute("type"))+"/"+e.type,e}function Le(e){return"true/"===(e.type||"").slice(0,5)?e.type=e.type.slice(5):e.removeAttribute("type"),e}function je(e,t){var n,r,i,o,a,s;if(1===t.nodeType){if(Y.hasData(e)&&(s=Y.get(e).events))for(i in Y.remove(t,"handle events"),s)for(n=0,r=s[i].length;n<r;n++)E.event.add(t,i,s[i][n]);G.hasData(e)&&(o=G.access(e),a=E.extend({},o),G.set(t,a))}}function qe(n,r,i,o){r=v(r);var e,t,a,s,u,l,c=0,f=n.length,d=f-1,p=r[0],h=b(p);if(h||1<f&&"string"==typeof p&&!m.checkClone&&Ne.test(p))return n.each(function(e){var t=n.eq(e);h&&(r[0]=p.call(this,e,t.html())),qe(t,r,i,o)});if(f&&(t=(e=me(r,n[0].ownerDocument,!1,n,o)).firstChild,1===e.childNodes.length&&(e=t),t||o)){for(s=(a=E.map(ge(e,"script"),De)).length;c<f;c++)u=e,c!==d&&(u=E.clone(u,!0,!0),s&&E.merge(a,ge(u,"script"))),i.call(n[c],u,c);if(s)for(l=a[a.length-1].ownerDocument,E.map(a,Le),c=0;c<s;c++)u=a[c],pe.test(u.type||"")&&!Y.access(u,"globalEval")&&E.contains(l,u)&&(u.src&&"module"!==(u.type||"").toLowerCase()?E._evalUrl&&!u.noModule&&E._evalUrl(u.src,{nonce:u.nonce||u.getAttribute("nonce")},l):C(u.textContent.replace(Se,""),u,l))}return n}function Oe(e,t,n){for(var r,i=t?E.filter(t,e):e,o=0;null!=(r=i[o]);o++)n||1!==r.nodeType||E.cleanData(ge(r)),r.parentNode&&(n&&ie(r)&&ve(ge(r,"script")),r.parentNode.removeChild(r));return e}E.extend({htmlPrefilter:function(e){return e},clone:function(e,t,n){var r,i,o,a,s,u,l,c=e.cloneNode(!0),f=ie(e);if(!(m.noCloneChecked||1!==e.nodeType&&11!==e.nodeType||E.isXMLDoc(e)))for(a=ge(c),r=0,i=(o=ge(e)).length;r<i;r++)s=o[r],u=a[r],void 0,"input"===(l=u.nodeName.toLowerCase())&&fe.test(s.type)?u.checked=s.checked:"input"!==l&&"textarea"!==l||(u.defaultValue=s.defaultValue);if(t)if(n)for(o=o||ge(e),a=a||ge(c),r=0,i=o.length;r<i;r++)je(o[r],a[r]);else je(e,c);return 0<(a=ge(c,"script")).length&&ve(a,!f&&ge(e,"script")),c},cleanData:function(e){for(var t,n,r,i=E.event.special,o=0;void 0!==(n=e[o]);o++)if(X(n)){if(t=n[Y.expando]){if(t.events)for(r in t.events)i[r]?E.event.remove(n,r):E.removeEvent(n,r,t.handle);n[Y.expando]=void 0}n[G.expando]&&(n[G.expando]=void 0)}}}),E.fn.extend({detach:function(e){return Oe(this,e,!0)},remove:function(e){return Oe(this,e)},text:function(e){return $(this,function(e){return void 0===e?E.text(this):this.empty().each(function(){1!==this.nodeType&&11!==this.nodeType&&9!==this.nodeType||(this.textContent=e)})},null,e,arguments.length)},append:function(){return qe(this,arguments,function(e){1!==this.nodeType&&11!==this.nodeType&&9!==this.nodeType||ke(this,e).appendChild(e)})},prepend:function(){return qe(this,arguments,function(e){if(1===this.nodeType||11===this.nodeType||9===this.nodeType){var t=ke(this,e);t.insertBefore(e,t.firstChild)}})},before:function(){return qe(this,arguments,function(e){this.parentNode&&this.parentNode.insertBefore(e,this)})},after:function(){return qe(this,arguments,function(e){this.parentNode&&this.parentNode.insertBefore(e,this.nextSibling)})},empty:function(){for(var e,t=0;null!=(e=this[t]);t++)1===e.nodeType&&(E.cleanData(ge(e,!1)),e.textContent="");return this},clone:function(e,t){return e=null!=e&&e,t=null==t?e:t,this.map(function(){return E.clone(this,e,t)})},html:function(e){return $(this,function(e){var t=this[0]||{},n=0,r=this.length;if(void 0===e&&1===t.nodeType)return t.innerHTML;if("string"==typeof e&&!Ae.test(e)&&!he[(de.exec(e)||["",""])[1].toLowerCase()]){e=E.htmlPrefilter(e);try{for(;n<r;n++)1===(t=this[n]||{}).nodeType&&(E.cleanData(ge(t,!1)),t.innerHTML=e);t=0}catch(e){}}t&&this.empty().append(e)},null,e,arguments.length)},replaceWith:function(){var n=[];return qe(this,arguments,function(e){var t=this.parentNode;E.inArray(this,n)<0&&(E.cleanData(ge(this)),t&&t.replaceChild(e,this))},n)}}),E.each({appendTo:"append",prependTo:"prepend",insertBefore:"before",insertAfter:"after",replaceAll:"replaceWith"},function(e,a){E.fn[e]=function(e){for(var t,n=[],r=E(e),i=r.length-1,o=0;o<=i;o++)t=o===i?this:this.clone(!0),E(r[o])[a](t),u.apply(n,t.get());return this.pushStack(n)}});var Pe=new RegExp("^("+ee+")(?!px)[a-z%]+$","i"),He=/^--/,Ie=function(e){var t=e.ownerDocument.defaultView;return t&&t.opener||(t=g),t.getComputedStyle(e)},Re=function(e,t,n){var r,i,o={};for(i in t)o[i]=e.style[i],e.style[i]=t[i];for(i in r=n.call(e),t)e.style[i]=o[i];return r},Be=new RegExp(ne.join("|"),"i"),Me="[\\x20\\t\\r\\n\\f]",We=new RegExp("^"+Me+"+|((?:^|[^\\\\])(?:\\\\.)*)"+Me+"+$","g");function Fe(e,t,n){var r,i,o,a,s=He.test(t),u=e.style;return(n=n||Ie(e))&&(a=n.getPropertyValue(t)||n[t],s&&a&&(a=a.replace(We,"$1")||void 0),""!==a||ie(e)||(a=E.style(e,t)),!m.pixelBoxStyles()&&Pe.test(a)&&Be.test(t)&&(r=u.width,i=u.minWidth,o=u.maxWidth,u.minWidth=u.maxWidth=u.width=a,a=n.width,u.width=r,u.minWidth=i,u.maxWidth=o)),void 0!==a?a+"":a}function $e(e,t){return{get:function(){if(!e())return(this.get=t).apply(this,arguments);delete this.get}}}!function(){function e(){if(l){u.style.cssText="position:absolute;left:-11111px;width:60px;margin-top:1px;padding:0;border:0",l.style.cssText="position:relative;display:block;box-sizing:border-box;overflow:scroll;margin:auto;border:1px;padding:1px;width:60%;top:1%",re.appendChild(u).appendChild(l);var e=g.getComputedStyle(l);n="1%"!==e.top,s=12===t(e.marginLeft),l.style.right="60%",o=36===t(e.right),r=36===t(e.width),l.style.position="absolute",i=12===t(l.offsetWidth/3),re.removeChild(u),l=null}}function t(e){return Math.round(parseFloat(e))}var n,r,i,o,a,s,u=w.createElement("div"),l=w.createElement("div");l.style&&(l.style.backgroundClip="content-box",l.cloneNode(!0).style.backgroundClip="",m.clearCloneStyle="content-box"===l.style.backgroundClip,E.extend(m,{boxSizingReliable:function(){return e(),r},pixelBoxStyles:function(){return e(),o},pixelPosition:function(){return e(),n},reliableMarginLeft:function(){return e(),s},scrollboxSize:function(){return e(),i},reliableTrDimensions:function(){var e,t,n,r;return null==a&&(e=w.createElement("table"),t=w.createElement("tr"),n=w.createElement("div"),e.style.cssText="position:absolute;left:-11111px;border-collapse:separate",t.style.cssText="border:1px solid",t.style.height="1px",n.style.height="9px",n.style.display="block",re.appendChild(e).appendChild(t).appendChild(n),r=g.getComputedStyle(t),a=parseInt(r.height,10)+parseInt(r.borderTopWidth,10)+parseInt(r.borderBottomWidth,10)===t.offsetHeight,re.removeChild(e)),a}}))}();var ze=["Webkit","Moz","ms"],_e=w.createElement("div").style,Ue={};function Ve(e){var t=E.cssProps[e]||Ue[e];return t||(e in _e?e:Ue[e]=function(e){var t=e[0].toUpperCase()+e.slice(1),n=ze.length;while(n--)if((e=ze[n]+t)in _e)return e}(e)||e)}var Xe,Qe,Ye=/^(none|table(?!-c[ea]).+)/,Ge={position:"absolute",visibility:"hidden",display:"block"},Ke={letterSpacing:"0",fontWeight:"400"};function Je(e,t,n){var r=te.exec(t);return r?Math.max(0,r[2]-(n||0))+(r[3]||"px"):t}function Ze(e,t,n,r,i,o){var a="width"===t?1:0,s=0,u=0;if(n===(r?"border":"content"))return 0;for(;a<4;a+=2)"margin"===n&&(u+=E.css(e,n+ne[a],!0,i)),r?("content"===n&&(u-=E.css(e,"padding"+ne[a],!0,i)),"margin"!==n&&(u-=E.css(e,"border"+ne[a]+"Width",!0,i))):(u+=E.css(e,"padding"+ne[a],!0,i),"padding"!==n?u+=E.css(e,"border"+ne[a]+"Width",!0,i):s+=E.css(e,"border"+ne[a]+"Width",!0,i));return!r&&0<=o&&(u+=Math.max(0,Math.ceil(e["offset"+t[0].toUpperCase()+t.slice(1)]-o-u-s-.5))||0),u}function et(e,t,n){var r=Ie(e),i=(!m.boxSizingReliable()||n)&&"border-box"===E.css(e,"boxSizing",!1,r),o=i,a=Fe(e,t,r),s="offset"+t[0].toUpperCase()+t.slice(1);if(Pe.test(a)){if(!n)return a;a="auto"}return(!m.boxSizingReliable()&&i||!m.reliableTrDimensions()&&S(e,"tr")||"auto"===a||!parseFloat(a)&&"inline"===E.css(e,"display",!1,r))&&e.getClientRects().length&&(i="border-box"===E.css(e,"boxSizing",!1,r),(o=s in e)&&(a=e[s])),(a=parseFloat(a)||0)+Ze(e,t,n||(i?"border":"content"),o,r,a)+"px"}E.extend({cssHooks:{opacity:{get:function(e,t){if(t){var n=Fe(e,"opacity");return""===n?"1":n}}}},cssNumber:{animationIterationCount:!0,columnCount:!0,fillOpacity:!0,flexGrow:!0,flexShrink:!0,fontWeight:!0,gridArea:!0,gridColumn:!0,gridColumnEnd:!0,gridColumnStart:!0,gridRow:!0,gridRowEnd:!0,gridRowStart:!0,lineHeight:!0,opacity:!0,order:!0,orphans:!0,widows:!0,zIndex:!0,zoom:!0},cssProps:{},style:function(e,t,n,r){if(e&&3!==e.nodeType&&8!==e.nodeType&&e.style){var i,o,a,s=V(t),u=He.test(t),l=e.style;if(u||(t=Ve(s)),a=E.cssHooks[t]||E.cssHooks[s],void 0===n)return a&&"get"in a&&void 0!==(i=a.get(e,!1,r))?i:l[t];"string"===(o=typeof n)&&(i=te.exec(n))&&i[1]&&(n=function(e,t,n,r){var i,o,a=20,s=r?function(){return r.cur()}:function(){return E.css(e,t,"")},u=s(),l=n&&n[3]||(E.cssNumber[t]?"":"px"),c=e.nodeType&&(E.cssNumber[t]||"px"!==l&&+u)&&te.exec(E.css(e,t));if(c&&c[3]!==l){u/=2,l=l||c[3],c=+u||1;while(a--)E.style(e,t,c+l),(1-o)*(1-(o=s()/u||.5))<=0&&(a=0),c/=o;c*=2,E.style(e,t,c+l),n=n||[]}return n&&(c=+c||+u||0,i=n[1]?c+(n[1]+1)*n[2]:+n[2],r&&(r.unit=l,r.start=c,r.end=i)),i}(e,t,i),o="number"),null!=n&&n==n&&("number"!==o||u||(n+=i&&i[3]||(E.cssNumber[s]?"":"px")),m.clearCloneStyle||""!==n||0!==t.indexOf("background")||(l[t]="inherit"),a&&"set"in a&&void 0===(n=a.set(e,n,r))||(u?l.setProperty(t,n):l[t]=n))}},css:function(e,t,n,r){var i,o,a,s=V(t);return He.test(t)||(t=Ve(s)),(a=E.cssHooks[t]||E.cssHooks[s])&&"get"in a&&(i=a.get(e,!0,n)),void 0===i&&(i=Fe(e,t,r)),"normal"===i&&t in Ke&&(i=Ke[t]),""===n||n?(o=parseFloat(i),!0===n||isFinite(o)?o||0:i):i}}),E.each(["height","width"],function(e,u){E.cssHooks[u]={get:function(e,t,n){if(t)return!Ye.test(E.css(e,"display"))||e.getClientRects().length&&e.getBoundingClientRect().width?et(e,u,n):Re(e,Ge,function(){return et(e,u,n)})},set:function(e,t,n){var r,i=Ie(e),o=!m.scrollboxSize()&&"absolute"===i.position,a=(o||n)&&"border-box"===E.css(e,"boxSizing",!1,i),s=n?Ze(e,u,n,a,i):0;return a&&o&&(s-=Math.ceil(e["offset"+u[0].toUpperCase()+u.slice(1)]-parseFloat(i[u])-Ze(e,u,"border",!1,i)-.5)),s&&(r=te.exec(t))&&"px"!==(r[3]||"px")&&(e.style[u]=t,t=E.css(e,u)),Je(0,t,s)}}}),E.cssHooks.marginLeft=$e(m.reliableMarginLeft,function(e,t){if(t)return(parseFloat(Fe(e,"marginLeft"))||e.getBoundingClientRect().left-Re(e,{marginLeft:0},function(){return e.getBoundingClientRect().left}))+"px"}),E.each({margin:"",padding:"",border:"Width"},function(i,o){E.cssHooks[i+o]={expand:function(e){for(var t=0,n={},r="string"==typeof e?e.split(" "):[e];t<4;t++)n[i+ne[t]+o]=r[t]||r[t-2]||r[0];return n}},"margin"!==i&&(E.cssHooks[i+o].set=Je)}),E.fn.extend({css:function(e,t){return $(this,function(e,t,n){var r,i,o={},a=0;if(Array.isArray(t)){for(r=Ie(e),i=t.length;a<i;a++)o[t[a]]=E.css(e,t[a],!1,r);return o}return void 0!==n?E.style(e,t,n):E.css(e,t)},e,t,1<arguments.length)}}),E.fn.delay=function(r,e){return r=E.fx&&E.fx.speeds[r]||r,e=e||"fx",this.queue(e,function(e,t){var n=g.setTimeout(e,r);t.stop=function(){g.clearTimeout(n)}})},Xe=w.createElement("input"),Qe=w.createElement("select").appendChild(w.createElement("option")),Xe.type="checkbox",m.checkOn=""!==Xe.value,m.optSelected=Qe.selected,(Xe=w.createElement("input")).value="t",Xe.type="radio",m.radioValue="t"===Xe.value;var tt,nt=E.expr.attrHandle;E.fn.extend({attr:function(e,t){return $(this,E.attr,e,t,1<arguments.length)},removeAttr:function(e){return this.each(function(){E.removeAttr(this,e)})}}),E.extend({attr:function(e,t,n){var r,i,o=e.nodeType;if(3!==o&&8!==o&&2!==o)return"undefined"==typeof e.getAttribute?E.prop(e,t,n):(1===o&&E.isXMLDoc(e)||(i=E.attrHooks[t.toLowerCase()]||(E.expr.match.bool.test(t)?tt:void 0)),void 0!==n?null===n?void E.removeAttr(e,t):i&&"set"in i&&void 0!==(r=i.set(e,n,t))?r:(e.setAttribute(t,n+""),n):i&&"get"in i&&null!==(r=i.get(e,t))?r:null==(r=E.find.attr(e,t))?void 0:r)},attrHooks:{type:{set:function(e,t){if(!m.radioValue&&"radio"===t&&S(e,"input")){var n=e.value;return e.setAttribute("type",t),n&&(e.value=n),t}}}},removeAttr:function(e,t){var n,r=0,i=t&&t.match(H);if(i&&1===e.nodeType)while(n=i[r++])e.removeAttribute(n)}}),tt={set:function(e,t,n){return!1===t?E.removeAttr(e,n):e.setAttribute(n,n),n}},E.each(E.expr.match.bool.source.match(/\w+/g),function(e,t){var a=nt[t]||E.find.attr;nt[t]=function(e,t,n){var r,i,o=t.toLowerCase();return n||(i=nt[o],nt[o]=r,r=null!=a(e,t,n)?o:null,nt[o]=i),r}});var rt=/^(?:input|select|textarea|button)$/i,it=/^(?:a|area)$/i;function ot(e){return(e.match(H)||[]).join(" ")}function at(e){return e.getAttribute&&e.getAttribute("class")||""}function st(e){return Array.isArray(e)?e:"string"==typeof e&&e.match(H)||[]}E.fn.extend({prop:function(e,t){return $(this,E.prop,e,t,1<arguments.length)},removeProp:function(e){return this.each(function(){delete this[E.propFix[e]||e]})}}),E.extend({prop:function(e,t,n){var r,i,o=e.nodeType;if(3!==o&&8!==o&&2!==o)return 1===o&&E.isXMLDoc(e)||(t=E.propFix[t]||t,i=E.propHooks[t]),void 0!==n?i&&"set"in i&&void 0!==(r=i.set(e,n,t))?r:e[t]=n:i&&"get"in i&&null!==(r=i.get(e,t))?r:e[t]},propHooks:{tabIndex:{get:function(e){var t=E.find.attr(e,"tabindex");return t?parseInt(t,10):rt.test(e.nodeName)||it.test(e.nodeName)&&e.href?0:-1}}},propFix:{"for":"htmlFor","class":"className"}}),m.optSelected||(E.propHooks.selected={get:function(e){var t=e.parentNode;return t&&t.parentNode&&t.parentNode.selectedIndex,null},set:function(e){var t=e.parentNode;t&&(t.selectedIndex,t.parentNode&&t.parentNode.selectedIndex)}}),E.each(["tabIndex","readOnly","maxLength","cellSpacing","cellPadding","rowSpan","colSpan","useMap","frameBorder","contentEditable"],function(){E.propFix[this.toLowerCase()]=this}),E.fn.extend({addClass:function(t){var e,n,r,i,o,a;return b(t)?this.each(function(e){E(this).addClass(t.call(this,e,at(this)))}):(e=st(t)).length?this.each(function(){if(r=at(this),n=1===this.nodeType&&" "+ot(r)+" "){for(o=0;o<e.length;o++)i=e[o],n.indexOf(" "+i+" ")<0&&(n+=i+" ");a=ot(n),r!==a&&this.setAttribute("class",a)}}):this},removeClass:function(t){var e,n,r,i,o,a;return b(t)?this.each(function(e){E(this).removeClass(t.call(this,e,at(this)))}):arguments.length?(e=st(t)).length?this.each(function(){if(r=at(this),n=1===this.nodeType&&" "+ot(r)+" "){for(o=0;o<e.length;o++){i=e[o];while(-1<n.indexOf(" "+i+" "))n=n.replace(" "+i+" "," ")}a=ot(n),r!==a&&this.setAttribute("class",a)}}):this:this.attr("class","")},toggleClass:function(t,n){var e,r,i,o,a=typeof t,s="string"===a||Array.isArray(t);return b(t)?this.each(function(e){E(this).toggleClass(t.call(this,e,at(this),n),n)}):"boolean"==typeof n&&s?n?this.addClass(t):this.removeClass(t):(e=st(t),this.each(function(){if(s)for(o=E(this),i=0;i<e.length;i++)r=e[i],o.hasClass(r)?o.removeClass(r):o.addClass(r);else void 0!==t&&"boolean"!==a||((r=at(this))&&Y.set(this,"__className__",r),this.setAttribute&&this.setAttribute("class",r||!1===t?"":Y.get(this,"__className__")||""))}))},hasClass:function(e){var t,n,r=0;t=" "+e+" ";while(n=this[r++])if(1===n.nodeType&&-1<(" "+ot(at(n))+" ").indexOf(t))return!0;return!1}});var ut=/\r/g;E.fn.extend({val:function(n){var r,e,i,t=this[0];return arguments.length?(i=b(n),this.each(function(e){var t;1===this.nodeType&&(null==(t=i?n.call(this,e,E(this).val()):n)?t="":"number"==typeof t?t+="":Array.isArray(t)&&(t=E.map(t,function(e){return null==e?"":e+""})),(r=E.valHooks[this.type]||E.valHooks[this.nodeName.toLowerCase()])&&"set"in r&&void 0!==r.set(this,t,"value")||(this.value=t))})):t?(r=E.valHooks[t.type]||E.valHooks[t.nodeName.toLowerCase()])&&"get"in r&&void 0!==(e=r.get(t,"value"))?e:"string"==typeof(e=t.value)?e.replace(ut,""):null==e?"":e:void 0}}),E.extend({valHooks:{option:{get:function(e){var t=E.find.attr(e,"value");return null!=t?t:ot(E.text(e))}},select:{get:function(e){var t,n,r,i=e.options,o=e.selectedIndex,a="select-one"===e.type,s=a?null:[],u=a?o+1:i.length;for(r=o<0?u:a?o:0;r<u;r++)if(((n=i[r]).selected||r===o)&&!n.disabled&&(!n.parentNode.disabled||!S(n.parentNode,"optgroup"))){if(t=E(n).val(),a)return t;s.push(t)}return s},set:function(e,t){var n,r,i=e.options,o=E.makeArray(t),a=i.length;while(a--)((r=i[a]).selected=-1<E.inArray(E.valHooks.option.get(r),o))&&(n=!0);return n||(e.selectedIndex=-1),o}}}}),E.each(["radio","checkbox"],function(){E.valHooks[this]={set:function(e,t){if(Array.isArray(t))return e.checked=-1<E.inArray(E(e).val(),t)}},m.checkOn||(E.valHooks[this].get=function(e){return null===e.getAttribute("value")?"on":e.value})}),m.focusin="onfocusin"in g;var lt=/^(?:focusinfocus|focusoutblur)$/,ct=function(e){e.stopPropagation()};E.extend(E.event,{trigger:function(e,t,n,r){var i,o,a,s,u,l,c,f,d=[n||w],p=y.call(e,"type")?e.type:e,h=y.call(e,"namespace")?e.namespace.split("."):[];if(o=f=a=n=n||w,3!==n.nodeType&&8!==n.nodeType&&!lt.test(p+E.event.triggered)&&(-1<p.indexOf(".")&&(p=(h=p.split(".")).shift(),h.sort()),u=p.indexOf(":")<0&&"on"+p,(e=e[E.expando]?e:new E.Event(p,"object"==typeof e&&e)).isTrigger=r?2:3,e.namespace=h.join("."),e.rnamespace=e.namespace?new RegExp("(^|\\.)"+h.join("\\.(?:.*\\.|)")+"(\\.|$)"):null,e.result=void 0,e.target||(e.target=n),t=null==t?[e]:E.makeArray(t,[e]),c=E.event.special[p]||{},r||!c.trigger||!1!==c.trigger.apply(n,t))){if(!r&&!c.noBubble&&!x(n)){for(s=c.delegateType||p,lt.test(s+p)||(o=o.parentNode);o;o=o.parentNode)d.push(o),a=o;a===(n.ownerDocument||w)&&d.push(a.defaultView||a.parentWindow||g)}i=0;while((o=d[i++])&&!e.isPropagationStopped())f=o,e.type=1<i?s:c.bindType||p,(l=(Y.get(o,"events")||Object.create(null))[e.type]&&Y.get(o,"handle"))&&l.apply(o,t),(l=u&&o[u])&&l.apply&&X(o)&&(e.result=l.apply(o,t),!1===e.result&&e.preventDefault());return e.type=p,r||e.isDefaultPrevented()||c._default&&!1!==c._default.apply(d.pop(),t)||!X(n)||u&&b(n[p])&&!x(n)&&((a=n[u])&&(n[u]=null),E.event.triggered=p,e.isPropagationStopped()&&f.addEventListener(p,ct),n[p](),e.isPropagationStopped()&&f.removeEventListener(p,ct),E.event.triggered=void 0,a&&(n[u]=a)),e.result}},simulate:function(e,t,n){var r=E.extend(new E.Event,n,{type:e,isSimulated:!0});E.event.trigger(r,null,t)}}),E.fn.extend({trigger:function(e,t){return this.each(function(){E.event.trigger(e,t,this)})},triggerHandler:function(e,t){var n=this[0];if(n)return E.event.trigger(e,t,n,!0)}}),m.focusin||E.each({focus:"focusin",blur:"focusout"},function(n,r){var i=function(e){E.event.simulate(r,e.target,E.event.fix(e))};E.event.special[r]={setup:function(){var e=this.ownerDocument||this.document||this,t=Y.access(e,r);t||e.addEventListener(n,i,!0),Y.access(e,r,(t||0)+1)},teardown:function(){var e=this.ownerDocument||this.document||this,t=Y.access(e,r)-1;t?Y.access(e,r,t):(e.removeEventListener(n,i,!0),Y.remove(e,r))}}}),E.parseXML=function(e){var t,n;if(!e||"string"!=typeof e)return null;try{t=(new g.DOMParser).parseFromString(e,"text/xml")}catch(e){}return n=t&&t.getElementsByTagName("parsererror")[0],t&&!n||E.error("Invalid XML: "+(n?E.map(n.childNodes,function(e){return e.textContent}).join("\n"):e)),t};var ft,dt=/\[\]$/,pt=/\r?\n/g,ht=/^(?:submit|button|image|reset|file)$/i,gt=/^(?:input|select|textarea|keygen)/i;function vt(n,e,r,i){var t;if(Array.isArray(e))E.each(e,function(e,t){r||dt.test(n)?i(n,t):vt(n+"["+("object"==typeof t&&null!=t?e:"")+"]",t,r,i)});else if(r||"object"!==T(e))i(n,e);else for(t in e)vt(n+"["+t+"]",e[t],r,i)}E.param=function(e,t){var n,r=[],i=function(e,t){var n=b(t)?t():t;r[r.length]=encodeURIComponent(e)+"="+encodeURIComponent(null==n?"":n)};if(null==e)return"";if(Array.isArray(e)||e.jquery&&!E.isPlainObject(e))E.each(e,function(){i(this.name,this.value)});else for(n in e)vt(n,e[n],t,i);return r.join("&")},E.fn.extend({serialize:function(){return E.param(this.serializeArray())},serializeArray:function(){return this.map(function(){var e=E.prop(this,"elements");return e?E.makeArray(e):this}).filter(function(){var e=this.type;return this.name&&!E(this).is(":disabled")&&gt.test(this.nodeName)&&!ht.test(e)&&(this.checked||!fe.test(e))}).map(function(e,t){var n=E(this).val();return null==n?null:Array.isArray(n)?E.map(n,function(e){return{name:t.name,value:e.replace(pt,"\r\n")}}):{name:t.name,value:n.replace(pt,"\r\n")}}).get()}}),E.fn.extend({wrapAll:function(e){var t;return this[0]&&(b(e)&&(e=e.call(this[0])),t=E(e,this[0].ownerDocument).eq(0).clone(!0),this[0].parentNode&&t.insertBefore(this[0]),t.map(function(){var e=this;while(e.firstElementChild)e=e.firstElementChild;return e}).append(this)),this},wrapInner:function(n){return b(n)?this.each(function(e){E(this).wrapInner(n.call(this,e))}):this.each(function(){var e=E(this),t=e.contents();t.length?t.wrapAll(n):e.append(n)})},wrap:function(t){var n=b(t);return this.each(function(e){E(this).wrapAll(n?t.call(this,e):t)})},unwrap:function(e){return this.parent(e).not("body").each(function(){E(this).replaceWith(this.childNodes)}),this}}),E.expr.pseudos.hidden=function(e){return!E.expr.pseudos.visible(e)},E.expr.pseudos.visible=function(e){return!!(e.offsetWidth||e.offsetHeight||e.getClientRects().length)},m.createHTMLDocument=((ft=w.implementation.createHTMLDocument("").body).innerHTML="<form></form><form></form>",2===ft.childNodes.length),E.parseHTML=function(e,t,n){return"string"!=typeof e?[]:("boolean"==typeof t&&(n=t,t=!1),t||(m.createHTMLDocument?((r=(t=w.implementation.createHTMLDocument("")).createElement("base")).href=w.location.href,t.head.appendChild(r)):t=w),o=!n&&[],(i=k.exec(e))?[t.createElement(i[1])]:(i=me([e],t,o),o&&o.length&&E(o).remove(),E.merge([],i.childNodes)));var r,i,o},E.offset={setOffset:function(e,t,n){var r,i,o,a,s,u,l=E.css(e,"position"),c=E(e),f={};"static"===l&&(e.style.position="relative"),s=c.offset(),o=E.css(e,"top"),u=E.css(e,"left"),("absolute"===l||"fixed"===l)&&-1<(o+u).indexOf("auto")?(a=(r=c.position()).top,i=r.left):(a=parseFloat(o)||0,i=parseFloat(u)||0),b(t)&&(t=t.call(e,n,E.extend({},s))),null!=t.top&&(f.top=t.top-s.top+a),null!=t.left&&(f.left=t.left-s.left+i),"using"in t?t.using.call(e,f):c.css(f)}},E.fn.extend({offset:function(t){if(arguments.length)return void 0===t?this:this.each(function(e){E.offset.setOffset(this,t,e)});var e,n,r=this[0];return r?r.getClientRects().length?(e=r.getBoundingClientRect(),n=r.ownerDocument.defaultView,{top:e.top+n.pageYOffset,left:e.left+n.pageXOffset}):{top:0,left:0}:void 0},position:function(){if(this[0]){var e,t,n,r=this[0],i={top:0,left:0};if("fixed"===E.css(r,"position"))t=r.getBoundingClientRect();else{t=this.offset(),n=r.ownerDocument,e=r.offsetParent||n.documentElement;while(e&&(e===n.body||e===n.documentElement)&&"static"===E.css(e,"position"))e=e.parentNode;e&&e!==r&&1===e.nodeType&&((i=E(e).offset()).top+=E.css(e,"borderTopWidth",!0),i.left+=E.css(e,"borderLeftWidth",!0))}return{top:t.top-i.top-E.css(r,"marginTop",!0),left:t.left-i.left-E.css(r,"marginLeft",!0)}}},offsetParent:function(){return this.map(function(){var e=this.offsetParent;while(e&&"static"===E.css(e,"position"))e=e.offsetParent;return e||re})}}),E.each({scrollLeft:"pageXOffset",scrollTop:"pageYOffset"},function(t,i){var o="pageYOffset"===i;E.fn[t]=function(e){return $(this,function(e,t,n){var r;if(x(e)?r=e:9===e.nodeType&&(r=e.defaultView),void 0===n)return r?r[i]:e[t];r?r.scrollTo(o?r.pageXOffset:n,o?n:r.pageYOffset):e[t]=n},t,e,arguments.length)}}),E.each(["top","left"],function(e,n){E.cssHooks[n]=$e(m.pixelPosition,function(e,t){if(t)return t=Fe(e,n),Pe.test(t)?E(e).position()[n]+"px":t})}),E.each({Height:"height",Width:"width"},function(a,s){E.each({padding:"inner"+a,content:s,"":"outer"+a},function(r,o){E.fn[o]=function(e,t){var n=arguments.length&&(r||"boolean"!=typeof e),i=r||(!0===e||!0===t?"margin":"border");return $(this,function(e,t,n){var r;return x(e)?0===o.indexOf("outer")?e["inner"+a]:e.document.documentElement["client"+a]:9===e.nodeType?(r=e.documentElement,Math.max(e.body["scroll"+a],r["scroll"+a],e.body["offset"+a],r["offset"+a],r["client"+a])):void 0===n?E.css(e,t,i):E.style(e,t,n,i)},s,n?e:void 0,n)}})}),E.fn.extend({bind:function(e,t,n){return this.on(e,null,t,n)},unbind:function(e,t){return this.off(e,null,t)},delegate:function(e,t,n,r){return this.on(t,e,n,r)},undelegate:function(e,t,n){return 1===arguments.length?this.off(e,"**"):this.off(t,e||"**",n)},hover:function(e,t){return this.mouseenter(e).mouseleave(t||e)}}),E.each("blur focus focusin focusout resize scroll click dblclick mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave change select submit keydown keypress keyup contextmenu".split(" "),function(e,n){E.fn[n]=function(e,t){return 0<arguments.length?this.on(n,null,e,t):this.trigger(n)}});var yt=/^[\s\uFEFF\xA0]+|([^\s\uFEFF\xA0])[\s\uFEFF\xA0]+$/g;E.proxy=function(e,t){var n,r,i;if("string"==typeof t&&(n=e[t],t=e,e=n),b(e))return r=s.call(arguments,2),(i=function(){return e.apply(t||this,r.concat(s.call(arguments)))}).guid=e.guid=e.guid||E.guid++,i},E.holdReady=function(e){e?E.readyWait++:E.ready(!0)},E.isArray=Array.isArray,E.parseJSON=JSON.parse,E.nodeName=S,E.isFunction=b,E.isWindow=x,E.camelCase=V,E.type=T,E.now=Date.now,E.isNumeric=function(e){var t=E.type(e);return("number"===t||"string"===t)&&!isNaN(e-parseFloat(e))},E.trim=function(e){return null==e?"":(e+"").replace(yt,"$1")},"function"==typeof define&&define.amd&&define("jquery",[],function(){return E});var mt=g.jQuery,bt=g.$;return E.noConflict=function(e){return g.$===E&&(g.$=bt),e&&g.jQuery===E&&(g.jQuery=mt),E},"undefined"==typeof e&&(g.jQuery=g.$=E),E});
+</script>
+</head>
+<body>
+<a href="https://hailiang-wang.github.io" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+<style>
+.float-message {
+	position:fixed;
+  	z-index:1001;
+  	max-width:400px;
+  	bottom:20px;
+  	right:20px;
+  	padding:30px;
+  	color:#444;
+  	font-size:16px;
+  	border-radius:5px;
+  	background:#FFF;
+  	box-shadow:0px 5px 10px rgba(0,0,0,0.5);
+}
+.float-message-inner {
+	position:relative;
+}
+.close-link {
+	text-decoration:none;
+  	color:#444;
+  	font-weight:bold;
+  	position:absolute;
+  	top:-15px;
+  	right:-15px;
+  	font-size:18px;
+}
+
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+
+    0%,
+    100% {
+        transform: rotate(0)
+    }
+
+    20%,
+    60% {
+        transform: rotate(-25deg)
+    }
+
+    40%,
+    80% {
+        transform: rotate(10deg)
+    }
+}
+
+@media (max-width:500px) {
+    .github-corner:hover .octo-arm {
+        animation: none
+    }
+
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out
+    }
+}
+</style>
+<article class="markdown-body">
+<h1 id="读周易">读《周易》</h1>
+<p>孔子在年老的时候说：假如我在五十岁就学习《周易》，那我会少犯很多错误 <a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>。</p>
+<p>《周易》，之前我一直觉得是玄学，是江湖术士之书。2018 年左右，听曾仕强教授讲“中华文化源于易 <a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> 而成于孝”，有志于读此书。</p>
+<p>有关《周易》的资料很多，我采纳的资料是：</p>
+<ul>
+<li>《道德经》</li>
+<li>《论语》</li>
+<li>《周易正读》（徐丛 2003） <a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></li>
+</ul>
+<p>周易，是一部不容易理解的书，《道德经》和《论语》，都与周易有着千丝万缕的联系。就目前，学习了周易一遍以后，我可以感到：《道德经》偏向于《周易》的上经 <a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a> ，讲王道；《论语》侧重于《周易》的下经，讲仁 <a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a> 道。《周易正读》包括周朝历史、周易本义和译文等内容。</p>
+<p>自 2014 年以来，有感于《道德经》，到现在，翻阅了多次。加之，2022 年至今，学习《论语》，今年 <a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a> 对论语终于有了比较多的感悟。有了这两个基础，我才开始学习《周易》。为什么呢？因为周易的作者，是周朝建立者中的一人或者多人 <a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a> ，而作《道德经》的老子，是周朝末期的图书馆管理员，孔子是周公旦的迷弟，孔门则是周朝制度的拥护者，倡导者。</p>
+<p>尽管《周易》中，有大智慧，时代在发展进步，并不能将其中的每句话作为金科玉律来看待，反而是学习研究，去其糟粕而取其精华。</p>
+<h1 id="周易与算命">《周易》与算命</h1>
+<p>因为传统文化，一谈到周易，就让人联想到算命先生，带着八卦旗走街串巷，现代人会感到落后、迷信。但是随着人年龄的增长，很多现代的老年人也是非常相信的。</p>
+<p>该如何看待这种现象？首先，如果自己可以看清楚某种选择，则不用算；其次是，算了之后，也不必尽信。</p>
+<h2 id="决策机制">决策机制</h2>
+<p>周易算命于我，是一种决策机制，而不是迷信 <a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a> 。</p>
+<p>我觉得使用周易算命的过程，应该采用排除法进行决策：<strong>在尽可能的收集了所算之事的信息之后，在六十四卦中，选择相关的卦，然后通过分析的方式一个个排除，如果还是剩下了多个选项，则使用抓阄的方式选出。</strong></p>
+<h2 id="吉凶的含义">吉凶的含义</h2>
+<p>使用周易占卜，除了爻辞中，教导行为的选择，每每还带有吉或者凶的判断。首先，我们都是有选择的，我们占卜了一个结果，但是并不一定按照爻辞去做，因为爻辞更是给定了我们一个范围，就是：<strong>《周易》并不会教导我们应该如何做，而是告诉我们什么样的行为会有什么样的结果（吉或凶）。</strong></p>
+<h1 id="周易与说教">《周易》与说教</h1>
+<p>《周易》中，很强调美德。但是号召人修养美德的原因，是为了躲避灾祸，而不是说，积善行的能获得多少福气好处。</p>
+<p>同时，周易中，也提倡对敌人给与打击，因此孔子也会说：以德报怨，何以报德？</p>
+<p>所以，《周易》就是从【实用】的角度去处理生活中的各种事情，并不是对人性善、或者人性恶，做一个选择。</p>
+<h1 id="周易的上经注释">《周易》的上经注释</h1>
+<p>以下，采用《周易正读》中，做的周易的今人译文 <a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a>。</p>
+<p>因为周易本义十分晦涩，三千年来，有许多种不同的解读。《周易正读》只是一家之言。</p>
+<h2 id="乾">1. 乾</h2>
+<p>遵循天道的规律行事，是人事活动可以顺利发展的基础，必须对此有正确的认识：</p>
+<ul>
+<li>王者的形成，需要得到民众的拥护；</li>
+<li>当为王的实力得到显现时，利于寻求到德才兼备的管理者帮助；</li>
+<li>品德高尚的领袖整天都遵循正确的方式不断努力进取，夜晚也保持警惕，提防随时可能发生的危险，因此，就不会因为自己的过错而造成灾难；</li>
+<li>或者在激烈的社会变革中推翻旧王，没有过错；</li>
+<li>在掌握最高权力、登上天子宝座的时候，利于得到有协调邦国能力的人才支持；</li>
+<li>与贤明的君王对抗，将带来悔恨。</li>
+</ul>
+<h2 id="坤">2. 坤</h2>
+<p>适宜人类生存和生活的肥沃土地，是国家得于顺利发展的根本，必须对养育我们的生存环境有一个正确的认识。贤明的领袖现在拥有一个安居乐业的地方，但开始的时候却感到迷惑，后来才明白了其中的道理：西南方向肥沃的周原地区有利于发展经济，而东北方向贫瘠的山区只会造成贫穷。对安居乐业的环境有了正确的认识，才能产生一个完满的结局：</p>
+<ul>
+<li>正如践踏到地霜的时候，严寒就要随之来临一样。我们要有远见卓识，从土地之类小问题上看到它对国家命运的影响；</li>
+<li>平直、方正、辽阔是选择土地的标准，只要符合此标准，即使是陌生的未被开垦的生地，也没有什么不好；</li>
+<li>有了充足的经济实力，也就具备了为王者的条件，就可以称王。但即使是自己不称王，而继续臣服于旧王，最终的结局不用你去策化，也同样会被推举为王；</li>
+<li>将财富管紧，没有过错，但也不值得赞赏；</li>
+<li>掌握中央政权，是完满的根本；</li>
+<li>正如春冬之季，会引发气候的剧烈变化一样。为获取政权，必须发动一场惨烈的战争。</li>
+</ul>
+<h2 id="屯">3. 屯</h2>
+<p>立朝建国，是亨通的基础，利于有一个正确的认识。能得到民众的拥护，才能有一个安定繁荣的政治局面：</p>
+<ul>
+<li>为巩固国家新生的政权，必须对应该如何依礼制的规范、公正地规划民众赖于生存和居住的土地资源，有一个正确的认识。必须建立法规，设官分职、分封诸侯，以建立建全国家的各级管理机构；</li>
+<li>灭商前夕，周族的军事准备已经完成，但却犹豫不决，没有立即去夺取商族的政权。因为我们不想如抢劫的强盗和土匪一般去掠夺商族，而是希望如男女婚配一样让商周两族融合。商族当然不会主动放弃已有的政权，而来帮助周族建立新政权。只有当我们一切都准备周全，条件完全成熟后，他们才会来与我们融合；</li>
+<li>夺取商王的政权，还缺少一个能够管理这个政权的能人。我们因此而要考虑灭商后可能出现的严重后果。我们的君王明察秋毫，认识到以其盲目的行动，还不如暂时放弃的好。因为盲目的行动将会造成难于挽回的严重后果而留下遗恨；</li>
+<li>全副武装的战士乘着战车排列整齐，威武雄壮。夺取商王政权、与商族融合的行动取得了圆满的成功，没有什么不好的事发生；</li>
+<li>囤积夺权过程中获取的商王宝藏，对于处理一般事务是有利的。但是对于巩固国家新政权这样的大事却将有害；</li>
+<li>全副武装的战士乘着战车排列整齐，威武又雄壮。新政权的诞生也伴随着难以避免的血泪与悲伤。</li>
+</ul>
+<h2 id="蒙">4. 蒙</h2>
+<p>教育愚昧无知的人使之通达开化有一个基本的原则：不是我有求于需要监管的愚昧者，而是这些被监管者有求于我，初次犯法可以警告后赦免他们，反复犯法罪行就深重了，深重的违法行为不能赦免。必须有这种正确的认识：</p>
+<ul>
+<li>启发和教育愚昧无知者。要利用受到惩罚的人为例子，给他们讲法律的规范和要求。告知他们，如果触犯了法律所禁止的事，就将受到法律的制裁而留下悔恨；</li>
+<li>包容愚昧无知者是正确的，因为国家需要全民的支持。这就如孤老娶已婚的妇女是正确的一样，因为她带来的孩子可以承担起家庭的责任；</li>
+<li>如果我们去聚众掠夺愚昧者，一定会遭到顽强的抵抗，这就如聚众去抢亲时会遭遇到对方男人们的顽强抵抗一样。面对这种抵抗不是会感到进退两难而窘迫吗？这样做的结果既不会带来安宁，也不会带来利益；</li>
+<li>围困、孤立愚昧者，会留下遗憾；</li>
+<li>监管愚昧者，会有一个完满的结局；</li>
+<li>对愚昧者实施的打击，不利于以掠夺为目的，只利于用来防备和制止犯罪行为的发生。</li>
+</ul>
+<h2 id="需">5. 需</h2>
+<p>对财富的索取，如果能够做到诚实守信，光明正大，就可以顺利地达到目的。有了这种正确的认识，就有利于在得到民众拥护的前提下完成重大的事业，就会有一个完满的结局：</p>
+<ul>
+<li>从郊区获取农业税收，利于执行稳定的政策，就不会有过错；</li>
+<li>在临近边界的地区获取所需的利益，会引发小的争议。正如在界河边的沙滩上捕鱼会引起对方的警告一样。但只要不过界，最终的结局还是完善的；</li>
+<li>在主权有争议的地区获取所需的利益，将会导致严重的冲突发生。正如在界河的泥中去摸鱼挖藕，会引发对方的攻击一样；</li>
+<li>在田间沟渠中获取渔业利益，就不会发生纠纷，因为沟渠处于自己的家门前，是没有争议的资源；</li>
+<li>获取交换酒食类生活物资的商业税收，要有一个正确的认识，才会有一个完满的结局；</li>
+<li>税收入库后，除正常的开支外，还会有一些意外的事件需要支出，对此要认真慎重地对待，才会有一个完满的结局。这就如背着财富回家的人，遭遇众多打劫者上门时，要恭敬地对待才会有一个好的结果一样。</li>
+</ul>
+<h2 id="讼">6. 讼</h2>
+<p>当发生争执的时候，如果能有解决问题的诚意，就可以遏制事态的进一步发展，达到消除矛盾、解除双方紧张状态的目的。但即使是使纠纷得到圆满地解决，最终的结局还是会因为这种争执留下的结蒂而不好。在处理争执的时候，利于由公正贤明、德高望重的人主持调解。争执的出现将因为影响团结而不利于重大事业的完成：</p>
+<ul>
+<li>如果所发生的争执能很快结束，只引发小的言语之争，最终的结果就还会是好的；</li>
+<li>诉讼失败后，逃回家中躲避打击，他所管辖的民众并没有过错；</li>
+<li>夺取君王权力的行为，要认识到其过程的艰难，但前途是美好的。或者继续俯首称臣，将没有良好的结局；</li>
+<li>争讼失败后，重新俯首称臣，遵从其命令，就可以因为自己及时的改过而得到安宁。有了这种正确的认识，就能够有一个良好的结局；</li>
+<li>处境艰难之时，据理力争是解决问题的根本办法；</li>
+<li>缺乏主见，对争讼之事疑惑不定的人，帝王赐予他的爵位，将在其就职期间，不断被贬低。</li>
+</ul>
+<h2 id="师">7. 师</h2>
+<p>军队的组建，能够正确地寻找到一个英明的统帅，就会有一个良好的结局，因为一个好的统帅不会犯明显的过错：</p>
+<ul>
+<li>军队出征，要以良好的纪律作为胜利的保证。如果没有良好的纪律，或者有纪律而不遵守，就会造成失败的后果；</li>
+<li>君王亲临前线，与自己的军队在一起就可以取得最大的胜利，其行为没有过错。之所以如此，是因为君王在前线可以及时地颁发嘉奖的命令，从而鼓舞军队的士气；</li>
+<li>在战场上如果处事不果断，就会造成重大的伤亡，从而带来灾难性的后果；</li>
+<li>出师要有合适的理由，帮助弱者，就没有过错；</li>
+<li>正如田中来了害鸟要驱逐一样，对待破坏社会秩序的强者，也要将其绳之于法。但出师要具有合法性，战争只能由最高领袖来发动，不具备其资格者如果也想发动的话，将会造成惨重的伤亡，以失败而告终。要认识到不合法战争的危险性；</li>
+<li>伟大的君主如果取得了上天授予的使命，而开创一个新的政权，承担起让家族发达兴旺的责任，那么他一定是得到民众拥护的结果。</li>
+</ul>
+<h2 id="比">8. 比</h2>
+<p>君民团结，亲密无间，就会有一个完满的结局。这是人类社会和睦相处的根源，从开始到永远都要有此正确的认识，才不会有过错。从不安宁的地区来亲附者，后到之人将受到惩罚：</p>
+<ul>
+<li>心怀坦诚地与人亲近，没有过错。有诚意地帮助了别人，在你遇到危险或困难的时候，也会得到别人的帮助而度过难关；</li>
+<li>要认识到亲近自己家族内部的成员，会有一个完满的结局；</li>
+<li>亲近行为不正的人，是为了以自己的真诚感化和影响他们；</li>
+<li>要认识到对外族的人亲近团结，会带到完满的结局；</li>
+<li>君王可效法成汤网开三面的捕鸟方式一般行事，让民众感受其仁义之心，以向民众显示自己亲民的思想。国人相信君王的仁义而不对其产生敌视的戒备心理，就能有一个良好的结局；</li>
+<li>本可亲近的人却姗姗来迟，应受到杀头的严厉惩罚。</li>
+</ul>
+<h2 id="小畜">9. 小畜</h2>
+<p>教化、驯服商遗族，有利于政令的通达。对他们的教化宜采用高压的政策，而不是轻易地惩罚，就如乌云满天而不下雨一样。这种压力来自于他们的居住地成周之西的我们所处的王城：</p>
+<ul>
+<li>恢复商族过去的生活方式，有什么过错呢？应当会产生良好的结果；</li>
+<li>在强制性地引导下恢复商遗民过去的生活方式，才能有一个完满的结局；</li>
+<li>正如车轮的辐条脱落一样，国家这部机器停止了运转，因为新政权中商周这对刚结合的“夫妻”发生了矛盾；</li>
+<li>依然真诚地对待他们，他们就会从刚刚过去的血的教训中，产生出对不良行为的警惕，这样做没有过错；</li>
+<li>抱着真诚的愿望带动他们跟从我们的文明进程，使他们因为我们的帮助而富裕起来；</li>
+<li>正如雨过天晴一样，在对其犯罪行为进行惩罚后，我们依然施行宽松的政治制度。但要让不甘为臣的商遗族认识到，其不当的行为可能造成的严重后果：因为我们的宽松政策已经达到极限，正如月亮几乎达到最圆最亮的时候一样，如果继续造反，逼使英明的领袖出征讨伐，他们就会大祸临头了。</li>
+</ul>
+<h2 id="履">10. 履</h2>
+<p>正如警惕地跟随在老虎后面，它就不敢吃人一样。对商遗族实行监督，他们就不敢造反。社会以此而和谐：</p>
+<ul>
+<li>在正常的氛围下监视商遗族，没有过错；</li>
+<li>在表面安定的监视过程中，只有当明察秋毫的监视者能够有一个正确的认识时，才可以有一个完美的结局；</li>
+<li>弱视的人可以看东西，腿瘸的人也可以走路。但如果让他们跟随在老虎后面，老虎就会吃人，并由此而造成灾难。由只崇尚武力的人担任管理诸侯的重任就会造成如此后果；</li>
+<li>如跟随在老虎后面一样，对商族的监视行为能够长期保持警惕地不断告知其正确的行为方式，最终的结局就是完满的；</li>
+<li>要认识到在敌对状态下跟随、监视商遗族，会非常艰难；</li>
+<li>观察跟随中存在的问题，并详细考虑周商两族可以共同接受的各种方法，是能有一个完满结局的根源。</li>
+</ul>
+<h2 id="泰">11. 泰</h2>
+<p>国泰民安的政治局面，是扬善抑恶，消除无德的小人，吸引有德的大人而产生的完满结局，这种局面必然会使国家政通人和：</p>
+<ul>
+<li>正如拔除茅草也要连同它周围的杂草一并拔起，因为它们聚集在一起一样，对于商族的支持者也要一并铲除。以军事力量征服他们，会产生完满的结局。</li>
+<li>要以经济援助为手段容纳边远的方国，因为他们虽然距离我们遥远，但也是我们中的一员，正如河流不会因为路途的遥远而遗留下河中的物品一样。我们所使用的财富将换来他们的尊崇，并由此使他们的行为遵循在我们所制定的政策范围之中。</li>
+<li>在天下大乱，没有安宁的日子里，也能够立场坚定，不为叛乱所惑的人，因为没有参预动乱也就不用纠正其行为。在那种艰难的日子里都能够保持其正确的行为，就没有过错。要聚集民众安抚这些诚信的人，要给予他们物资上的奖励，使其生活富足，以作为其他人的榜样。</li>
+<li>周族辛勤的劳动而不富裕，是因为我们的邻居商族没有在我们的真诚对待下改正其错误的原因。</li>
+<li>商族领袖第二次归顺周族后，因为他能够遵守告示而停止其叛乱的行为，才由此产生完满的结局。</li>
+<li>正如城墙倾覆于护城濠里一样，商族的叛乱得于平复。要认识到只有得到民众的拥护，才具有王者所享有的征战的权力。如果仅仅是自己的国家一厢情愿地向天下发布为王者的命令，将带来悔恨。</li>
+</ul>
+<h2 id="否">12. 否</h2>
+<p>政令不通、民意不达，是由于行为不正的人从中阻挡的原因，这种状况将不利于英明的领袖。对此要有一个正确的认识：它将会使得德才兼备的大人离开，而招引来行为不正的小人：</p>
+<ul>
+<li>正如拔除茅草也要连同它周围的杂草一并拔起，因为它们聚集在一起一样，对破坏朝庭行政的小人也要连同其生长的基础一并铲除。有了这个正确的认识，才能有一个完满的结局，才能产生一个政通人和的局面；</li>
+<li>包容阿谀奉承的行为，将会使行为不正的小人得势，而品德高尚的大人却因此被隔绝了与君王沟通的渠道；</li>
+<li>包容阿谀奉承的行为，将会蒙受耻辱；</li>
+<li>制定出正确的法令，就没有过错。因为严格的法令就如同分隔开农田的田界一般，可以将黄鹂鸟一样只会唱赞歌的小人限制起来，使他们停止其不正当的行为；</li>
+<li>停止小人隔绝君臣的行为，品德高尚的大人就可以得势当政。这种行为的消亡啊！这种行为的消亡啊！关键在于要有一套能够制约其行为产生的制度；</li>
+<li>彻底清除隔绝君臣的行为，过去政令不通的状况就可以从今以后转变成为让人欣慰的政通人和的局面。</li>
+</ul>
+<h2 id="同人">13. 同人</h2>
+<p>君王如果与全体国民同心同德，国家就会政通人和。这种局面有利于克服艰难险阻，有利于君王的行政及政权的稳定，对此要有一个正确的认识：</p>
+<ul>
+<li>维护家庭成员的利益，没有过错；</li>
+<li>以家族的利益为重，将造成悔恨；</li>
+<li>不能与人坦诚相待，却依靠秘密发展军备以穷兵黩武者，他对权力的获取将以毁灭为代价，从而造成国家持久的贫穷；</li>
+<li>应做好防御战争的准备工作，要在敌人强加给我们的战争来临时，能够凭借坚固的防御体系，抗击敌人的进攻，并矫正他们狂妄的行为，以此，就会有一个完满的结局；</li>
+<li>如果能够首先与人同忧愁、共患难，然后才去同甘甜，共欢乐。那么，当大敌当前时，就能够万众一心地取得抗击侵略者的胜利；</li>
+<li>与王城外的民众同心同德，就不会留下悔恨。</li>
+</ul>
+<h2 id="大有">14. 大有</h2>
+<p>五谷丰登、繁荣富强，是国家政通人和的根本：</p>
+<ul>
+<li>当五谷不收，出现荒年的时候，容易滋生行为不正的人，从而造成灾难。如果制定和实施艰难时期的法规，就可以避免人祸；</li>
+<li>在风调雨顺、五谷丰登的时候，能够建立起相应的管理和运行机制，以合理地利用资源，就可以有一个安居乐业的结局，就没有过错；</li>
+<li>诸侯百官在每年年终，必须奉行向天子进贡之礼。但民众的税收可以根据不同的情况做出相应的调整；</li>
+<li>打击行为不正的人，没有过错；</li>
+<li>将诸侯百官朝贡的物品重新赏赐给臣民，以宣扬自己仁爱的品德。这种亲切的交流会加强王者的威望，并由此产生出一个完满的结局；</li>
+<li>五谷丰登是来自于自然界对我们的帮助，如此完满的结局，没有什么不好。</li>
+</ul>
+<h2 id="谦">15. 谦</h2>
+<p>为人谦虚谨慎，就会遇事亨通。英明的领袖因为具有此完美的品德才达到了他所追求的最高目标——受国为王：</p>
+<ul>
+<li>要虚心地对待自己的国民。英明的领袖正是以这种态度克服了巨大的困难，才有了现在的这个完满结局；</li>
+<li>要宣扬谦让的道理。当人们对自己的行为准则有了一个正确的认识后，才可以有一个完满的结局；</li>
+<li>既要勤劳创造又要能谦虚谨慎。英明的领袖因为具有此完美的品德而达到了他所追求的最高目标——受国为王，也才有了现在的这个完满的结局；</li>
+<li>指责横行霸道的人不懂谦让之礼，没有什么不好；</li>
+<li>周族过去经济上不富裕，是因为邻国商族过于霸道的原因。利于使用战争为手段推翻其残暴的统治，没有什么不好；</li>
+<li>为了宣扬谦让的精神，利于使用战争的手段，出动部队征伐那些霸道的诸侯方国。</li>
+</ul>
+<h2 id="豫">16. 豫</h2>
+<p>在社会秩序稳定的时候，利于建立法规、设官分职、分封诸侯、调动军队，以建立建全国家的各级管理机构和军事组织：</p>
+<ul>
+<li>提倡安逸的生活方式，将会造成灾难；</li>
+<li>要将长治久安、居安思危的道理刻在石碑上，使其如天空中永不停息的太阳一样照耀、警示我们。对安逸的生活有了正确的认识，才会有一个完满的结局；</li>
+<li>关注于安逸的生活，将会留下悔恨。因为行动迟缓而导致让人悔恨的事情发生；</li>
+<li>由于社会秩序稳定，人们生活安稳，国家经济就会得到较大的发展。国富民强的结果就是使人民能够万众一心，只要稍有风吹草动，大家就会迅速地如聚拢来插上发簪后的头发一般紧紧地聚合在一起，共同应对；</li>
+<li>认识到安逸生活的问题所在，就可以长久地保持这种理想的生活状态，使其长期存在下去，永不消亡；</li>
+<li>当国家安定团结的局面遭到破坏时，坚决打击那些企图改变国泰民安的现状者，不会有过错。</li>
+</ul>
+<h2 id="随">17. 随</h2>
+<p>随事态的变化而及时应变，是事情得于圆满解决的根本。对此有一个正确的认识，就不会有过错。</p>
+<ul>
+<li>在朝廷百官中产生意见而不愿意服从命令的时候，能够有一个正确的认识，就会有一个完满的结局。走出家门，主动地与他们交换看法，就可以产生良好的效果，从而化解矛盾，消除分歧，得到他们的理解和支持；</li>
+<li>如果商族企图重新掌握国家政权，就将破坏我们之间的合作关系；</li>
+<li>如果商族愿意与我们合作，那么就必须放弃对国家政权的要求。我们紧跟在他们后面是希望将道理给他们讲清楚：得到了我们给与的优惠待遇，就应当臣服地安定下来，要明白这个道理；</li>
+<li>在跟随、劝说的过程中，曾经采取过强制性的措施。但我们的愿望是真诚的，是在以正确的观点促使他们明白道理，这样做又有什么错呢？</li>
+<li>真诚的愿望如果能够以美好的语言表达出来，就会得到完满的结果；</li>
+<li>为了制止商族错误的行为而施行了强制性的手段，然后派人跟随其后监视、管制起来，以维持相互的关系。君王是在他们如遮挡阳光的西山般不讲道理的时候，才不得不使用此方法来维护与他们之间的联系。</li>
+</ul>
+<h2 id="蛊">18. 蛊</h2>
+<p>商族旧政权内部的腐败是我们周族得于建立新政权的基础。要消除内部的腐败，需要克服较大的困难。正如象征生命周期衰退的辛日、壬日、癸日完结后，象征新生命成长的乙日、丙日、丁日才会随着象征种子破壳而出的甲日的开始而开始一样，新政权的诞生是建立在旧政权消亡的基础之上的：</p>
+<ul>
+<li>阻止周族内部的腐败现象，就可以使周族所掌握的政权延续下去，这样做没有过错。只有在艰苦中磨练自己，才会有一个完满的结局；</li>
+<li>不要阻止竞争对手 - 商族内部的腐败现象。要正确地认识到此问题；</li>
+<li>阻止周族内部的腐败现象，会有较小的遗憾，但因此避免了大的遗憾；</li>
+<li>企图扩大周族内部的腐败行为，从过去的历史经验来看，结局都是不好的；</li>
+<li>对阻止周族内部腐败的行为，要使用鼓励和赞扬的政策；</li>
+<li>不在王朝侯府中当官行政，也要在自己所从事的行业中努力提高自己的道德水准。</li>
+</ul>
+<h2 id="临">19. 临</h2>
+<p>对国情民意的考察，是政通人和的基础，对此应有一个正确的认识。君王如果亲自出巡，时间应遵循天道春生、夏长、秋收、冬藏的规律，选择在春季和夏季进行。如果违背此规律，在八月的秋季之后出巡，就将会产生不好的结果：</p>
+<ul>
+<li>带着深切的关爱之心考察国情民意，将会有一个完满的结局。没有什么不好；</li>
+<li>以自我陶醉的甜美心情来考察国情民意，不会带来安宁和利益。只有对现实的处境保持一种忧患的意识，才不会造成过错；</li>
+<li>君王亲自出巡考察国情民意，没有过错；</li>
+<li>以敏锐的洞察力和简明扼要的工作作风考察国情民意，才是与一个大国的国君相称的能力。以此，才会有一个完满的结局；</li>
+<li>敦促朝廷百官调查研究，会产生完满的结局，不会有过错。</li>
+</ul>
+<h2 id="观">20. 观</h2>
+<p>深入的观察，是为国家今后的需要做好充分的准备。要将德才兼备的人选拔出来作为国家的人才储备：</p>
+<ul>
+<li>儿童般幼稚肤浅的认识，对于普通百姓而言不会有什么问题，而对于承担着管理国家重担的领袖来说就会酿成大错；</li>
+<li>片面的认识，只有利于女人，对男人无益。对此，要有一个正确的认识；</li>
+<li>深入全面的认识，要从观察我们自己家族的进步和退步，优点与不足入手；</li>
+<li>观察国家中才德出众的贤能之人，将他们供养起来，以礼相待，以利用他们的道德才智辅助君王治国行政；</li>
+<li>观察和学习我们家族和其他家族英明领袖的治国方略与得失，没有过错。</li>
+</ul>
+<h2 id="噬嗑">21. 噬嗑</h2>
+<p>采用公正合适的法律制度，就能带来国泰民安的局面。利于使用诉讼及责任追究制度来确保法律制度的遵守：</p>
+<ul>
+<li>正如穿上鞋子就不会再露出脚趾头一样，有了法律的约束，就可以使犯罪行为被消灭在萌芽状态。这样做没有过错；</li>
+<li>建立约束民众的法律制度应大公无私，同时约束自己的行为，如此则不会有过错；</li>
+<li>正如吃存放时间过长而开始变质的肉会引起腹泻，带来小的病痛，但不会有大问题一样。惩处那些行为不正而触犯了法律的人，也会遭受他们的憎恨，并因此而产生小的遗憾。这样做没有过错；</li>
+<li>正如啃干硬的骨头一样，对那些既不遵守法律，又不愿服从法律管制的人执法时，会遭遇他们的武力抵抗，利于作好艰苦治理的准备。有了这种正确的认识，就能有一个完满的结局；</li>
+<li>在对那些违背了法律却又无法逃避打击的人执法时，可能会得到他们的贿赂，如果能认识到接受这些贿赂将造成的不良后果，就不会有过错；</li>
+<li>正如戴上沉重的枷械就隐盖了耳朵一样，法律如果过于严厉，臣民就不敢讲真话，国王也就因听不到真实的声音而不了解自己的国情，后果将是严重的。</li>
+</ul>
+<h2 id="贲">22. 贲</h2>
+<p>修饰能使人或事物变得更为美好，从而易于为别人所接受。这种修饰会产生小的利益，也会由此获得一个安居乐业的环境：</p>
+<ul>
+<li>在装饰之初，就要放弃铺张浪费的选择，而采用厉行节约的方式；</li>
+<li>正如我们要经常洗脸，并整理自己的头发和胡须一样，修饰要从将已有的东西料理得干净整齐入手；</li>
+<li>热情饱满的健康状态是最好的修饰，如果能够永远地认识到此问题并保持下去，就会有一个完满的结局；</li>
+<li>修饰的最佳效果是慈祥而健康的白首老人形象，他们有如一匹矫健的骏马，即使是不加任何的装饰也会如五彩的锦鸡一般美丽漂亮。这种精神焕发的状态不是即将去抢劫的土匪相，而是迎亲时的那种神采奕奕；</li>
+<li>在装饰陵园及祭祀祖先时，只需要少量的祭品以表心意就可以了。虽然看起来有一些吝啬，但最终的结局却会是完满的；</li>
+<li>朴素无华的修饰，没有过错。</li>
+</ul>
+<h2 id="剥">23. 剥</h2>
+<p>当国家政权受到反动势力的削弱时，不利于形成安居乐业的环境：</p>
+<ul>
+<li>当国家政权的基础被削弱时，如果我们没有引起足够的重视，而是以傲慢、轻蔑的态度来对待，将会造成严重的后果；</li>
+<li>当削弱国家政权的企图已经达到清晰可辨的程度时，依然以傲慢、轻蔑的态度来对待，将会造成严重的后果；</li>
+<li>为防止国家政权落入行为不正者之手，而暂时将王权剥夺过来，没有过错；</li>
+<li>当对国家政权的削弱已经危及到王权的存在时，将会发生严重的后果；</li>
+<li>企图剥夺国家政权的人有如穿在绳索上的小鱼一般被绳之以法。这个胜利是得到王室成员支持的结果，因此没有什么不利；</li>
+<li>因为没有剥夺王权这个硕果的企图，所以，光明正大的领袖反而得以坐在驾驭国家这部马车的位置上，而那些搞阴谋诡计企图颠覆王权的人，却被剥夺了生存的权力。</li>
+</ul>
+<h2 id="复">24. 复</h2>
+<p>恢复过去的秩序，将会使政令通达。自己进出的行为都能畅通无阻，外面朋友的往来也不会受到限制。从遭到破坏的状态到秩序的恢复需要一个过程，正如冬至日阳气的恢复需要在阳气剥尽后七天才开始一样。秩序的恢复有利于产生一个安居乐业的政治局面。</p>
+<ul>
+<li>在错误的道路上走得不远就恢复到正确的方向上来，并为自己不恭敬的行为而后悔，也能有一个完满结局；</li>
+<li>以休生养息的方式恢复社会秩序，将会有一个完满的结局；</li>
+<li>一步一步连续不断地恢复社会秩序，需要经常勉励自己，就不会有过错；</li>
+<li>为了保持公正的行为，在环境动乱时，也不能随波逐流，而是要独自坚持自己的正确观念；</li>
+<li>督促、劝勉他人去恶从善，以恢复正道，不会留下悔恨；</li>
+<li>以错误的方法恢复正道，是凶险的，将造成灾难。如果因此而发动战争，最终的结局必然是大败而归。因为其国君错误的决策而造成的灾难，将会使国家在条件成熟之后，也再没有发动战争征伐不顺者的能力。</li>
+</ul>
+<h2 id="无妄">25. 无妄</h2>
+<p>商业活动是物质交流的基础，必须对此有一个正确的认识：</p>
+<ul>
+<li>商业活动所促进的人员及物质的交流与往来，将产生完满的结局；</li>
+<li>不耕种就有收获，不开荒就得到熟田的无妄之事，就是通过商品交换得到利润。 这种商业活动有益于产生安居乐业的环境；</li>
+<li>不耕种就可获得的商业行为可能造成的危害在于：动摇农业是国民经济的基础这个信念。要认识到商业活动本身并不产生价值，靠在贩运中交易的商人所得到的利润，就使在家耕种的人所受到的损失；</li>
+<li>能够认识到以上所说的农业与商业的利弊及关系，就不会有过错；</li>
+<li>依靠长途贩运来谋取利益的商旅活动存在许多风险，如果采用聚众同行的方式就可以通过集体的力量来化解这些风险，从而产生让人满意的结局；</li>
+<li>长途贩运的商业活动，如果对其行进的过程中可能出现的问题认识不足，就不会带来安宁和利益。</li>
+</ul>
+<h2 id="大畜">26. 大畜</h2>
+<p>对人才的培养和储备，利于有一个正确的认识。不局限于在自己家族内部挑选，就能有一个完满的结果。人才的储备有利于国家克服重大的困难：</p>
+<ul>
+<li>国家总有危难之时，利于储备人才资源以为国家排忧解难之用；</li>
+<li>正如捆绑车轮的绳索脱落后车辆就不能行进一样，一个国家如果没有优秀的人才来协助君王管理，国家就会处于混乱的无政府状态；</li>
+<li>正如骏马要经常使之相互追逐一样，优秀的人才也要使他们经常演练，这种演练有利于形成一支能够克服艰难险阻的队伍，对此要有一个正确的认识。或者说演练政权的保卫行动，将有利于国家形成安居乐业的局面；</li>
+<li>正如将小牛圈养在栏中一样，要以优越的条件将人才集中供养，以使之受到纪律的约束；</li>
+<li>正如被阉割的猪既有攻击能力，又不会伤及主人一样，使用经过严格培训的人才去管理民众，保卫国家，以充当国家的爪牙，就会有一个完满的结局；</li>
+<li>一支训练有素，纪律严明，忠于朝廷的人才队伍，可以承担起沟通天子与诸侯、天子与民众之间联系的作用，国家由此而政通人和。</li>
+</ul>
+<h2 id="颐">27. 颐</h2>
+<p>对于国家财政问题，能够有一个正确的认识，就能够有一个完满的结局。首先观察我们的财政需求有多大，然后自己寻求解决这个需求的办法：</p>
+<ul>
+<li>放弃你们先辈们灵龟般节省的生活方式，再观察一下我们自己现在铺张浪费的生活方式，如果以此来管理国家，将会造成灾难性的结局；</li>
+<li>为了增加财政储备，而废除国家过去遵循的法则，向贫困者征收税赋，将会造成不良的后果；</li>
+<li>如果以减除对人才的供养来达到收支平衡，要认识到这种做法可能会造成的不良后果。因为不供养就是放弃人才，而等到你有了供养条件再来招贤纳士时就晚了，因此这种行为不会带来安宁和利益；</li>
+<li>勤俭节约、加强战备就能有一个完满的结局。如老虎般对敌人保持高度的警惕， 做好随时抗击侵略者的准备，就不会有过错；</li>
+<li>不依照现行的税收政策办，而是企图减少征收额度，这种愿望是良好的。但减少正常的征收就必然会减少国家财政储备，当大的天灾人祸降临时，也就不可能有足够的力量来克服；</li>
+<li>遵循正常的财政管理体制，并不断地勉励自己，就会有一个完满的结局。有利于克服任何艰难险阻。</li>
+</ul>
+<h2 id="大过">28. 大过</h2>
+<p>辅佐君王的大臣代君行政，是因为一国之主的君王能力不足，承担不起行政重任的原因。这种代君行政的行为有利于达到国泰民安的政治局面，是可行的：</p>
+<ul>
+<li>在代君行政的问题上，如果能够像祭祀时对祭品铺上整洁的白茅一般心存敬意地谨慎从事，就不会有过错；</li>
+<li>正如枯槁的杨树重新发芽，体弱的老人娶回年青的女娃一样，如果柔弱的君王在行政的时候能够得到强臣的辅佐，就没有什么不好；</li>
+<li>正如房梁不堪重负而弯曲很危险一样，承担国家管理重任的人如果不能胜任其职责，将会产生不良的后果；</li>
+<li>正如房梁被撑起，能够承受屋顶的重量会很好一样，柔弱的君王如果能够在强臣的辅佐下完成对国家管理的职责，就会有一个完满的结局。但如果替君行政的强臣因此而生起了企图夺取政权的非分之想，则会留下悔恨；</li>
+<li>正如枯槁的杨树重新开花，体弱的老妇人嫁给未婚的男士一样，如果柔弱的君王主动让权给得力的大臣，获取权力者虽然没有什么过错，但也不会带来赞誉；</li>
+<li>正如本想涉水过河却不料河水太深而淹没了头顶一样，摄政当国的行为遇到了极大的阻力，甚至危及到自身的安全，但摄政的行为本身是事所必然，没有过错。</li>
+</ul>
+<h2 id="坎">29. 坎</h2>
+<p>熟悉水性以解除困境的时候，如果其所作所为都能够保证自己内心的诚信，就可以有一个完满的结局，因为诚信的行为可以得到众人的帮助：</p>
+<ul>
+<li>正如初学游泳的人如果进入深水区会有危险一样，在没有准备周全的情况下，如果冒险进入动乱的中心，将产生不良的后果；</li>
+<li>正如深水区有危险一样，不能到叛乱的中心去，而应当遁序渐进地，从寻求小的支持入手壮大自己的力量；</li>
+<li>来到有陷阱的地方。明知道陷阱处很危险却还是要靠近它，因为我们进入到危险的陷阱中，是为了争取得到那里的民众支持；</li>
+<li>正如将好酒好饭用瓦罐装着，小心翼翼地从窗子秘密地送给屋内的人以交换情报一样，为了使平叛的行动得于顺利进行，我们以优厚的待遇为条件，小心翼翼地、秘密地争取到了对方内部官兵的支持，因此，使得我们的平叛最终没有出现让人遗憾的结局；</li>
+<li>正如河水没有能够漫过堤坝一样，三叔之乱没能达到泛滥的程度。既然他们挑起的事端已经平息，就没有了危险；</li>
+<li>将叛乱的首领管叔杀头示众，废除无知的霍叔爵位，再将实力人物蔡叔用结实的绳索捆绑，投入到丛棘围绕的监狱，使之今后很长一段时间里不能够再危害国家的安全。</li>
+</ul>
+<h2 id="离">30. 离</h2>
+<p>对莺歌燕舞的政治局面，利于有一个正确的认识，它能使政令通达。 驯服国民使之顺从，才能有一个完满的结局：</p>
+<ul>
+<li>虽然曾经发生过错误的行为，但只要能够及时地改正，现在开始恭敬地对待君王，就不会被追究；</li>
+<li>当民众恭敬地拥护君王，服从其管理时，就如美丽的黄鹂鸟唱出悦耳的歌声一样，是国泰民安的根源；</li>
+<li>正如傍晚时分的黄鹂鸟还没有发出归巢后快乐的鸣叫声一样，如果早就失去了旧主依靠的臣民还不向新王击鼓而歌，以表示归顺，就将会因此受到惩罚，而如临死的老人一样发出哀叹声，结局是凶险的；</li>
+<li>惩罚性的灾难突然降临在叛乱者的住地，焚烧他们的房屋，杀死他们的生命，废除他们曾经拥有的权利；</li>
+<li>将顽固不化的淮夷之人镇压和瓦解，使其深切地感受到失去亲人、土地和权力的悲哀与痛苦，政权就可以得到巩固；</li>
+<li>由于成王亲自出征，所以取得了为人称赞的功绩：彻底捣毁叛乱者的根据地，并捕获了叛匪中令人憎恶的头目。这样做没有过错。</li>
+</ul>
+<h1 id="周易的下经注释">《周易》的下经注释</h1>
+<h2 id="咸">31. 咸</h2>
+<p>真诚的感情能使人类之间和睦相处，利于对此有一个正确的认识。建立在男婚女嫁的婚约基础上的感情将会产生完满的结局：</p>
+<ul>
+<li>触摸对方的脚，以传达自己的爱慕之情；</li>
+<li>鲁莽地触摸她的小腿，将造成不好的结局。向深爱的人表达自己的尊重才可以有一个完美的结局；</li>
+<li>抚摸她的大腿，并强制发生性行为，将会留下悔恨；</li>
+<li>有了正确的认识就能有一个完美的结局，就不会发生使人感到悔恨的事。使人心旷神怡的和谐的性生活是建立在你情我愿、心心相印的状态之上的；</li>
+<li>心心相印的恋人热情地拥抱，没有过错；</li>
+<li>吻她的脸、额和舌头。</li>
+</ul>
+<h2 id="恒">32. 恒</h2>
+<p>持之以恒的坚定意志，可以使事情得于顺利地发展，没有过错，必须对此有一个正确的认识。坚定的意志有利于获得安居乐业的生活环境：</p>
+<ul>
+<li>正如不断地挖深沟渠会使渠道崩塌而无益一样，对财富的获取也要适可而止，要认识到如果贪得无厌就会造成不良的后果。贪得无厌的行为不会带来任何安宁和利益；</li>
+<li>如果我们能够驱散贪得无厌的念头，悔恨就会消亡；</li>
+<li>不能够坚守道德的标准，就会因为自己意志的不坚定而蒙受羞辱，要认识到这种行为将会产生令人遗憾的结果；</li>
+<li>为什么不能够坚守道德的标准行事的人会受到惩治而使其感到羞辱呢？因为国家和社会的正常秩序不允许被这些人所破坏，这就如农田里不能允许飞禽走兽来捣乱一样；</li>
+<li>坚持依道德的标准行事是一种正确的认识。如果臣民都能够如此去做，国家就将会有一个安居乐业的理想局面。但如果为王者也依此而行，就将会产生不良的后果；</li>
+<li>动摇坚定的意志，将产生不良的后果。</li>
+</ul>
+<h2 id="遁">33. 遁</h2>
+<p>适时隐蔽，就可以很好地保护自己，这种隐蔽能带来小的利益，对此要有一个正确的认识：</p>
+<ul>
+<li>隐蔽在对手的后面跟随他，并不断地勉励和磨练自己，然后招集民众推翻其政权取而代之，就会有一个安居乐业的结果；</li>
+<li>制约住暴君，用光明的新纪元来革新商族的暴政。既然他们的政治如黄昏的天空一样昏暗，就应当由我们周族来承担解说天命的责任；</li>
+<li>退而不隐，藏而不深，仍然与过去的事务保持联系是有害的。应磨练自己的意志，彻底断绝与过去的联系，专心管理家政事务，享受天伦之乐，才有完满的结局。</li>
+</ul>
+<h2 id="大壮">34. 大壮</h2>
+<p>对于称强者的暴力行为，必须有一个正确的认识：</p>
+<ul>
+<li>在他们称强之初就采用征伐的权利对其实施打击，将产生不良的后果。应坚持诚信的原则与之交往，以消除其成见和敌意；</li>
+<li>具有诚信待人的正确认识，就会有一个完满的结局；</li>
+<li>行为不正的人喜欢使用暴力来解决自己遇到的问题，英明的领袖则要依自然的规律制定出公正的规则来约束他们，要正确地认识到暴力行为可能产生的危害。有了完善的制度后，当有人企图破坏社会秩序时，就只能自取灭亡。正如发情的公羊冲撞牢固的篱笆时， 会损坏它们的角一样；</li>
+<li>有一个正确的认识，就会有一个完满的结局，错误的行为就可以消亡。如果我们不能够制定出正确的法规来约束称强者的行为，就会导致社会的剧烈动荡，造成不可收拾的局面。这就如圈羊的篱笆墙被打开，就不能约束住闹事的公羊，它们的横行将会如大型的军车装上了坚固的车条輹，从而势不可挡一样；</li>
+<li>消灭以暴力为手段企图破坏社会秩序的叛乱者，不会感到遗憾；</li>
+<li>如果在与挑战者的争斗中，处于既不能后退，又不能获胜的僵持状态，将得不到安宁和利益。只有施行艰难时期的法则，全民动员，努力一搏，才能最终取得胜利，获得一个完满的结局。</li>
+</ul>
+<h2 id="晋">35. 晋</h2>
+<p>如果希望影响或吞并其它方国，从而成为一个安康、富强的大国，就应当利用王所赐予的征伐权大力发展军备，使之快速地成为一个军事强国：</p>
+<ul>
+<li>进入到愚昧的方国，是为了推动他们文明的进程，有了这种正确的认识，才能有一个完满的结局。我们的目的是要让他们知道，只有遵守法律的规定所取得的富裕生活，才没有过错，才能得到保障；</li>
+<li>进入愚昧的方国，要心怀同情之心，有了这种正确的认识，就能有一个完满的结局。受到滋润而能得到幸福的生活，是因为他们现在的王象母亲一样关爱他们的结果；</li>
+<li>社会的秩序能够为大家普遍接受，就不会发生让人感到遗憾的事；</li>
+<li>进入愚昧的方国，却如鼫鼠一样一无所长，不能带给他们先进的文化，要认识到其中的危害；</li>
+<li>要想今后不再发生让人悔恨的错误行为，需要发动群众来共同思考以强凌弱的野蛮行为和依法律的规范行事这两者之间，那种更有利于自己的生存和发展。如果我们这样去发动群众，就会产生一个完满的结局，没有什么不好；</li>
+<li>如果进入愚昧的方国，而遭遇到对方顽强的抵抗，只有使用武力来征伐他们所居住的城市。此时要不断地激励和磨砺自己，才能取得完满的结局。这样做没有过错，但要认识到这是十分遗憾的事情。</li>
+</ul>
+<h2 id="明夷">36. 明夷</h2>
+<p>当贤明的人无辜受到伤害时，在身处逆境的时候，最好的做法是坚守自己的认识和美德：</p>
+<ul>
+<li>正如受伤的小鸟渴望着飞翔，却展不开它那受了伤的翅膀一样。心灵受到伤害的领袖伯夷和叔齐，宁可饿死也不食周粮。他们本来有着安居乐业的地方，却因为与周王的观念不合，要维护自己的信仰；</li>
+<li>贤明的人受到了伤害，受到伤害的是我们周族英明的领袖文王，他被囚禁而失去了自由，由于去拯救他的大臣散宜生等人的得力，才使他顺利获释，有了一个良好的归宿；</li>
+<li>贤明的太伯和虞仲受到不公正的待遇时，他们宽大为怀，选择了向南发展的道路，并成功地开辟了基地，成为当地的领袖。人在逆境的时候，不要抱怨和憎恨，而是要自立自强，要有这种正确的认识；</li>
+<li>比干以死进谏，却在自己的宫殿门前被纣王剖腹刳心，为后人树立了一个忠义的榜样；</li>
+<li>商族太师箕子在受到伤害时的做法，有利于保护自己品德的完美；</li>
+<li>因为商王帝辛的品德不端，行为不正，就造成了商朝的灭亡。这种人即使在开始的时候能够登上国家最高的权力宝座，但最终的结局却一定会被赶下台，摔得粉身碎骨。</li>
+</ul>
+<h2 id="家人">37. 家人</h2>
+<p>家庭中的成员，必须认识到自己的责任和义务：</p>
+<ul>
+<li>男人身处逆境而寻找退路时，能够回到家中享受家庭的温暖，他在外所遭受到的烦恼就会逐渐消散。</li>
+<li>当自己的能力得不到朝廷赏识而不被重用，在家中赋闲的时候，有一个正确的认识，就会有一个完满的结局。</li>
+<li>家庭中的成员如果都能够心怀忧虑，并不断反省自己的行为，不断地磨砺自己，就会有一个完满的结局。如果家里的女人和孩子们成天沉溺于游戏享乐之中，最终的结局必将留下悔恨。</li>
+<li>能使家庭富裕起来，就会产生最完美的结局。</li>
+<li>为王者要以国为家、以天下为家，从而使民众产生强大的凝聚力，来共同分担国家的忧愁，以此，就会有一个完满的结局。</li>
+<li>真诚地对待民众，就会受到大家的爱戴和遵从，从而树立起自己的威望，最终将由此产生一个良好的结局。</li>
+</ul>
+<h2 id="睽">38. 睽</h2>
+<p>当内部发生矛盾时，应当在发生矛盾的初期阶段就及时地想办法，使其得到圆满的解决：</p>
+<ul>
+<li>应该让使人感到悔恨的矛盾消亡。因为正如离群逃亡的马会受到猎人的追逐一样，脱离了群体的人也会遭受欺凌而难于生存。如果我们自己能够主动地回去向被得罪的人讲和，就不会留下让人感到悔恨的过错；</li>
+<li>在媾和的时候，如果能够借用一些偶然相遇的机会，向被自己得罪的君王表达自己的心意，就会使矛盾化解，而不留下让人感到悔恨的过错；</li>
+<li>正如在别人的车辆陷入泥潭不能自拔时，能够提供牛帮助牵引，会得到帮助者的感激一样。当与自己有矛盾的君王遇到困难时，如果能够伸出友谊之手，给予其大力帮助的话，这个人即使过去曾经犯了被刺面割鼻之类的极大罪行，而因此与君王关系紧张，双方过去的矛盾也会从此化解而结下深厚的友情；</li>
+<li>在与君王发生矛盾而被孤立时，如果遇到深受君王信任的大人，应向他解释自己对君王的真诚和敬重之心，然后将这种敬重付之于自己的实际行为中去，就不会造成使人感到遗憾的后果；</li>
+<li>为了消除双方的矛盾，就应当交换意见，寻找造成相互伤害的问题根源，为此而主动上门和解，又有什么过错呢？</li>
+<li>在发生矛盾后的孤立状态下，往往会疑心重重，看见一头全身沾满污泥的猪，也怀疑是一辆来加害于我的鬼车，于是紧张地防备，张弓欲射，只到搞清楚是误会后，才又放下弓箭。如果我们之间本来就没有恶意，就应当寻求和解的办法。为此而主动上门交换意见，将过去的误会解释清楚，就会有一个完满的结局。正如遭遇一场大雨将猪身上的污泥洗清后，就不会再疑神疑鬼一样。</li>
+</ul>
+<h2 id="蹇">39. 蹇</h2>
+<p>在内部发生矛盾而关系紧张的时候，必须制造一个如西南方向温暖的气候般有利于矛盾解决的环境，而不利于如东北方向的严寒般冷酷无情。利于寻找德高望重的人从中调解。有此正确的认识，就会有一个完满的结局：</p>
+<ul>
+<li>主动上门与对自己有意见的对方交换意见、寻找和解的办法，会得到大家的称颂和赞美；</li>
+<li>君王与大臣不和而关系紧张，是因为在发生矛盾后，双方都不肯主动让步的原因；</li>
+<li>在发生矛盾的时候，如果能够主动去与对方和解，就可以得到他的响应，最终由此产生信任和友谊， 并与之结成联盟；</li>
+<li>当大难来临的时候，可以得到与自己结为联盟的朋友们的帮助；</li>
+<li>在与人发生矛盾的时候，如果能够主动与人求和，这种良好的品德就可以吸引那些德才兼备的人来投奔，由此将有一个完满的结局，因为我们的事业可以得到贤良的辅佐。</li>
+</ul>
+<h2 id="解">40. 解</h2>
+<p>正如西南方向温暖的气候才适宜于作物的生长一样，创造一个良好的政治环境，就有利于国家内部矛盾的解决。如果没有更好的解决办法，那就恢复过去的秩序。一个安居乐业的理想环境，是我们敬重于人，勤勉于事的结果：</p>
+<ul>
+<li>在内部关系紧张的时候，采取循序渐进的方式逐渐解决矛盾，没有过错；</li>
+<li>正如打猎时只能围三面之网，而不可赶尽杀绝一样，制定国家政策的时候，要给民众留下足够的生存空间，以此，就可以得到公正执法的好名声。有此正确的认识，就有一个完满的结局；</li>
+<li>如果我们对物资的要求贪得无厌，超过自己所需的大量储备财富，就会造成社会分配的严重不公，从而引发动乱，导致盗寇风起云涌。要正确地认识到这种行为将可能造成的遗憾；</li>
+<li>如果想缓解君王与民众之间的矛盾，就要从解决造成这个矛盾的根本问题做起。我们自己的财富积累得太多是造成其诚信的形象遭到破坏，民众不满的根本原因；</li>
+<li>英明的君王如果能够对自己及其当权者集团的行为有所约束，君王与民众的紧张关系就可以得到缓解。这种完满的结局，是因为民众以此相信君王诚信的品德的原故；</li>
+<li>为了公平地施行维护大家共同利益的国家法律、法规，打击和逮捕那些如隼般喜欢以非法的暴力为手段侵害民众利益的人，没有什么不利。</li>
+</ul>
+<h2 id="损">41. 损</h2>
+<p>在打击损害公共利益的犯罪行为时，如果我们能够以诚信为原则，就是使问题得于圆满解决的根本，这样做没有过错。以诚信为本制定的能够得到大家认可的公平规则，有利于取得安居乐业的政治环境。施行什么样的方法才符合此原则呢？有二种方法的使用，可以使问题得到圆满的解决：</p>
+<ul>
+<li>对于已经发生的犯罪行为及时快速地加以制止，没有过错。对于制造事端的责任人，要根据他们的责任大小和所造成的后果酌情处理；</li>
+<li>执法者利于有一个正确的认识：仅仅依靠武力征伐的方式惩治犯罪者，将会产生不良的后果。从根本上矫正违法者的行为，是要帮助其获取正当的利益；</li>
+<li>正如三个人一同出行容易引发纠纷而自然减少一人，一个人单独出行会因为孤独与人结伴而行一样，我们对待违法乱纪者的处理，需要遵循损有余而补不足的这一自然法则；</li>
+<li>铲除破坏社会秩序的违法乱纪者，从而使君民上下之间的频繁交往充满喜悦，没有过错；</li>
+<li>或者赐与他侯王的爵位，满足其对权力的要求，以此来纠正其违法乱纪的行为，也是使问题得到圆满解决的根本办法；</li>
+<li>为了纠正违法乱纪的行为，而采用帮助其获取正当利益的方式，没有过错。有此正确的认识，就能有一个完满的结局。这样以德报冤的做法，有利于取得一个安居乐业的理想政治局面，有利于促使大臣们相信君王的仁慈，从而无私奉献，精忠报国。</li>
+</ul>
+<h2 id="益">42. 益</h2>
+<p>在治国行政的时候为民造福，有利于得到一个安居乐业的理想环境，有利于克服艰难险阻，从而完成伟大的事业：</p>
+<ul>
+<li>利用为民造福的理由来发动大型工程的兴建，是事情得于圆满完成的根本，这样做没有过错；</li>
+<li>或者赐予他们为公侯的权力，以矫正其不满的情绪，从而制止他们对抗的行为。永远保持这种正确的认识，就能够有一个完满的结局。周武王正是采用了此办法来对待商帝的后裔武庚，从而缓和了周商两族之间的矛盾，取得了一个较为完满的结局；</li>
+<li>为了造福于民而采用可能使其遭受损失的危险方式，没有过错。因为我们在真诚的良好愿望之下所进行的这种公正的行为，是为了告示于大家遵守规则行事；</li>
+<li>以中正的行为告示公众，是为了使其顺从。利用以上所说的方法，圆满地完成将商族遗民从其过去的都城朝歌迁往洛邑的任务就是很好的例子；</li>
+<li>对民众怀有真诚的仁爱之心，我们的事业就可以得到大家共同的关心和支持，由此就会产生一个圆满的结局。对民众所具有的真诚和仁爱，正是我做人处事的原则；</li>
+<li>在我们治国行政的时候，错误地帮助民众，或者甚至于打击他们，这种如在风中飘舞的旗帜一般总是使人捉摸不透、喜怒无常的性格，将产生灾难性的后果。</li>
+</ul>
+<h2 id="夬">43. 夬</h2>
+<p>要与不良的人和事划清界线，这是发自于朝廷的声音，真诚地告诫你们：“将有灾难临头。去告诉你们的国家：扰乱社会秩序者，将受到征伐。遵纪守法者，才可以得到一个安居乐业的环境。”</p>
+<ul>
+<li>人之所以能茁壮成长，是因为懂得进与止的道理。明知道自己与朝廷抗衡只能是失败的结局，却依然要去强行对抗，将导致不良的后果；</li>
+<li>要敬重地对待发自于朝廷的告诫。如果其行为愚蠢得如漆黑的夜晚一样昏暗，就将遭受到军队的镇压，要招集民众使之都能明白此道理，来共同为自己可能存在的不正确行为担忧；</li>
+<li>明知不可为而为之，这种外强中干的人将带来灾难性的后果，因为英明的君王会因此与之决裂而征伐。如果能够与这种人划清界线，保持自己行为的端正，那么在君王征伐的时候，自己虽然也可能会受到牵连而产生烦恼，但因为自己没有过错而不会受到追究；</li>
+<li>屁股被打开了花，是因为他改正错误的行动迟缓而形成的。只有如被牵着的绵羊一般顺从才会让悔恨消亡，可他听到我们的告诫后却不肯相信；</li>
+<li>如果能像山羊独行于悬崖峭壁上一般，与破坏社会秩序的人决裂，这种中正的行为没有过错；</li>
+<li>无视朝廷的告诫，最终将导致灾难性的结局。</li>
+</ul>
+<h2 id="姤">44. 姤</h2>
+<p>人类的生育繁衍之道在于 - 当女孩已经发育完全之后，招集人马热热闹闹地将其迎娶回来婚配：</p>
+<ul>
+<li>娶回的女主人要勤于家务，有此正确的认识，就有一个美满的结局，就有一个温暖的家庭环境。如果好吃懒做，就将会产生不良的后果，家庭会因此而贫穷，生儿养女也会感到很困难；</li>
+<li>媳妇怀孕之后，要特别小心，不能有过错。譬如出门做客就不好；</li>
+<li>腰腿受伤，是因为她的行为不注意而造成的。小心谨慎地生活，才不会有大的过错；</li>
+<li>胎儿死在腹中，将可能引发危及孕妇生命的后果；</li>
+<li>正如用枸杞作为篱笆保护瓜田一样，要精心保护和照料孕妇的生活，只有在这种良好的环境中，胎儿才能够自然地健康成长。如果这样做了胎儿仍然死亡，那就是天命使然，是不可抗拒的自然选择；</li>
+<li>婴儿初生时如果是头部先出产道，就标志着顺产。孕妇的产生过程虽然会很痛苦，但不会有危险。</li>
+</ul>
+<h2 id="萃">45. 萃</h2>
+<p>人才的聚集是有益的。在君王推翻腐朽的旧政权，建立新的朝廷的时候，利于得到德才兼备的人才支持，所以说人才的聚集是有益的，利于对此有一个正确的认识。用最大的诚意来敬重所聚集的人才，就会有一个圆满的结局，就有利于获得一个安居乐业的环境：</p>
+<ul>
+<li>对人民有诚信之德却不能坚持到底，就会造成社会的混乱，就会有贤良之人为了商讨救国救民之计而在混乱中聚集。如果在这种时候发出推翻暴君、改换朝廷的号召，只要能使民众团结在一起，就可以达到目标，取得使人为之鼓舞的胜利。为了民众共同的愿望而采取的夺权行为，没有过错；</li>
+<li>带领民众拨乱反正，以恢复过去安居乐业的生活，没有过错。有诚信之德的人就可以利用他的高尚品德来主持政权；</li>
+<li>大家聚集在一起却又对除暴安民的革命行动犹豫不决，仅仅是为世道的没落而叹息，不会带来安宁和利益。参与这种行动也没有过错，但会产生小的遗恨；</li>
+<li>推翻暴政，取而代之是最完满的结局，没有过错；</li>
+<li>朝廷命官聚集在一起造暴君的反，没有过错，因为他们不正确的行为方式是为了达到拨乱反正的高尚目的。自始至终都能够保持这种正确的观念，就不会留下悔恨；</li>
+<li>抓住被推翻的昏君而讯问他：为什么要施行暴政？使其羞愧而流泪，没有过错。</li>
+</ul>
+<h2 id="升">46. 升</h2>
+<p>提拔重用追随者，是事业得于顺利发展的基础，在会见有才德的领袖时，应当运用这种方法作为鼓励。有了大家齐心协力地共同关心其事业，依从天道的规律而进行的征战就会取得圆满的结局：</p>
+<ul>
+<li>承诺提拔、重用追随者，会得到非常好的结果；</li>
+<li>有诚信的高尚品德，就可以利用这种为众人所赞扬的品德来担当起管理国家的重任，这样做没有过错；</li>
+<li>封官许愿的承诺是将革命成功后可能取得的成果，按地理位置划分给参与者各自的势力范围，提前产生未来的诸侯国和其国君；</li>
+<li>周文王在岐山时自封为王就是很好的自我提升的例子，事实证明他这样做的结局是完满的，没有过错；</li>
+<li>有了以上的正确认识，就有一完满的结局，就可以登上天子之位；</li>
+<li>隐蔽地发展其革命的组织工作，将有利于使推翻暴君的正义行动蓬勃发展。</li>
+</ul>
+<h2 id="困">47. 困</h2>
+<p>处困境之时，要对如何顺利地走出困境有一个正确的认识。才德兼备的贤良之人身处困境之时，可以有一个良好的结局，因为他处理事情的方法正确，没有过错。处困境之时，即使是有理可辩，也不能取信于人：</p>
+<ul>
+<li>在处境艰难，并且原因根深蒂固、错综复杂，而难于缓解时，应远走高飞，躲藏到远离对手的深山老林中去，让其长时间里不能见到自己；</li>
+<li>在生活困难的时候，如果能够得到君王需要帮助而授予征战权力的要求，应当利用这个机会，向其表示敬重和顺从。征战的结局虽然不好，但为了缓和与君王的矛盾，从而摆脱生活的困境，这样做也没有过错；</li>
+<li>被困于穷山恶水之中处境艰难的时候，如果没有征战的实力，而是仅仅凭借微不足道的武器，就去征战敌人的堡垒，是不会取得胜利的，将导致灾难性的后果；</li>
+<li>接受君王征战的任命后不可操之过急，因为制造武器和兵车的战争准备工作需要时间。这种准备工作可能会产生一些遗憾，但由于我们作好了战争的准备而会有一个良好的结局；</li>
+<li>当征战的过程中出现较大的伤亡时，内部会因为当初接受君王这个征战的命令而发生矛盾，因为这时就会有人说：我们将获取的利益是用过多的牺牲为代价换取的；</li>
+<li>人在艰难困苦时期的状况，就有如受困于藤蔓之中，或像立于悬崖成为别人箭靶子的跛子一样左右为难，这就叫做有所行动会产生麻烦而后悔，不行动也会有麻烦存在而后悔。而接受君王的征战之命，将终究会有一个完满的结局。</li>
+</ul>
+<h2 id="井">48. 井</h2>
+<p>由贫瘠的山区搬回富饶的平原后，如果我们不能改变生活质量，不能提高收入水平，就等于过去的努力全都是白费了。先祖公刘为避战乱，而搬迁到山上豳这个地方去是为了求生存。古公亶父后来又带领族人从贫瘠的山上重回故里，也是为了提高周族的生活水平，改变其落后的状况，这就如井水即将干涸的时候就要掏挖一样。如果在生存困难或生活水平越来越低下的时候还不去寻找出路，我们的生存状态就会出现危机。这就如井水即将干涸时，所能打出来的水会越来越少一样。这种状态将产生不良的后果：</p>
+<ul>
+<li>正如井水被外来的飞鸟搅浑就不能食用，而有猫头鹰守候的水井就不会有飞鸟来捣乱一样。要建立一支强大的军事力量来防止外来侵略，以保证国家经济秩序和税源的稳定；</li>
+<li>对内部的贪官污吏要给予坚决的打击，因为他们的行为造成了国家税收的大量流失；</li>
+<li>正如在掏挖水井的时候，没有水可以食用一样，在从贫瘠的山区向肥沃的地区搬迁时，暂时不会有经济收入，这是在完成我们多年的愿望，在治疗我们心中的疾病。待安置完毕后，就可以得到丰富的财富。君王这个英明的决定，使我们大家都一同享受到生活的富裕；</li>
+<li>正如掏挖新井需要同时修整井壁一样，在新的条件下制定相应的经济法规以维护经济秩序，保障经济的健康有序发展，没有过错；</li>
+<li>正如寒冷刺骨的井水，才是可供我们食用的取之不尽、用之不竭的清凉、洁净的泉水一样。拥有肥沃的土地资源，又建立了完善的经济法规和保护其法规得于遵守的队伍，我们所需要的财政收入才可以得到保障；</li>
+<li>国家财政的税收是靠全体国民共同上缴而完成的，因此，当权者坚持公平、合理、适当的诚信原则，才是保证税收得于顺利完成的基础。</li>
+</ul>
+<h2 id="革">49. 革</h2>
+<p>革命的行动，在条件成熟的时候就付诸于实施，是取得一个圆满结局的根本。必须对此有一个正确的认识，才不会留下悔恨：</p>
+<ul>
+<li>按规矩约束其行为，要使用象征生生之道的光明政治来开创一个新纪元，从而革除过去的腐败政权；</li>
+<li>在革命条件成熟的时候，就要发起革命的总攻，以革除旧政权。这时的征伐将会取得圆满的成功，其行为没有过错；</li>
+<li>发动征战是一件危险的事情，要正确地认识到战争可能产生的磨难。革命的号召要能够得到民众反复的响应，才证明其征战是真诚而有益的，是可以为之而奋斗的事业；</li>
+<li>怀着有益于民众的真诚愿望而改变商族所享有的天命，就会有一个完满的结局，就不会留下悔恨；</li>
+<li>品德高尚的领袖以革命的行为夺取国家最高政权，只要是在国家走向衰退、当权者腐败的时候进行，就是符合民众利益的诚信行为；</li>
+<li>在位的君王被剥夺权力，是广大民众有变革政权的要求。对腐朽政权的征战将会彻底毁灭旧社会，只有俯首称臣一条路，有此正确的认识，才能有一个良好的结局。</li>
+</ul>
+<h2 id="鼎">50. 鼎</h2>
+<p>掌握国家新政权，是产生一个圆满结局的根本，将使万事亨通：</p>
+<ul>
+<li>正如将鼎颠倒过来有利于清除废物一样，颠覆旧政权有利于铲除社会的腐败。得到管理他们的权力是因为我们获取了他们曾经掌握的政权，这样做没有过错；</li>
+<li>国家政权中包含有巨大的物资利益，而我们的这个不和谐的配偶商族却因为被剥夺了政治的主宰权而心怀忧虑，担心受到不公正的待遇。如果大公无私地对待他们，让他们能够与我们一道分享其中的政治权力和物资利益，就会有一个完满的结局；</li>
+<li>正如鼎器的提耳被打掉，就会因为鼎器烫手而不能将其移动，不能享受其中的美食，如果仅仅指望雨水来打湿鼎器后再享用，美食也会因冷却而无味一样。如果我们不能够公平地分配权利，不能够听从其他部族的意见，仅仅希望通过武力来压制其他部族，是不可能与之取得和谐关系的。如果我们能为不公平的行为而悔恨，最终还可以有一个良好的结局；</li>
+<li>正如鼎足折断，鼎中供大家食用的美味佳肴就会被打翻，其情形一遍狼籍，结局将不好一样。如果国家的政权机制脱离了民众的支持，政权中所包含的物质利益就会支离破碎，将由此形成一个混乱的局面，产生不良的后果；</li>
+<li>正如鼎要配于黄铜制成的金属耳及提环才结实一样，国家政权应保持与民众的联系，应由为人公正贤明的大臣掌握。利于对此有一个正确的认识；</li>
+<li>正如在鼎的黄铜提手上配上美玉会更为完美一样。掌握国家政权的人如果能示人于仁慈友善的形象，将产生最为圆满的结果。没有什么不利。</li>
+</ul>
+<h2 id="震">51. 震</h2>
+<p>政令仿佛雷声可以助长万物生长一样，能使国事通泰。当雷声响起时，人们会惊恐地窥视并停止嘻笑。对政令的传达也会使民众心存敬畏，严肃对待。因为政令与雷声一样，即使传播得很远，它的威力也会如刚舀出坛的美酒散发出浓郁的芳香一般地存在：</p>
+<ul>
+<li>政令有如雷声一样使人敬畏，在听到后如果能够严肃对待，就会有一个圆满的结局；</li>
+<li>当新政的推行遭遇到对方的阻碍时，要考虑到将要消耗掉大量财富。因为对于不顺从者，就要统领大军跋山涉水地追击，直到他们山穷水尽后投降；</li>
+<li>新政令有如治病的良药。新政令推行后，就会清除腐败，使社会成为一个健康、文明的社会；</li>
+<li>新政令得于推行完成后，国家才会政通人和；</li>
+<li>政令如果朝令夕改，将产生不良的后果，要考虑到不能使现任的官员寒心而逃亡；</li>
+<li>高压下的专政如果像搓绳索一般地反复进行，被专政者就会如被捕获的鹰一般感到恐惧，征战的结果将产生灾难性后果。如果其打击不会伤害到俯首的顺从者，而只是针对其不愿称臣的邻邦，就没有过错，因为他们不愿意与新政权融合而罪有应得。</li>
+</ul>
+<h2 id="艮">52. 艮</h2>
+<p>制止诸侯国中的背叛者，不是为了从肉体上俘虏和消灭他们，而是为了从精神上改造他们，不能使他们的政权由背叛者掌握，如此则就不会有违背朝廷的行为发生：</p>
+<ul>
+<li>将背叛朝廷的行为制止在其萌芽的初始阶段，就不会引发不良的后果，利于永远保持这种正确的认识；</li>
+<li>要将他们背叛的行为制止在已经开始实施的阶段。如果这时候还不采取拯救的措施，而是放任自流，我们的朝廷就将得不到安宁；</li>
+<li>要将叛乱者的行为制止在国界之外，如果任由分裂者的阴谋活动继续演变下去，会产生严重的不良后果：对新政权的影响将会如烟熏火燎般使其窒息；</li>
+<li>制止住叛乱者的有生力量，就消除了危机；</li>
+<li>制止住叛乱者首领，他们所发出的政令就会符合朝廷所要求的社会秩序，从而使其遗憾的行为消亡；</li>
+<li>督促、劝勉叛乱者制止其不正确的行为，将产生良好的结局。</li>
+</ul>
+<h2 id="渐">53. 渐</h2>
+<p>逐渐融合，使小国臣服于朝廷，才能有一个良好的结局，必须对此有一个正确的认识。</p>
+<ul>
+<li>正如鸿雁降落在遭受攻击的地区，生命就会受到威胁一样。当我们所推进的文明遭遇到对方武力的抵抗时，国家政权就会受到威胁。如果我们能够以理服人，将自己的先进文化及可能给他们带来的好处陈述清楚，使之理解和接受，就可以消除其对立情绪，而不发生矛盾；</li>
+<li>正如鸿雁降落在巨石一般安定的地区，饮食就会有保障一样。文明的推进如果能平稳地进行，人民的生活就可以安居乐业，呈现出国泰民安的祥和景象；</li>
+<li>正如鸿雁降落在食物稀少的陆地一样，当文明的推进得不到被推广地区的人民响应的时候，征战的队伍将不能收兵回朝，强行的结合也不能够诞生符合于双方利益的新政权机构，将由此产生不良的后果。此时，利于防止犯罪的行为发生；</li>
+<li>正如鸿雁降落在树枝头，在可能受到威胁的时候可以提前发出警报，起到屋椽般的防护作用一样。当文明的推进遭遇到阻力的时候，可以与对方保持一种若即若离的关系，在对方有发动叛乱的企图时，我们就可以提前做好应对的准备，这样做了就不会发生过错；</li>
+<li>正如鸿雁降落在高高的山岗上，而找不到食物一样。当文明的推进受到长期的抵制，被推广者很长时间也不愿意与文明的政治制度结合时，终究会因为他们自己的昏庸、愚昧而被我们取代，将会有一个良好的结局；</li>
+<li>正如鸿雁降落在食物短缺的陆地上时，它们漂亮的羽毛可以成为美丽的榜样一样。当文明的推广得不到被推广地区的人民响应的时候，我们也要严格地要求自己，以我们的言行举止用来作为他们效法的榜样。潜移默化的作用将可以产生良好的结果。</li>
+</ul>
+<h2 id="归妹">54. 归妹</h2>
+<p>正如依靠强迫的手段娶回新娘不会有美满的结果一样。小国的归顺如果靠武力的征服完成，也将产生不良的结局，不会带来安宁和利益：</p>
+<ul>
+<li>正如以身份低微的小妾来顶替新娘婚配，虽然不完美，却仍然可以成婚生子一样。以微子启取代武庚承袭商祀，虽然由于不是商王帝辛的合法继承人而显得勉强，但依然可以完成对商族的管理。因此，对武庚的征战将会产生良好的结局；</li>
+<li>正如弱视的人想看清道路，需要他们头脑清醒、感觉敏锐一样。武庚的继位者微子要想管理好商族，就利于有明察秋毫的人一般对文明与愚昧的取舍有一个正确的认识；</li>
+<li>正如婚配的新娘以公主为首选，只有当她不顺从时才以小妾取代其位置一样。小国对大国的归顺也应以其合法的继承人为领袖，如果这个继承人与朝廷背道而驰时，朝廷可以选择其旁系的领袖取而代之；</li>
+<li>正如出嫁的时间如果超过了约定的期限，其所推迟的时间应有一定的限度一样。小国对朝廷的归顺也有一个时间限度，如果无限止地延期，当然有必要替换其领袖；</li>
+<li>帝王所在的商族曾再次归顺周族，因为他们的君王武庚改过自新的行为不如其大臣微子启的改过彻底。微子与周族的合作使得两族的关系有如十四的月亮般，几乎达到了最为融洽的程度，由此产生了一个完满的结局；</li>
+<li>正如在举行婚礼时，新娘子以没有果实的空筐进奉给公、婆，新郎杀病死的羊招待来宾，不会给今后的生活带来任何好处一样。小国对大国的归附、商周新旧政权的结合对双方而言，都应当以诚相待，否则就不会带来安宁和利益。</li>
+</ul>
+<h2 id="丰">55. 丰</h2>
+<p>土地和人口的资源丰富，国家就能够繁荣昌盛。为王者如果大公无私地以国为家、以天下为家，就能够产生巨大的凝聚力，使民众共同关心国家的前途和命运，社会环境良好的程度也就会因此如正午的时分一般阳光灿烂：</p>
+<ul>
+<li>在最后的时刻才来朝见君王，是因为只有他们这个新选取的领袖的替代者才明智的原因，虽然经过了漫长的努力和等待，也没有过错。因为他们现在的行为与过去相比，已经有了很大的进步和提高；</li>
+<li>使君王的光芒所隐盖下的忠臣良将的功劳显现出来，这就有如在中午时分可以看见北斗星一样。实行这种政策容易使人产生疑心病，但只要保持心中的诚信，就可以使他们顺从，并由此产生良好的结局；</li>
+<li>让民众的光芒显现出来，就如正午时分可以看见天上水沫般的繁星一样。这样做可能会损害权贵、大臣们的利益，但没有过错；</li>
+<li>使君王的光芒所隐盖下的忠臣良将的功劳显现出来，这就有如在中午时分可以看见北斗星一样。这种行为将使得遥远的边民也会在漫长的跋涉后赶在冬天之前来朝会贤明的君王，边远民族的被感化将会带来圆满的结局；</li>
+<li>完美的乐章从臣民中传来，贤明的君王必将因为其谦虚谨慎的作风而受到国民的广泛庆贺和赞扬，将由此产生一个圆满和结局；</li>
+<li>身为君王、天子，如果不能严以律己，而是以民争财、贪天之功、用人疑人、滥用近臣、不理朝政，必将产生灾难性后果。</li>
+</ul>
+<h2 id="旅">56. 旅</h2>
+<p>商旅活动对国家的繁荣昌盛能够起到小的推动作用。商旅活动需要有一个正确的认识，才能产生一个圆满的结局：</p>
+<ul>
+<li>商旅活动应如串联在一起的玉件一般有组织地结伴而行，以相互照应，壮大声威。如果分离开来，如沉闷、单调的伐木声一样单独行动，就会因其势单力薄而遭遇不幸；</li>
+<li>在出门经商的过程中，要遇事将就、礼让他人；要收藏好自己的钱财；要获得照看商品的仆人的帮助。对此三点要有一个正确的认识；</li>
+<li>在出外经商的过程中，如果处处争强好胜，又失去照看货物的仆人的帮助，要认识到其中可能带来的磨难；</li>
+<li>商旅活动的目的，是为了获取商人所需的资源和利润。如果不是靠公平交易，而是使用武力或以武力相威胁来达到目的，我们的心中不会感到愉快；</li>
+<li>强迫交易的行为有如用不带绳子的箭去射击野鸡，会因此遗失珍贵的箭一样，是得不偿失的，最终的结果将造成自己信誉的丧失；</li>
+<li>强迫交易的行为犹如张网捕鸟时，为了驱赶鸟群来触网而焚烧它们的巢穴一样，商人虽然在一开始的时候会为所获取的较多利益而开怀大笑，随后就会因为自己将失去的更多利益而痛苦万分，号啕大哭。因为在普通的商业活动中，为了获取眼前的利益就不讲信誉地胡作非为，会因此而丧失一个领导者的权威，是得不偿失的，必将产生不良的后果。</li>
+</ul>
+<h2 id="巽">57. 巽</h2>
+<p>信息的传播，对国家的繁荣昌盛将起到小的推动作用，有利于协调民众，从而营建一个安居乐业的理想政治环境。政令的制定、传播和落实利于得到德才兼备的人才支持：</p>
+<ul>
+<li>对政令的推行，利于有军人般正确的认识：坚决服从和迅速地完成；</li>
+<li>不在君位时发布政令，需要借用史官所掌握的对先人事迹的解释权和巫觋所掌握的神权来解决纷争，从而使民众顺从。如此就可以取得一个圆满的结局，这样做没有过错；</li>
+<li>频繁地更改政令，将会丧失政令的严肃性，并使人无所适从，从而留下悔恨；</li>
+<li>为了不让其制定的政策留下遗憾，在制定政策时就要遵守田猎有三驱之制的规则，充分考虑人民的生存和生活的权力；</li>
+<li>有一个正确的认识，就会有一个圆满的结局，就不会发生使人感到悔恨的事，也就没有什么不利。即使是在开始时发生了某些混乱，也会得到很圆满的解决，从而形成一个良好的结局；</li>
+<li>不在君位时发布政令，需要使用较多的钱财来收买人心。如果鲁莽地以武力推行其主张，要认识到将产生的不良后果。</li>
+</ul>
+<h2 id="兑">58. 兑</h2>
+<p>语言的交流可以沟通人们之间的感情，但在交流中必须有一个正确的认识：</p>
+<ul>
+<li>以平和的言语向对方表达自己的意愿，就可以产生良好的结果；</li>
+<li>以真诚之心向对方解说自己的意愿，就会产生良好的效果，从而使悔恨消亡；</li>
+<li>由于自己的错误行为而招致对方的指责并兴师问罪，将造成灾难性后果；</li>
+<li>不公平交易引发的纠纷不会自然地平息下来，只有纠正了自己不正确的认识和错误的行为之后，才能产生一个让人满意的结果；</li>
+<li>在即将被推翻、即将被伤害的时候才被迫讲信誉，将会受到磨难；</li>
+<li>在行为一开始的时候就要保证自己言语的正确。</li>
+</ul>
+<h2 id="涣">59. 涣</h2>
+<p>瓦解敌人的阵营就会使自己的行动顺利。瓦解敌人是为了推翻旧政权，然后取而代之，这种瓦解有利于今后的发展。对此，必须有一个正确的认识：</p>
+<ul>
+<li>在瓦解敌人，从而拯救受到敌人长期压制的民众的时候，如果能够有强大的军事力量作为后盾，就会产生一个完满的结局；</li>
+<li>瓦解敌人时快速地扑向敌人的重要部位，就不会留下悔恨；</li>
+<li>瓦解敌人从争取其阵营中受到欺辱和压迫的弱小者入手，就不会留下悔恨；</li>
+<li>在瓦解敌人的过程中，能够争取到他们中的大多数人拥护，是产生一个圆满结局的根源。而在被瓦解的敌方阵营中有人如中流砥柱般顽固不化，是行为不正的夷族所希望出现的结果；</li>
+<li>竭尽全力瓦解敌人并发出决战的总动员，迫使敌人的君王退下王位，俯首称臣，没有过错；</li>
+<li>以和平的方式瓦解敌人的阵营，可以避免流血冲突，而同样达到铲出邪恶的目的，没有过错。</li>
+</ul>
+<h2 id="节">60. 节</h2>
+<p>施行勤俭节约的财经政策，是正确的。但在民不聊生的时候，不可以施行节制的政策，对此要有一个正确的认识：</p>
+<ul>
+<li>以勤俭节约的行为准则修身、齐家，没有过错；</li>
+<li>勤俭节约的行为准则仅仅作为对自己的要求还远远不够，关键是要让其发扬光大，成为全民、全社会的行为准则，否则的话就将产生不良的后果；</li>
+<li>如果大家不能以勤俭节约的行为准则来要求自己，就应当教导他们遵守这一准则，才不会有过错；</li>
+<li>在国泰民安的太平盛世，依然施行勤俭节约的政策，是正确的；</li>
+<li>在幸福美满的甜蜜日子里，依然施行勤俭节约的政策，将会有一个完满的结局，因为施行勤俭节约的政策将会使现在的生活更加完美；</li>
+<li>要认识到在民不聊生的时候施行节制的政策，将造成灾难性的后果，要防止这种行为的发生，以克服可能出现的令人感到遗憾的后果。</li>
+</ul>
+<h2 id="中孚">61. 中孚</h2>
+<p>为人中正、诚信，就会如穿上了用豚鱼皮制作而成的坚硬战袍一样不会受到敌人的伤害。这种优良的品德有利于克服艰难险阻，必须对此有一个正确的认识：</p>
+<ul>
+<li>国家的政权由于我公正的管理，所以才有了现在这种完满的结局。如果我存有篡政夺权的野心，就不会有我们今天这样的和平安宁；</li>
+<li>正如在黑暗中的鹤发出警惕的鸣叫声时，能够得到群体的响应一样。由于在我需要帮助的时候，能够得到大家如雏鹤对它们的父母般的信任与支持，所以在我拥有了权力的时候，也就能够与大家一同分享；</li>
+<li>在俘获商遗族后，凡是拥护新政权的贵族都给予了鼓励和封赏；凡是为旧政权的灭亡而悲伤的贵族，则废除了他们过去曾经享有的特权；</li>
+<li>如今的国家政治局面有如十四的月亮般光明正大，人民安居乐业，远离战争，这样好的管理没有过错；</li>
+<li>只要是抱着真诚的愿望，即使是采取强制性的措施挽救处于危难之中的国家政权，使之恢复和平安宁，也没有过错；</li>
+<li>正如美丽锦鸡的鸣叫声如果传入天空，就会遭到猎人的捕杀一样，为人臣者的美名如果超过自己的君王，也易于遭受打击。我知道这种行为将产生的不良后果。</li>
+</ul>
+<h2 id="小过">62. 小过</h2>
+<p>下级官员的越权行为，可以使事情得于顺利的解决，但必须有一个正确的认识：这种越权行事的行为只可以用于办普通的事，而不可以用于办重大的事情。正如 飞过的小鸟遗留下来的声音，不适合于传得太高太远，只适合于传得低一些一样，其越权行事的行为如果不危及到王权本身的权威性，就可以产生非常圆满的结局：</p>
+<ul>
+<li>正如飞鸟在高空鸣叫会遭来杀身之祸一样，向朝廷的权威挑战必将导致不良的后果；</li>
+<li>正如在家庭事务中，不争求祖父的意思，而以祖母商量是可行的一样。在处理国家大事时，未得到君王的支持，而受到百官的拥护，也没有过错；</li>
+<li>要纠正越权行事者的错误行为，以提高警惕，防止其有谋反之心。如果顺其发展下去，或者实行过分的打击，都会产生不良的后果；</li>
+<li>即使越权行事者没有造反的恶意，也应纠正其不当的行为，以加强对他们的约束。因为历史的教训必须引以为戒，在聚集民众的组织问题上，一定要永远保持这种正确的认识；</li>
+<li>正如乌云密布而不下雨一样，在我们的中央政权里，应长期保持对东方商遗族的强大威慑力量。这样的话，一旦有不服从管理的诸侯企图谋反时，就可以将他们消灭在事变的发生地和启蒙阶段；</li>
+<li>改变过去对君王亲密、臣服的良好态度，有意越权行事，挑战君王的权威，就会如飞鸟被罗网捕获一样，结局是悲哀的，这就叫做目光短浅而造成的灾难。</li>
+</ul>
+<h2 id="既济">63. 既济</h2>
+<p>正如《周易》的讲述已经既将完成一样，我的政治生命也自此结束，总结自己的一生，基本上是顺利的，曾经获得了小的利益，有一个正确的观点。相对而言，前半生的事业很完美，但晚年的生活却造成了一些混乱：</p>
+<ul>
+<li>正如拉车的狐狸拉起了陷入泥潭的车轮，却因此打湿了自己的尾巴一样。在武王早逝，成王年幼，周族新政权立足未稳，诸侯可能乘机反叛的危急时刻，我毅然摄行朝政，从而挽救了危机四伏的新政权，却也因其越权行事的行为而背上了篡政夺权的黑锅，败坏了一生的英名。我的这种牺牲自己而挽救周族命运的行为没有过错；</li>
+<li>成王因为丧失了王权，而聚集其拥护者来追讨，于是依照天道的规律，在我摄政的第七年，还政于成王；</li>
+<li>正如殷商王武丁继承王位后，只用了三年时间就征服了诸侯方国，取得全面的胜利，是因为他的行为能够得到民众拥护的结果一样。我能够拨乱反正，统一全国，也是因为得到民众拥护的结果，因此，我摄政当国的行为并没有错；</li>
+<li>正如用质量最好的丝线缝合已经破损的衣裳一样，我将以最真诚的愿望，以最完美的行动来弥补因自己过去的摄政行为给周王室造成的伤害，并将在今后所有的时间里引以为戒；</li>
+<li>正如同为邻里的二个人，在参与夏祭的活动时，家住东边者担任又苦又脏的杀牛任务，却没有家住西边者担任又干净又轻松的歌功颂德的任务，所得到的实惠多一样。我为巩固周朝的政权辛勤地东征西伐，到头来却没有守在成王身边坐享其成、溜须拍马的召公得到的利益多；</li>
+<li>正如请客请饭时，不小心将酒泼在客人的身上，会带来麻烦一样，为了挽救国家新生的政权而摄政的行为造成了对成王的伤害，是我晚年不幸的根源。</li>
+</ul>
+<h2 id="未济">64. 未济</h2>
+<p>使人感到遗憾的事情，已经得到顺利的解决。正如狡猾的小狐狸虽然渡过了湍急的河流，却打湿了自己漂亮的尾巴，从而没有了过去的光彩一样。我摄政的行为虽然挽救了周族的新生政权，完成了统一天下的伟大事业，却也因为此行为对周王室的伤害而败坏了自己的一生英名，从而造成了晚年的生活得不到安宁和利益：</p>
+<ul>
+<li>正如小狐狸为了过河而打湿了自己的尾巴后，会感到难过一样。名誉受到伤害后，也就会留下悔恨；</li>
+<li>为了挽救新政权于危难之中而采取的行动，是正确的，也将有一个完满的结局；</li>
+<li>在没有准备好的时候就去发动征讨的战争，将会造成不良的后果，利于首先克服艰难险阻，完成战争的准备；</li>
+<li>有一个正确的认识，就有一个圆满的结局，就不会发生使人感到悔恨的事。只有以君王的名誉发出征战不顺从方国的命令，才可以在短时期内拨乱反正，使他们归顺而来朝贡；</li>
+<li>有一个正确的认识，就能够有一个圆满的结局，就不会发生使人感到悔恨的事。正如英明的领袖光明磊落一样，为人处事充满了诚信，就能够有一个完满的结局；</li>
+<li>为了国家的利益，为了新政权的稳定而摄行王政本没有过错，就如真心诚意地请人来喝酒没有过错一样。但摄政的行为伤害了周成王及其他成员，却不是有意的，而是一种非常对不起的失误，这就如在酒席上不小心将酒泼洒在客人的头上，是好心敬酒而发生的失误一样。</li>
+</ul>
+<p>（完）</p>
+<section class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>孔子在《论语》中说：“加我数年，五十以学《易》，可以无大过矣。”<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>曾仕强教授此处应指《易》的三大组成：《连山》、《归藏》和《周易》。易，构字就是上面是太阳，下面是月亮，是日月的意思。<a href="#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p>《周易正读》，购书链接，https://item.jd.com/10107933991498.html<a href="#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn4"><p>周易的前 30 卦。<a href="#fnref4" class="footnote-back">↩</a></p></li>
+<li id="fn5"><p>仁道，即与人相处的道理。<a href="#fnref5" class="footnote-back">↩</a></p></li>
+<li id="fn6"><p>2024 年。<a href="#fnref6" class="footnote-back">↩</a></p></li>
+<li id="fn7"><p>最有可能的一位作者是周公旦。<a href="#fnref7" class="footnote-back">↩</a></p></li>
+<li id="fn8"><p>迷信不可取，即便天命存在，天也赋予了人独立思考的能力。天命不可违，可是不到最后，难说天命是什么。<a href="#fnref8" class="footnote-back">↩</a></p></li>
+<li id="fn9"><p>为了阅读方便，对一些语句做了微小调整，以及去掉了一些内容 ，比如爻辞序数、爻辞后。<a href="#fnref9" class="footnote-back">↩</a></p></li>
+</ol>
+</section>
+</article>
+
+<div style="text-align:center;">版权声明：自由转载-非商用-非衍生-保持署名 <a href="https://hailiang-wang.github.io/">https://hailiang-wang.github.io/</a> <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">（创意共享3.0许可证）</a>
+</div>
+<div style="text-align:center;">//</div>
+<br />
+
+<div class="float-message">
+  <div class="float-message-inner">
+    <a href="javascript:void(0);" onclick="jQuery(&#39;.float-message&#39;).hide();" class="close-link">X</a>
+  	<p>Subscribe</p>
+    <img style="width:100px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABIUExURQAAAJmZmf///zMzM8zMzKOjo3p6elxcXK2trfX19dbW1h8fHykpKWZmZnBwcIWFhVJSUuDg4Ovr6z09PY+PjxQUFMLCwgoKCjRrbnUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAchSURBVHhe7Z3bUhs5FEVDuIYkQBJI/v9Pp6rXUqq35yC3A8zE5qwXauvW2hIlyWrJ/nAoZx8LzolDXCBUcmbgfi7IoHo72shW2siBtJGttBG4vNjHFQk1cn2+cIMKI5/MgLol4WdSXBlXQYo08sW4CV9IOTD7BNtUI1Y9FSIZ9YOyP8UkYeQcMcNnD9rIWiGSNrLQRiYclxFVYGFpZMKoeqivqK+hJKtSGfHZSTbioI38mzYCbQTerZFbl2wBUcMIYTcsGu9Qd6HEZR9R57eUYhjiDY3sZAeihhEoc5cVI2pAWBtRBW1koY0stBFVUFbl/uuCI+cDiqhvCKeMzH19tnCNSog6+04Gwt7eiFhbcydEzapSEjVpI6qgjSy0kYU24go0uCYqjbj6fSDQ3IQNiHLT0w3XzxTpBqpKCCuNuIROcrt2ULZpkEYyezx8hrnL3iWsNDKjjaDayEIbKThVI1euPZ/HFWsa+cFC95EkCIfkD6G+oO5J6NpZFevdNPKZFDMcyg8mjaRCjM8jocrtoJxOEdt794W0kYU28vq0kYU3NOIgthm3Zm9QV4yjT5SFuCNKjxrJ4fcncT9Rd8QhxmCs2ozt9qfYpkFOYqN/QHdJ9Oef0kagjaxpI2tOx4if5Ce4+VBuADjuetoL8cs4eCBKHFsty+0DNzIQ4yQYwtNe95W6R8WruimW6WeIkskklv0j5ecRif6xbZxAU/nfsH0CbSMLbWShjVQciREXj4EbtT9QjyxOc3vCj/y+Sov1q7nliajEshw53YqQaiPDtbPr6nLtrPNk1g5iu9mmVSvOKMuSQ3t35FYGbWShjUAbKThmI7HmLI08kSJfeFVGxm0FwkosS27MAJ8oRRU4XCeunYeRqk3TiGTVKyMDwjZgH7yMNlIpxICwDbSRNW2kUogBYRt4cyOSo7eLZ9HIhGyUEp8t2lJBNqlqZxnPnzZi6PO0kTVtBCHHZcRFIwuwS5KIRr4TNz5Fk/6RQCHhWDSCZaURy5LytoIK3CTViLuw3nwYW6b8GZAy0Ujuoljp7B/Csj8ljZQ7MsZNyJLzv6GNENhGCoyb0Eagjaz5f4xk1VWSVRdtIUb6VFDmFpPE9DiriYz0SiFslr2NLLSRtUraCIHJ32CEleSAMG8YPLK89MCAK1bXnL9IKR4YIGocEUCVucvbCiQc63CwLGtSHj4wPSXWlGO/o3eZkagx2qMkc6eaYFnWZDqPTGgjayVtZKGNwHEZ4XV7ySVJvvNiPm8YOIB6W8FjW6Qfd3VRmXu86w/l0VtxVAWrnkcXZOeuA39mZKvklJb9g0gyd0n2rpMrZB+Uk+uYjPkzo40stJGFNlJxJEYcyyrK4deNWk9c5W0F0o/hF9wr3mCEEv94+J2QD3cSE9sh+4ewbEXZYEQVZH9myf43iIElbaSgjSy0EThKI37XTJAHZHP41cglgULCHCRz+PWIq8te0QhRSXlw9weBGnHtTNjvigXZB1bFPqjS2yo5bWWbmjv7RyP7sWTrpZGd3G1kDVFtZC9txDg4LiOMbzIbfnO4/kZuEnqg1rK8YZBbFzn85gDqU1Xg8GvJaaQeflWQ7ZZFJ/v7Jx9eQortNcmyCGsj0kbWkKKNyEkbyTsFfrWtq1lftuUxNPBlm/cNyq/J9SBZQoqLB5JQsFiT8jXezl3dykhiq+SEqArsA9kwISaT6TFLzpog2kgbeZ42AqdmpMKqJJl+/8NzFiqNGDehLGuHNrLQRtYYN6GNQBtZ+M+MsJIcN2Qr8hqFuEYVb9tS4vg1MJTfW5Nr57z3K0SVv3HmFrBl1d/MaCmHkn1g/yBst2xh+yAn0PITRfW/Mf1nEpMeShtZ00YqTHoobWTNqxo5FB+ukaxKRc5Cpp9VrGqUMn3ZDNtpIwttpKCNwN9uJDY9S1yqmd07AvkFhQlRGsllovuoHvNKzEcKN0k1kl+c6D1hl7uk+J19goWVfWD/JERpxHkkyVlFqpr4bPtHzB092EakjRS0ETg1I7x8T2av6asvKPRzueev/LhdGsnTXiQsf+XB33XQyC2BHtuqjagCs6cR+6DqH/sgKY0kppyQNZE2gmojz2PKCW0E3qERlqP5LeDjfBdx4vmub0owQ2Bu184W4ojuTd/Yrn0lI4SZXmb9kxMiYYm5TZ9lZU0GbWQNYW2koI2ogvdkxLUwq9j8aRuvjrlU9W6vK1wDhfSjLMjbCirJLxY38IVGVIjRbijJ3KqEqN0W3stOzdvIWiHaCLQRODUjjGhJufng4/KrEhBj84GEDr8OuG5W5PaBkHCUFeTwq5puPkwojcwgof3jlJbkhDghJ8ScTtsIqo2saSMLJ27k0FdvpRG2AQZkc/vAh/trYN5WcPNhXP8NFbj5kFsR9au3zcyMEDUwELIVs38sK9V+rIkYuJ02stBGCtoI/J1GPn78B4WC4UbqGNeMAAAAAElFTkSuQmCC">
+  </div>
+</div>
+<script>
+function checkHide(){
+  if(jQuery(window).width() < 1000){
+    jQuery('.float-message').hide();
+  } else {
+    jQuery('.float-message').show();
+  }
+}
+
+checkHide();
+jQuery(window).resize(checkHide);
+
+</script>
+</body>
+</html>
