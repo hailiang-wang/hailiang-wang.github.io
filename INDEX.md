@@ -20,6 +20,7 @@ Publications of [Hai Liang W.](https://github.com/hailiang-wang), [subscribe](ht
 
 | Date | Post | Tags |
 | --- | --- | --- |
+| 2025-01-02 | [查理芒格箴言](html/notes_2501020855.html ) | mindset,philosophy |
 | 2024-09-11 | [读《周易》](html/notes_2409101538.html) | culture |
 | 2024-08-08 | [读《数学与生活》远山启（日）著](html/notes_2408081752.html) | math |
 | 2024-07-27 | [读《怎样解题：数学思维的新方法》波利亚 著](html/notes_2407270650.html) | math |
