@@ -241,7 +241,7 @@ $-------------------------------------------------------------------------------
 <div class='float-message'>
   <div class='float-message-inner'>
     <a href="javascript:void(0);" onclick="jQuery('.float-message').hide();" class="close-link">X</a>
-  	<p>Subscribe</p>
+  	<p>WeChat</p>
     <img style="width:100px" src="assets/qrcode_for_gh_d12d7a43aece_258.jpg">
   </div>
 </div>
