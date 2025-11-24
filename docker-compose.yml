@@ -1,0 +1,6 @@
+services:
+  blog:
+    image: chatopera/blogmake:develop
+    restart: always
+    ports:
+      - "17780:80"
