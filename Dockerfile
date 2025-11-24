@@ -1,0 +1,13 @@
+FROM nginx:20240618
+MAINTAINER Hai Liang Wang <hain@chatopera.com>
+
+ARG VCS_REF
+
+LABEL org.label-schema.vcs-ref=$VCS_REF \
+          org.label-schema.vcs-url="https://gitee.com/hailiang-wang/hailiang-wang.github.io"
+
+
+COPY . /usr/share/nginx/html
+COPY ./assets/default.conf /etc/nginx/conf.d/default.conf
+COPY ./assets/404.html /usr/share/nginx/html/404.html
+COPY ./assets/50x.html /usr/share/nginx/html/50x.html
