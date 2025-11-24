@@ -1,6 +1,7 @@
 # Thoughts and learnings
 
-Publications of [Hai Liang W.](https://github.com/hailiang-wang), subscribe for updates, further contacts or feedbacks via WeChat ID: **mzhaai**.
+Thoughts and learnings of [Hai Liang W.](https://github.com/hailiang-wang), CEO and Founder of [Chatopera Inc.](https://www.chatopera.com)
+Subscribe for updates, further contacts or feedbacks via WeChat ID: **mzhaai**.
 
 ## Tags
 
