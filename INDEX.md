@@ -1,26 +1,28 @@
 # Thoughts and learnings
 
-Thoughts and learnings of [Hai Liang W.](https://github.com/hailiang-wang), CEO and Founder of [Chatopera Inc.](https://www.chatopera.com)
-Subscribe for updates, further contacts or feedbacks via WeChat ID: **mzhaai**.
+Thoughts and learnings of [Hai Liang W.](https://github.com/hailiang-wang), CEO and Founder of [Chatopera Inc.](https://www.chatopera.com/) 
+
+Subscribe for updates, further contacts or feedbacks via Zhihu Link: [deckard-10](https://www.zhihu.com/people/deckard-10).
 
 ## Tags
 
-| Category | Tags | Description |
-| --- | --- |  --- |
-| Product | product,cskefu,chatbot,branding,chatopera | 产品 |
-| Finance  | finance,munger,buffett  | 财务管理，投资 |
-| Productivity  | productivity,ob,habits  | 生产力，效率，自动化 |
-| Philosophy  | philosophy,buddha,love,confucianism  | 哲学，宗教 |
-| Psychology  | psych,mindset,meditation  | 心理学，心态，冥想 |
-| Culture  | culture,history,figure,communications  | 文化，历史，人物 |
-| Management  | management,economics,okrs,sales,ceo | 管理,经济,目标管理 |
-| Technologies | tech, AI, opensource, math | 科学、技术 |
-| Others | books,sports,digest | 兴趣，运动，读书摘要 |
+| Category     | Tags                                      | Description |
+| ------------ | ----------------------------------------- | ----------- |
+| Product      | product,cskefu,chatbot,branding,chatopera | 产品          |
+| Finance      | finance,munger,buffett                    | 财务管理，投资     |
+| Productivity | productivity,ob,habits                    | 生产力，效率，自动化  |
+| Philosophy   | philosophy,buddha,love,confucianism       | 哲学，宗教       |
+| Psychology   | psych,mindset,meditation                  | 心理学，心态，冥想   |
+| Culture      | culture,history,figure,communications     | 文化，历史，人物    |
+| Management   | management,economics,okrs,sales,ceo       | 管理,经济,目标管理  |
+| Technologies | tech, AI, opensource, math                | 科学、技术       |
+| Others       | books,sports,digest                       | 兴趣，运动，读书摘要  |
 
 ## Posts
 
 | Date | Post | Tags |
 | --- | --- | --- |
+| 2022-01-09 | [修身：超越自我，追求无我](./html/notes_2303310816.html) | buddha,philosophy | 
 | 2025-01-02 | [查理芒格箴言](html/notes_2501020855.html ) | mindset,philosophy |
 | 2024-09-11 | [读《周易》](html/notes_2409101538.html) | culture |
 | 2024-08-08 | [读《数学与生活》远山启（日）著](html/notes_2408081752.html) | math |
@@ -54,8 +56,7 @@ Subscribe for updates, further contacts or feedbacks via WeChat ID: **mzhaai**.
 | 2022-02-01 | [《金字塔原理》读书笔记，The Pyramid Principle](./files/2022_02_01_The_Pyramid_Principle.docx) | digest,communications |
 | 2022-01-23 | [《定位》读书笔记，心智之争，英文 'Positioning'](./files/notes_2303301841.docx) | branding,digest |
 | 2022-01-26 | [《大教堂与集市》读后感，英文 The Cathedral and the Bazaar](./html/notes_2304170947.html) | tech,opensource |
-| 2022-01-15 | [《清单革命》读书笔记，英文 'The Checklist'](./files/notes_2303301830.docx) | productivity,culture,digest |
-| 2022-01-09 | [修身：超越自我，追求无我](./html/notes_2303310816.html) | buddha,philosophy | 
+| 2022-01-15 | [《清单革命》读书笔记，英文 'The Checklist'](./files/notes_2303301830.docx) | productivity,culture,digest | 
 | 2021-12-31 | [《商界局外人》，英文 'The Outsiders' by William N. T.](./files/2021_12_31_The_Outsiders_商界局外人.docx) | management,digest |
 | 2021-12-20 | [《一个数学家的辩白》书摘，哈代自传](./files/notes_2303301357.docx)  | digest,figure,culture |
 | 2021-12-16 | [功劳归于勇敢者, The Man in the Arena](./files/notes_2303301246.docx) | figure,chatopera |
