@@ -22,6 +22,7 @@ Subscribe for updates, further contacts or feedbacks via Zhihu Link: [deckard-10
 
 | Date | Post | Tags |
 | --- | --- | --- |
+| 2026-03-01 | [《狂热分子》埃里克霍弗书摘](./html/notes_2405011036.html) | psych,digest | 
 | 2022-01-09 | [修身：超越自我，追求无我](./html/notes_2303310816.html) | buddha,philosophy | 
 | 2025-01-02 | [查理芒格箴言](html/notes_2501020855.html ) | mindset,philosophy |
 | 2024-09-11 | [读《周易》](html/notes_2409101538.html) | culture |
